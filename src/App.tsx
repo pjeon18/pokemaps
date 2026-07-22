@@ -139,7 +139,8 @@ export default function App() {
         <p className="survey-label leading-relaxed normal-case tracking-normal">
           A free fan-made puzzle. Not affiliated with Nintendo, Game Freak, or The
           Pokémon Company; Pokémon content © its owners. Data: PokéAPI · images &
-          trainer data: Bulbapedia (CC BY-NC-SA) · cries: Pokémon Showdown.
+          trainer data: Bulbapedia (CC BY-NC-SA) · cries: Pokémon Showdown ·
+          anonymous visit counts: GoatCounter (no cookies).
         </p>
       </footer>
 

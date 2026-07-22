@@ -101,8 +101,8 @@ export function PracticePicker({ open, onClose }: { open: boolean; onClose: () =
           </button>
         ))}
         <button onClick={() => start("all")} className={opt} style={{ background: "var(--wm-panel-2)" }}>
-          Both together
-          <span className="survey-label">every region</span>
+          Every Region
+          <span className="survey-label">all five packs</span>
         </button>
         <p className="survey-label normal-case tracking-normal leading-relaxed">
           Practice keeps its own streak — every win extends your run, one miss ends it.
