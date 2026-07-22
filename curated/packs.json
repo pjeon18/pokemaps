@@ -1,0 +1,90 @@
+{
+ "_comment": "Region packs. `versions` filters Pok\u00e9API encounters; `mapdescTag` picks the right generation's town-map description from Bulbapedia infoboxes; `regionSource` = manual (curated map-regions.json, Sinnoh) or auto (extracted from Bulbapedia per-location highlight maps by pull-maps.mjs; manual overrides merge from map-regions-manual.json).",
+ "packs": [
+  {
+   "id": "sinnoh",
+   "name": "Sinnoh",
+   "versions": [
+    "diamond",
+    "pearl",
+    "platinum"
+   ],
+   "mapdescTag": "DPPt|DP|Pt",
+   "regionSource": "manual",
+   "mapFile": "Sinnoh_DP.png",
+   "spriteGen": "generation-iv/platinum",
+   "maxDex": 493
+  },
+  {
+   "id": "johto-kanto",
+   "name": "Johto & Kanto",
+   "versions": [
+    "heartgold",
+    "soulsilver"
+   ],
+   "mapdescTag": "HGSS",
+   "regionSource": "auto",
+   "spriteGen": "generation-iv/heartgold-soulsilver",
+   "maxDex": 493
+  },
+  {
+   "id": "hoenn",
+   "name": "Hoenn",
+   "versions": [
+    "ruby",
+    "sapphire",
+    "emerald"
+   ],
+   "mapdescTag": "RSE|RS|E|Em",
+   "regionSource": "auto",
+   "highlightPrefix": "Hoenn",
+   "mapFile": "Hoenn_RSE_Map.png",
+   "spriteGen": "generation-iii/emerald",
+   "maxDex": 386
+  },
+  {
+   "id": "unova",
+   "name": "Unova",
+   "versions": [
+    "black",
+    "white",
+    "black-2",
+    "white-2"
+   ],
+   "mapdescTag": "BW|B2W2|BW2",
+   "regionSource": "auto",
+   "highlightPrefix": "Unova",
+   "spriteGen": "generation-v/black-white",
+   "maxDex": 649,
+   "dotColors": [
+    [
+     235,
+     28,
+     36
+    ],
+    [
+     216,
+     72,
+     112
+    ]
+   ]
+  },
+  {
+   "id": "kalos",
+   "name": "Kalos",
+   "versions": [
+    "x",
+    "y"
+   ],
+   "maxDex": 721,
+   "mapdescTag": "XY",
+   "regionSource": "auto",
+   "highlightPrefix": "Kalos",
+   "spriteGen": "generation-vi/x-y",
+   "regionShift": [
+    -0.63,
+    0.69
+   ]
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "_comment": "Hand-placed Kalos regions in the FINAL (post-regionShift) frame. Lumiose oversized to cover the big central circle (Paul, 2026-07-21).",
+ "regions": {
+  "vaniville-town": [
+   [
+    19.67,
+    18.24,
+    1.2,
+    1.0
+   ]
+  ],
+  "aquacorde-town": [
+   [
+    19.57,
+    15.94,
+    1.2,
+    1.0
+   ]
+  ],
+  "azure-bay": [
+   [
+    5.77,
+    1.89,
+    4.0,
+    3.2
+   ]
+  ],
+  "lumiose-city": [
+   [
+    15.4,
+    6.6,
+    2.5,
+    2.5
+   ]
+  ],
+  "kalos-route-7": [
+   [
+    7.9,
+    11.3,
+    4.4,
+    0.9
+   ]
+  ]
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "_comment": "Hand-placed Hoenn regions (257x159, tile=8px) for locations whose highlights exist only on an incompatible 352x223 revision. Placed against the actual base-map markers at 6x zoom (2026-07-21).",
+ "regions": {
+  "petalburg-city": [
+   [
+    1.9,
+    11.0,
+    1.1,
+    1.1
+   ]
+  ],
+  "oldale-town": [
+   [
+    5.0,
+    10.9,
+    1.1,
+    1.1
+   ]
+  ],
+  "littleroot-town": [
+   [
+    5.0,
+    12.8,
+    1.1,
+    1.1
+   ]
+  ],
+  "hoenn-route-101": [
+   [
+    5.1,
+    12.0,
+    0.9,
+    0.9
+   ]
+  ],
+  "hoenn-route-102": [
+   [
+    3.1,
+    11.1,
+    1.8,
+    0.9
+   ]
+  ],
+  "hoenn-route-103": [
+   [
+    5.2,
+    10.0,
+    1.9,
+    0.9
+   ]
+  ],
+  "hoenn-route-104": [
+   [
+    1.9,
+    9.3,
+    1.1,
+    1.6
+   ]
+  ],
+  "hoenn-route-105": [
+   [
+    1.4,
+    12.5,
+    1.1,
+    2.7
+   ]
+  ],
+  "hoenn-route-110": [
+   [
+    9.3,
+    10.7,
+    1.1,
+    2.1
+   ]
+  ]
+ }
+}

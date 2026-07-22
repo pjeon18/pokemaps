@@ -1,0 +1,4 @@
+{
+  "_comment": "themeYoutubeId per location — reveal-screen only (PRD §9). null = module hidden (never breaks the reveal). IDs must be looked up, NEVER guessed; fill via CURATION_TODO.md. Routes share themes, so ~25 unique IDs cover all 67 locations.",
+  "ids": {}
+}

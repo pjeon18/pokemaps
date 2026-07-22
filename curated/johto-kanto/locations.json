@@ -1,0 +1,714 @@
+{
+ "_comment": "Johto & Kanto pack (combined HGSS town map, 362x145: Johto frame at x=0, Kanto frame at x+170px). Merged from the per-region author files.",
+ "locations": [
+  {
+   "id": "new-bark-town",
+   "name": "New Bark Town",
+   "class": "town",
+   "bulba": "New Bark Town",
+   "bulbaMap": "Johto_New_Bark_Town_Map.png"
+  },
+  {
+   "id": "cherrygrove-city",
+   "name": "Cherrygrove City",
+   "class": "city",
+   "bulba": "Cherrygrove City",
+   "bulbaMap": "Johto_Cherrygrove_City_Map.png"
+  },
+  {
+   "id": "violet-city",
+   "name": "Violet City",
+   "class": "city",
+   "bulba": "Violet City",
+   "bulbaMap": "Johto_Violet_City_Map.png"
+  },
+  {
+   "id": "azalea-town",
+   "name": "Azalea Town",
+   "class": "town",
+   "bulba": "Azalea Town",
+   "bulbaMap": "Johto_Azalea_Town_Map.png"
+  },
+  {
+   "id": "goldenrod-city",
+   "name": "Goldenrod City",
+   "class": "city",
+   "bulba": "Goldenrod City",
+   "bulbaMap": "Johto_Goldenrod_City_Map.png",
+   "merge": [
+    "goldenrod-tunnel"
+   ]
+  },
+  {
+   "id": "ecruteak-city",
+   "name": "Ecruteak City",
+   "class": "city",
+   "bulba": "Ecruteak City",
+   "bulbaMap": "Johto_Ecruteak_City_Map.png"
+  },
+  {
+   "id": "olivine-city",
+   "name": "Olivine City",
+   "class": "city",
+   "bulba": "Olivine City",
+   "bulbaMap": "Johto_Olivine_City_Map.png"
+  },
+  {
+   "id": "cianwood-city",
+   "name": "Cianwood City",
+   "class": "city",
+   "bulba": "Cianwood City",
+   "bulbaMap": "Johto_Cianwood_City_Map.png"
+  },
+  {
+   "id": "mahogany-town",
+   "name": "Mahogany Town",
+   "class": "town",
+   "bulba": "Mahogany Town",
+   "bulbaMap": "Johto_Mahogany_Town_Map.png"
+  },
+  {
+   "id": "blackthorn-city",
+   "name": "Blackthorn City",
+   "class": "city",
+   "bulba": "Blackthorn City",
+   "bulbaMap": "Johto_Blackthorn_City_Map.png"
+  },
+  {
+   "id": "dark-cave",
+   "name": "Dark Cave",
+   "class": "cave",
+   "bulba": "Dark Cave",
+   "bulbaMap": "Johto_Dark_Cave_Map.png"
+  },
+  {
+   "id": "sprout-tower",
+   "name": "Sprout Tower",
+   "class": "tower",
+   "bulba": "Sprout Tower",
+   "bulbaMap": "Johto_Sprout_Tower_Map.png"
+  },
+  {
+   "id": "ruins-of-alph",
+   "name": "Ruins of Alph",
+   "class": "landmark",
+   "bulba": "Ruins of Alph",
+   "bulbaMap": "Johto_Ruins_of_Alph_Map.png"
+  },
+  {
+   "id": "union-cave",
+   "name": "Union Cave",
+   "class": "cave",
+   "bulba": "Union Cave",
+   "bulbaMap": "Johto_Union_Cave_Map.png"
+  },
+  {
+   "id": "slowpoke-well",
+   "name": "Slowpoke Well",
+   "class": "cave",
+   "bulba": "Slowpoke Well",
+   "bulbaMap": "Johto_Slowpoke_Well_Map.png"
+  },
+  {
+   "id": "ilex-forest",
+   "name": "Ilex Forest",
+   "class": "forest",
+   "bulba": "Ilex Forest",
+   "bulbaMap": "Johto_Ilex_Forest_Map.png"
+  },
+  {
+   "id": "national-park",
+   "name": "National Park",
+   "class": "landmark",
+   "bulba": "National Park",
+   "bulbaMap": "Johto_National_Park_Map.png"
+  },
+  {
+   "id": "pokeathlon-dome",
+   "name": "Pok\u00e9athlon Dome",
+   "class": "building",
+   "bulba": "Pok\u00e9athlon Dome",
+   "bulbaMap": null,
+   "note": "A great dome standing west of the National Park, where Trainers and their Pok\u00e9mon compete in athletic events."
+  },
+  {
+   "id": "burned-tower",
+   "name": "Burned Tower",
+   "class": "tower",
+   "bulba": "Burned Tower",
+   "bulbaMap": "Johto_Brass_Tower_Map.png"
+  },
+  {
+   "id": "bell-tower",
+   "name": "Bell Tower",
+   "class": "tower",
+   "bulba": "Bell Tower",
+   "bulbaMap": "Johto_Bell_Tower_Map.png"
+  },
+  {
+   "id": "johto-lighthouse",
+   "name": "Glitter Lighthouse",
+   "class": "building",
+   "bulba": "Olivine Lighthouse",
+   "bulbaMap": "Johto_Olivine_Lighthouse_Map.png"
+  },
+  {
+   "id": "cliff-cave",
+   "name": "Cliff Cave",
+   "class": "cave",
+   "bulba": "Cliff Cave",
+   "bulbaMap": null,
+   "note": "A cave partway up the sheer cliffs between the Safari Zone and Route 47."
+  },
+  {
+   "id": "johto-safari-zone",
+   "name": "Safari Zone",
+   "class": "landmark",
+   "bulba": "Johto Safari Zone",
+   "bulbaMap": "Johto_Safari_Zone_Map.png"
+  },
+  {
+   "id": "mt-mortar",
+   "name": "Mt. Mortar",
+   "class": "mountain",
+   "bulba": "Mt. Mortar",
+   "bulbaMap": "Johto_Mt_Mortar_Map.png"
+  },
+  {
+   "id": "lake-of-rage",
+   "name": "Lake of Rage",
+   "class": "lake",
+   "bulba": "Lake of Rage",
+   "bulbaMap": "Johto_Lake_of_Rage_Map.png"
+  },
+  {
+   "id": "ice-path",
+   "name": "Ice Path",
+   "class": "cave",
+   "bulba": "Ice Path",
+   "bulbaMap": null
+  },
+  {
+   "id": "whirl-islands",
+   "name": "Whirl Islands",
+   "class": "island",
+   "bulba": "Whirl Islands",
+   "bulbaMap": "Johto_Whirl_Islands_Map.png"
+  },
+  {
+   "id": "embedded-tower",
+   "name": "Embedded Tower",
+   "class": "landmark",
+   "bulba": "Embedded Tower",
+   "bulbaMap": null
+  },
+  {
+   "id": "dragons-den",
+   "name": "Dragon's Den",
+   "class": "landmark",
+   "bulba": "Dragon's Den",
+   "bulbaMap": "Johto_Dragons_Den_Map.png"
+  },
+  {
+   "id": "johto-route-29",
+   "name": "Route 29",
+   "class": "route",
+   "bulba": "Johto Route 29",
+   "bulbaMap": "Johto_Route_29_Map.png"
+  },
+  {
+   "id": "johto-route-30",
+   "name": "Route 30",
+   "class": "route",
+   "bulba": "Johto Route 30",
+   "bulbaMap": "Johto_Route_30_Map.png"
+  },
+  {
+   "id": "johto-route-31",
+   "name": "Route 31",
+   "class": "route",
+   "bulba": "Johto Route 31",
+   "bulbaMap": "Johto_Route_31_Map.png"
+  },
+  {
+   "id": "johto-route-32",
+   "name": "Route 32",
+   "class": "route",
+   "bulba": "Johto Route 32",
+   "bulbaMap": "Johto_Route_32_Map.png"
+  },
+  {
+   "id": "johto-route-33",
+   "name": "Route 33",
+   "class": "route",
+   "bulba": "Johto Route 33",
+   "bulbaMap": "Johto_Route_33_Map.png"
+  },
+  {
+   "id": "johto-route-34",
+   "name": "Route 34",
+   "class": "route",
+   "bulba": "Johto Route 34",
+   "bulbaMap": "Johto_Route_34_Map.png"
+  },
+  {
+   "id": "johto-route-35",
+   "name": "Route 35",
+   "class": "route",
+   "bulba": "Johto Route 35",
+   "bulbaMap": "Johto_Route_35_Map.png"
+  },
+  {
+   "id": "johto-route-36",
+   "name": "Route 36",
+   "class": "route",
+   "bulba": "Johto Route 36",
+   "bulbaMap": "Johto_Route_36_Map.png"
+  },
+  {
+   "id": "johto-route-37",
+   "name": "Route 37",
+   "class": "route",
+   "bulba": "Johto Route 37",
+   "bulbaMap": "Johto_Route_37_Map.png"
+  },
+  {
+   "id": "johto-route-38",
+   "name": "Route 38",
+   "class": "route",
+   "bulba": "Johto Route 38",
+   "bulbaMap": "Johto_Route_38_Map.png"
+  },
+  {
+   "id": "johto-route-39",
+   "name": "Route 39",
+   "class": "route",
+   "bulba": "Johto Route 39",
+   "bulbaMap": "Johto_Route_39_Map.png"
+  },
+  {
+   "id": "johto-sea-route-40",
+   "name": "Route 40",
+   "class": "sea-route",
+   "bulba": "Johto Route 40",
+   "bulbaMap": "Johto_Route_40_Map.png"
+  },
+  {
+   "id": "johto-sea-route-41",
+   "name": "Route 41",
+   "class": "sea-route",
+   "bulba": "Johto Route 41",
+   "bulbaMap": "Johto_Route_41_Map.png"
+  },
+  {
+   "id": "johto-route-42",
+   "name": "Route 42",
+   "class": "route",
+   "bulba": "Johto Route 42",
+   "bulbaMap": "Johto_Route_42_Map.png"
+  },
+  {
+   "id": "johto-route-43",
+   "name": "Route 43",
+   "class": "route",
+   "bulba": "Johto Route 43",
+   "bulbaMap": "Johto_Route_43_Map.png"
+  },
+  {
+   "id": "johto-route-44",
+   "name": "Route 44",
+   "class": "route",
+   "bulba": "Johto Route 44",
+   "bulbaMap": "Johto_Route_44_Map.png"
+  },
+  {
+   "id": "johto-route-45",
+   "name": "Route 45",
+   "class": "route",
+   "bulba": "Johto Route 45",
+   "bulbaMap": "Johto_Route_45_Map.png"
+  },
+  {
+   "id": "johto-route-46",
+   "name": "Route 46",
+   "class": "route",
+   "bulba": "Johto Route 46",
+   "bulbaMap": "Johto_Route_46_Map.png"
+  },
+  {
+   "id": "johto-route-47",
+   "name": "Route 47",
+   "class": "route",
+   "bulba": "Johto Route 47",
+   "bulbaMap": "Johto_Route_47_Map.png"
+  },
+  {
+   "id": "johto-route-48",
+   "name": "Route 48",
+   "class": "route",
+   "bulba": "Johto Route 48",
+   "bulbaMap": "Johto_Route_48_Map.png"
+  },
+  {
+   "id": "pallet-town",
+   "name": "Pallet Town",
+   "class": "town",
+   "bulba": "Pallet Town",
+   "bulbaMap": "Kanto_Pallet_Town_Map.png"
+  },
+  {
+   "id": "viridian-city",
+   "name": "Viridian City",
+   "class": "city",
+   "bulba": "Viridian City",
+   "bulbaMap": "Kanto_Viridian_City_Map.png"
+  },
+  {
+   "id": "pewter-city",
+   "name": "Pewter City",
+   "class": "city",
+   "bulba": "Pewter City",
+   "bulbaMap": "Kanto_Pewter_City_Map.png"
+  },
+  {
+   "id": "cerulean-city",
+   "name": "Cerulean City",
+   "class": "city",
+   "bulba": "Cerulean City",
+   "bulbaMap": "Kanto_Cerulean_City_Map.png"
+  },
+  {
+   "id": "vermilion-city",
+   "name": "Vermilion City",
+   "class": "city",
+   "bulba": "Vermilion City",
+   "bulbaMap": "Kanto_Vermilion_City_Map.png"
+  },
+  {
+   "id": "lavender-town",
+   "name": "Lavender Town",
+   "class": "town",
+   "bulba": "Lavender Town",
+   "bulbaMap": "Kanto_Lavender_Town_Map.png"
+  },
+  {
+   "id": "celadon-city",
+   "name": "Celadon City",
+   "class": "city",
+   "bulba": "Celadon City",
+   "bulbaMap": "Kanto_Celadon_City_Map.png"
+  },
+  {
+   "id": "saffron-city",
+   "name": "Saffron City",
+   "class": "city",
+   "bulba": "Saffron City",
+   "bulbaMap": "Kanto_Saffron_City_Map.png"
+  },
+  {
+   "id": "fuchsia-city",
+   "name": "Fuchsia City",
+   "class": "city",
+   "bulba": "Fuchsia City",
+   "bulbaMap": "Kanto_Fuchsia_City_Map.png"
+  },
+  {
+   "id": "cinnabar-island",
+   "name": "Cinnabar Island",
+   "class": "island",
+   "bulba": "Cinnabar Island",
+   "bulbaMap": "Kanto_Cinnabar_Island_Map.png"
+  },
+  {
+   "id": "indigo-plateau",
+   "name": "Indigo Plateau",
+   "class": "landmark",
+   "bulba": "Indigo Plateau",
+   "bulbaMap": "Kanto_Indigo_Plateau_Map.png"
+  },
+  {
+   "id": "kanto-power-plant",
+   "name": "Power Plant",
+   "class": "building",
+   "bulba": "Kanto Power Plant",
+   "bulbaMap": "Kanto_Power_Plant_Map.png",
+   "api": [
+    "kanto-power-plant"
+   ]
+  },
+  {
+   "id": "rock-tunnel",
+   "name": "Rock Tunnel",
+   "class": "cave",
+   "bulba": "Rock Tunnel",
+   "bulbaMap": "Kanto_Rock_Tunnel_Map.png"
+  },
+  {
+   "id": "kanto-pal-park",
+   "name": "Pal Park",
+   "class": "landmark",
+   "bulba": "Pal Park",
+   "bulbaMap": "Kanto_Pal_Park_Map.png",
+   "api": []
+  },
+  {
+   "id": "digletts-cave",
+   "name": "Diglett's Cave",
+   "class": "cave",
+   "bulba": "Diglett's Cave",
+   "bulbaMap": "Kanto_Digletts_Cave_Map.png"
+  },
+  {
+   "id": "mt-moon",
+   "name": "Mt. Moon",
+   "class": "mountain",
+   "bulba": "Mt. Moon",
+   "bulbaMap": "Kanto_Mt_Moon_Map.png"
+  },
+  {
+   "id": "viridian-forest",
+   "name": "Viridian Forest",
+   "class": "forest",
+   "bulba": "Viridian Forest",
+   "bulbaMap": "Kanto_Viridian_Forest_Map.png"
+  },
+  {
+   "id": "seafoam-islands",
+   "name": "Seafoam Islands",
+   "class": "island",
+   "bulba": "Seafoam Islands",
+   "bulbaMap": "Kanto_Seafoam_Islands_Map.png"
+  },
+  {
+   "id": "cerulean-cave",
+   "name": "Cerulean Cave",
+   "class": "cave",
+   "bulba": "Cerulean Cave",
+   "bulbaMap": "Kanto_Cerulean_Cave_Map.png"
+  },
+  {
+   "id": "tohjo-falls",
+   "name": "Tohjo Falls",
+   "class": "cave",
+   "bulba": "Tohjo Falls",
+   "bulbaMap": "Kanto_Tohjo_Falls_Map.png"
+  },
+  {
+   "id": "mt-silver",
+   "name": "Mt. Silver",
+   "class": "mountain",
+   "bulba": "Mt. Silver",
+   "bulbaMap": null,
+   "merge": [
+    "mt-silver-cave"
+   ]
+  },
+  {
+   "id": "kanto-victory-road",
+   "name": "Victory Road",
+   "class": "cave",
+   "bulba": "Victory Road (Kanto)",
+   "bulbaMap": "Kanto_Victory_Road_Map.png",
+   "api": [
+    "kanto-victory-road-1",
+    "kanto-victory-road-2"
+   ]
+  },
+  {
+   "id": "kanto-route-1",
+   "name": "Route 1",
+   "class": "route",
+   "bulba": "Kanto Route 1",
+   "bulbaMap": "Kanto_Route_1_Map.png"
+  },
+  {
+   "id": "kanto-route-2",
+   "name": "Route 2",
+   "class": "route",
+   "bulba": "Kanto Route 2",
+   "bulbaMap": "Kanto_Route_2_Map.png"
+  },
+  {
+   "id": "kanto-route-3",
+   "name": "Route 3",
+   "class": "route",
+   "bulba": "Kanto Route 3",
+   "bulbaMap": "Kanto_Route_3_Map.png"
+  },
+  {
+   "id": "kanto-route-4",
+   "name": "Route 4",
+   "class": "route",
+   "bulba": "Kanto Route 4",
+   "bulbaMap": "Kanto_Route_4_Map.png"
+  },
+  {
+   "id": "kanto-route-5",
+   "name": "Route 5",
+   "class": "route",
+   "bulba": "Kanto Route 5",
+   "bulbaMap": "Kanto_Route_5_Map.png"
+  },
+  {
+   "id": "kanto-route-6",
+   "name": "Route 6",
+   "class": "route",
+   "bulba": "Kanto Route 6",
+   "bulbaMap": "Kanto_Route_6_Map.png"
+  },
+  {
+   "id": "kanto-route-7",
+   "name": "Route 7",
+   "class": "route",
+   "bulba": "Kanto Route 7",
+   "bulbaMap": "Kanto_Route_7_Map.png"
+  },
+  {
+   "id": "kanto-route-8",
+   "name": "Route 8",
+   "class": "route",
+   "bulba": "Kanto Route 8",
+   "bulbaMap": "Kanto_Route_8_Map.png"
+  },
+  {
+   "id": "kanto-route-9",
+   "name": "Route 9",
+   "class": "route",
+   "bulba": "Kanto Route 9",
+   "bulbaMap": "Kanto_Route_9_Map.png"
+  },
+  {
+   "id": "kanto-route-10",
+   "name": "Route 10",
+   "class": "route",
+   "bulba": "Kanto Route 10",
+   "bulbaMap": "Kanto_Route_10_Map.png"
+  },
+  {
+   "id": "kanto-route-11",
+   "name": "Route 11",
+   "class": "route",
+   "bulba": "Kanto Route 11",
+   "bulbaMap": "Kanto_Route_11_Map.png"
+  },
+  {
+   "id": "kanto-route-12",
+   "name": "Route 12",
+   "class": "route",
+   "bulba": "Kanto Route 12",
+   "bulbaMap": "Kanto_Route_12_Map.png"
+  },
+  {
+   "id": "kanto-route-13",
+   "name": "Route 13",
+   "class": "route",
+   "bulba": "Kanto Route 13",
+   "bulbaMap": "Kanto_Route_13_Map.png"
+  },
+  {
+   "id": "kanto-route-14",
+   "name": "Route 14",
+   "class": "route",
+   "bulba": "Kanto Route 14",
+   "bulbaMap": "Kanto_Route_14_Map.png"
+  },
+  {
+   "id": "kanto-route-15",
+   "name": "Route 15",
+   "class": "route",
+   "bulba": "Kanto Route 15",
+   "bulbaMap": "Kanto_Route_15_Map.png"
+  },
+  {
+   "id": "kanto-route-16",
+   "name": "Route 16",
+   "class": "route",
+   "bulba": "Kanto Route 16",
+   "bulbaMap": "Kanto_Route_16_Map.png"
+  },
+  {
+   "id": "kanto-route-17",
+   "name": "Route 17",
+   "class": "route",
+   "bulba": "Kanto Route 17",
+   "bulbaMap": "Kanto_Route_17_Map.png"
+  },
+  {
+   "id": "kanto-route-18",
+   "name": "Route 18",
+   "class": "route",
+   "bulba": "Kanto Route 18",
+   "bulbaMap": "Kanto_Route_18_Map.png"
+  },
+  {
+   "id": "kanto-sea-route-19",
+   "name": "Route 19",
+   "class": "sea-route",
+   "bulba": "Kanto Route 19",
+   "bulbaMap": "Kanto_Route_19_Map.png"
+  },
+  {
+   "id": "kanto-sea-route-20",
+   "name": "Route 20",
+   "class": "sea-route",
+   "bulba": "Kanto Route 20",
+   "bulbaMap": "Kanto_Route_20_Map.png"
+  },
+  {
+   "id": "kanto-sea-route-21",
+   "name": "Route 21",
+   "class": "sea-route",
+   "bulba": "Kanto Route 21",
+   "bulbaMap": "Kanto_Route_21_Map.png"
+  },
+  {
+   "id": "kanto-route-22",
+   "name": "Route 22",
+   "class": "route",
+   "bulba": "Kanto Route 22",
+   "bulbaMap": "Kanto_Route_22_Map.png"
+  },
+  {
+   "id": "kanto-route-23",
+   "name": "Route 23",
+   "class": "route",
+   "bulba": "Kanto Route 23",
+   "bulbaMap": "Kanto_Route_23_Map.png"
+  },
+  {
+   "id": "kanto-route-24",
+   "name": "Route 24",
+   "class": "route",
+   "bulba": "Kanto Route 24",
+   "bulbaMap": "Kanto_Route_24_Map.png"
+  },
+  {
+   "id": "kanto-route-25",
+   "name": "Route 25",
+   "class": "route",
+   "bulba": "Kanto Route 25",
+   "bulbaMap": "Kanto_Route_25_Map.png"
+  },
+  {
+   "id": "kanto-route-26",
+   "name": "Route 26",
+   "class": "route",
+   "bulba": "Kanto Route 26",
+   "bulbaMap": "Kanto_Route_26_Map.png"
+  },
+  {
+   "id": "kanto-route-27",
+   "name": "Route 27",
+   "class": "route",
+   "bulba": "Kanto Route 27",
+   "bulbaMap": "Kanto_Route_27_Map.png"
+  },
+  {
+   "id": "kanto-route-28",
+   "name": "Route 28",
+   "class": "route",
+   "bulba": "Kanto Route 28",
+   "bulbaMap": "Kanto_Route_28_Map.png"
+  }
+ ]
+}

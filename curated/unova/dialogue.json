@@ -1,0 +1,467 @@
+{
+  "_comment": "Unova (BW + B2W2 combined) Overheard lines. Best-effort gen-5 flavor; verified:false until QA'd (CURATION_TODO.md). `who` = real in-game class/name; sprite references Spr_BW_* / Spr_B2W2_* trainer classes (build-content nulls any that didn't scrape).",
+  "lines": {
+    "nuvema-town": {
+      "text": "The Professor's lab is right here. She studies where Pokémon come from — the big questions!",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_BW_Youngster.png",
+      "verified": false
+    },
+    "accumula-town": {
+      "text": "Did you catch that speech in the plaza? 'Liberate your Pokémon,' they said. Gave me chills.",
+      "who": "Lass",
+      "sprite": "trainer-sprites/Spr_BW_Lass.png",
+      "verified": false
+    },
+    "striaton-city": {
+      "text": "The three brothers run both the restaurant AND the Gym. Which one you battle depends on your starter!",
+      "who": "Waiter",
+      "sprite": null,
+      "verified": false
+    },
+    "nacrene-city": {
+      "text": "The Gym's inside a museum, and the whole city used to be a warehouse district. Very artsy now.",
+      "who": "Backpacker",
+      "sprite": "trainer-sprites/Spr_BW_Backpacker_M.png",
+      "verified": false
+    },
+    "castelia-city": {
+      "text": "Biggest city in Unova! Skyscrapers everywhere, and the best ice cream you'll ever have.",
+      "who": "Rich Boy",
+      "sprite": "trainer-sprites/Spr_BW_Rich_Boy.png",
+      "verified": false
+    },
+    "nimbasa-city": {
+      "text": "Roller coasters, a ferris wheel, two stadiums — this is the entertainment city!",
+      "who": "Dancer",
+      "sprite": null,
+      "verified": false
+    },
+    "driftveil-city": {
+      "text": "It's a rough-and-ready market town by the drawbridge. The Cold Storage is just outside.",
+      "who": "Worker",
+      "sprite": "trainer-sprites/Spr_BW_Worker.png",
+      "verified": false
+    },
+    "mistralton-city": {
+      "text": "Cargo planes take off from the runway here. The Gym's in an airplane hangar — full of cannons!",
+      "who": "Pilot",
+      "sprite": null,
+      "verified": false
+    },
+    "icirrus-city": {
+      "text": "It snows most of the year here. Careful in the marsh outside — the fog gets thick.",
+      "who": "Skier",
+      "sprite": null,
+      "verified": false
+    },
+    "opelucid-city": {
+      "text": "The Dragon-type Gym is here. The whole city looks different depending on which version you're in!",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_M.png",
+      "verified": false
+    },
+    "aspertia-city": {
+      "text": "There's a lookout up on the hill with the best view in Unova. The new Gym's right here, too.",
+      "who": "Schoolboy",
+      "sprite": null,
+      "verified": false
+    },
+    "virbank-city": {
+      "text": "Smoggy little harbor town. The Gym's in a nightclub — the Pokéstar Studios are next door.",
+      "who": "Roughneck",
+      "sprite": null,
+      "verified": false
+    },
+    "humilau-city": {
+      "text": "A resort city built on the water! Everyone gets around by Surfing between the boardwalks.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_BW_Swimmer_F.png",
+      "verified": false
+    },
+    "lacunosa-town": {
+      "text": "Everyone locks their doors at night here. Old legend about a beast that came from the sky…",
+      "who": "Old woman",
+      "sprite": null,
+      "verified": false
+    },
+    "undella-town": {
+      "text": "Summer resort town! A famous Champion keeps a villa here and visits every season.",
+      "who": "Rich Boy",
+      "sprite": "trainer-sprites/Spr_BW_Rich_Boy.png",
+      "verified": false
+    },
+    "lentimas-town": {
+      "text": "Tiny town on the mountainside. The volcano and the old strange house loom right over us.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_BW_Hiker.png",
+      "verified": false
+    },
+    "floccesy-town": {
+      "text": "Quiet farming town. My grandpa runs the ranch just up Route 20 — go say hi!",
+      "who": "Schoolboy",
+      "sprite": null,
+      "verified": false
+    },
+    "anville-town": {
+      "text": "The trains all come here for repairs. On weekends collectors show up hunting for rare items.",
+      "who": "Worker",
+      "sprite": "trainer-sprites/Spr_BW_Worker.png",
+      "verified": false
+    },
+    "dreamyard": {
+      "text": "Kids play in these ruins now, but the Musharna here can pull dreams right out of the air.",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_BW_Youngster.png",
+      "verified": false
+    },
+    "wellspring-cave": {
+      "text": "The tunnel runs deeper than anyone's mapped. You hear water everywhere but can't see it.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_BW_Hiker.png",
+      "verified": false
+    },
+    "pinwheel-forest": {
+      "text": "Two ways through: the straight path, or the deep woods full of big old trees and bugs.",
+      "who": "Bug Catcher",
+      "sprite": null,
+      "verified": false
+    },
+    "castelia-sewers": {
+      "text": "Watch your step down here — grunts in funny outfits have been skulking around the tunnels.",
+      "who": "Janitor",
+      "sprite": null,
+      "verified": false
+    },
+    "desert-resort": {
+      "text": "A whole desert in the middle of Unova! The sandstorm hides old ruins near the center.",
+      "who": "Backpacker",
+      "sprite": "trainer-sprites/Spr_BW_Backpacker_F.png",
+      "verified": false
+    },
+    "relic-castle": {
+      "text": "This buried castle sinks down through the sand. Deeper than anyone's ever gone, they say.",
+      "who": "Psychic",
+      "sprite": "trainer-sprites/Spr_BW_Psychic_M.png",
+      "verified": false
+    },
+    "cold-storage": {
+      "text": "A refrigerated warehouse full of crates — and the Pokémon that snuck in from the cold.",
+      "who": "Worker",
+      "sprite": "trainer-sprites/Spr_BW_Worker.png",
+      "verified": false
+    },
+    "chargestone-cave": {
+      "text": "The floating stones are all charged with electricity! They move when you push through them.",
+      "who": "Scientist",
+      "sprite": "trainer-sprites/Spr_BW_Scientist_M.png",
+      "verified": false
+    },
+    "mistralton-cave": {
+      "text": "There's a guidance chamber deep inside where one of the guardian dragons is said to rest.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_BW_Hiker.png",
+      "verified": false
+    },
+    "celestial-tower": {
+      "text": "Ring the bell at the top for the Pokémon laid to rest here. Its tone tells you their spirit.",
+      "who": "Psychic",
+      "sprite": "trainer-sprites/Spr_BW_Psychic_F.png",
+      "verified": false
+    },
+    "twist-mountain": {
+      "text": "The tunnels twist and climb every which way. Miners and Hikers both get lost in here.",
+      "who": "Worker",
+      "sprite": "trainer-sprites/Spr_BW_Worker.png",
+      "verified": false
+    },
+    "dragonspiral-tower": {
+      "text": "Oldest structure in Unova. They say the original dragon slept coiled inside for centuries.",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_M.png",
+      "verified": false
+    },
+    "relic-passage": {
+      "text": "This long underground passage connects the city to the desert ruins. Watch for lurking grunts.",
+      "who": "Backpacker",
+      "sprite": "trainer-sprites/Spr_BW_Backpacker_M.png",
+      "verified": false
+    },
+    "giant-chasm": {
+      "text": "A crater blasted out of the forest. It's bitterly cold at the bottom — and something powerful lives there.",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_M.png",
+      "verified": false
+    },
+    "reversal-mountain": {
+      "text": "One side blazing, the other freezing — the whole mountain's split in two climates.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_BW_Hiker.png",
+      "verified": false
+    },
+    "abundant-shrine": {
+      "text": "People come to this shrine to wish for their Pokémon's health. The little ones gather here.",
+      "who": "Preschooler",
+      "sprite": null,
+      "verified": false
+    },
+    "lostlorn-forest": {
+      "text": "A traveling battle troupe camps in this little wood. And rare Pokémon slip in from far away.",
+      "who": "Pokémon Ranger",
+      "sprite": null,
+      "verified": false
+    },
+    "moor-of-icirrus": {
+      "text": "The whole marsh floods in the wet season. Great fishing — if you don't mind sinking in the mud!",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_BW_Fisherman.png",
+      "verified": false
+    },
+    "cave-of-being": {
+      "text": "Three little guardians of the lakes were born in a place like this, the old stories say.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_BW_Hiker.png",
+      "verified": false
+    },
+    "clay-tunnel": {
+      "text": "The Gym Leader had this tunnel dug himself. It runs clear under the city to the old ruins.",
+      "who": "Worker",
+      "sprite": "trainer-sprites/Spr_BW_Worker.png",
+      "verified": false
+    },
+    "seaside-cave": {
+      "text": "The tide pools freeze the floor into slides. Push the ice blocks to make your way across.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_BW_Swimmer_M.png",
+      "verified": false
+    },
+    "strange-house": {
+      "text": "The furniture moves on its own and the stairs don't go where they should. I'm not staying the night!",
+      "who": "Psychic",
+      "sprite": "trainer-sprites/Spr_BW_Psychic_F.png",
+      "verified": false
+    },
+    "p2-laboratory": {
+      "text": "An abandoned lab out on the water. Whatever they were building here, they left in a hurry.",
+      "who": "Team Plasma Grunt",
+      "sprite": null,
+      "verified": false
+    },
+    "ns-castle": {
+      "text": "The whole castle erupted up out of the ground beneath the League. Nobody saw it coming.",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_M.png",
+      "verified": false
+    },
+    "liberty-garden": {
+      "text": "There's a lighthouse on this little island. A rare event Pokémon was sighted here once!",
+      "who": "Sailor",
+      "sprite": null,
+      "verified": false
+    },
+    "floccesy-ranch": {
+      "text": "The ranch dog — er, Herdier — keeps the whole herd in line. One of ours went missing today, though.",
+      "who": "Pokémon Breeder",
+      "sprite": null,
+      "verified": false
+    },
+    "virbank-complex": {
+      "text": "Overgrown lots behind the factories. Wild Pokémon and tough Trainers both love the tall grass here.",
+      "who": "Roughneck",
+      "sprite": null,
+      "verified": false
+    },
+    "challengers-cave": {
+      "text": "Only strong Trainers bother with this cave. That's exactly why I train in here!",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_F.png",
+      "verified": false
+    },
+    "unova-pokemon-league": {
+      "text": "The League sits at the top of Victory Road. Beat the Elite Four and the Champion waits beyond.",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_M.png",
+      "verified": false
+    },
+    "unova-route-1": {
+      "text": "First route out of Nuvema. Just tall grass and little Patrat as far as the eye can see.",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_BW_Youngster.png",
+      "verified": false
+    },
+    "unova-route-2": {
+      "text": "Straight shot north to the science city. Plenty of Trainers itching to battle along the way.",
+      "who": "Lass",
+      "sprite": "trainer-sprites/Spr_BW_Lass.png",
+      "verified": false
+    },
+    "unova-route-3": {
+      "text": "There's a school bus stuck on this road and a little pond off to the side. Preschoolers everywhere!",
+      "who": "Preschooler",
+      "sprite": null,
+      "verified": false
+    },
+    "unova-route-4": {
+      "text": "Half-finished buildings and blowing sand — this road runs right alongside the big city.",
+      "who": "Backpacker",
+      "sprite": "trainer-sprites/Spr_BW_Backpacker_M.png",
+      "verified": false
+    },
+    "unova-route-5": {
+      "text": "Street performers line the road into the amusement city. Somebody's always looking for a battle.",
+      "who": "Dancer",
+      "sprite": null,
+      "verified": false
+    },
+    "unova-route-6": {
+      "text": "It follows the river up toward the cave. The rangers here keep an eye on the wild Deerling.",
+      "who": "Pokémon Ranger",
+      "sprite": null,
+      "verified": false
+    },
+    "unova-route-7": {
+      "text": "A long ridge road with an old house at the end. They say it's haunted — I believe it.",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_F.png",
+      "verified": false
+    },
+    "unova-route-8": {
+      "text": "The road runs on a boardwalk over the marsh. Mud everywhere off the path — stay on the planks!",
+      "who": "Worker",
+      "sprite": "trainer-sprites/Spr_BW_Worker.png",
+      "verified": false
+    },
+    "unova-route-9": {
+      "text": "There's a whole shopping mall built right on this route! Best place to stock up before the League road.",
+      "who": "Rich Boy",
+      "sprite": "trainer-sprites/Spr_BW_Rich_Boy.png",
+      "verified": false
+    },
+    "unova-route-10": {
+      "text": "Last road before Victory Road. The League checkpoint turns back anyone missing a badge.",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_M.png",
+      "verified": false
+    },
+    "unova-route-11": {
+      "text": "A bridge road east of the dragon city. Big bug Pokémon love the trees along the rails.",
+      "who": "Bug Maniac",
+      "sprite": null,
+      "verified": false
+    },
+    "unova-route-12": {
+      "text": "The road runs down to the sea, past a little wood. Feels like the far edge of the region out here.",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_BW_Fisherman.png",
+      "verified": false
+    },
+    "unova-route-13": {
+      "text": "A coastal cliff road with a hidden hermit's house tucked into the rocks below.",
+      "who": "Backpacker",
+      "sprite": "trainer-sprites/Spr_BW_Backpacker_F.png",
+      "verified": false
+    },
+    "unova-route-14": {
+      "text": "The road winds down to a quiet beach and a wishing shrine in the trees. Peaceful spot.",
+      "who": "Pokémon Ranger",
+      "sprite": null,
+      "verified": false
+    },
+    "unova-route-15": {
+      "text": "There's an abandoned resort just off the road here. Strong Trainers gather in its ruined rooms.",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_M.png",
+      "verified": false
+    },
+    "unova-route-16": {
+      "text": "Short green road on the edge of the big city. The forest troupe used to camp nearby.",
+      "who": "Preschooler",
+      "sprite": null,
+      "verified": false
+    },
+    "unova-route-17": {
+      "text": "It's all whitewater rapids out here! You ride the current down on a raft — hold on tight!",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_BW_Swimmer_M.png",
+      "verified": false
+    },
+    "unova-route-18": {
+      "text": "A rocky little island route at the mouth of the rapids. A rare event Pokémon turned up here once.",
+      "who": "Backpacker",
+      "sprite": "trainer-sprites/Spr_BW_Backpacker_M.png",
+      "verified": false
+    },
+    "unova-route-19": {
+      "text": "First route out of the new town in the southwest. Wild Pokémon in every patch of grass!",
+      "who": "Schoolboy",
+      "sprite": null,
+      "verified": false
+    },
+    "unova-route-20": {
+      "text": "The road to the ranch, split by a little river. Lots of families out for a stroll.",
+      "who": "Pokémon Breeder",
+      "sprite": null,
+      "verified": false
+    },
+    "unova-route-21": {
+      "text": "You can only reach this stretch by Surfing. Quiet water, big fish, and not another soul around.",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_BW_Fisherman.png",
+      "verified": false
+    },
+    "unova-route-22": {
+      "text": "A short road running up toward the harbor town. The nightclub's thumping bass carries all the way out here.",
+      "who": "Roughneck",
+      "sprite": null,
+      "verified": false
+    },
+    "unova-route-23": {
+      "text": "The final road before the League checkpoint. Only the toughest Trainers linger up here.",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_F.png",
+      "verified": false
+    },
+    "unova-victory-road": {
+      "text": "The last road to the League winds up through the cliffs. Only Trainers with eight badges may climb.",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_BW_Veteran_M.png",
+      "verified": false
+    },
+    "driftveil-drawbridge": {
+      "text": "The longest drawbridge in Unova! When it lifts for the ships, feathers drift down onto the deck.",
+      "who": "Worker",
+      "sprite": "trainer-sprites/Spr_BW_Worker.png",
+      "verified": false
+    },
+    "marine-tube": {
+      "text": "A glass tunnel right along the sea floor! You can watch the water Pokémon swim overhead.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_BW_Swimmer_F.png",
+      "verified": false
+    },
+    "skyarrow-bridge": {
+      "text": "Longest bridge in the region — it soars from the forest gate straight into the big city.",
+      "who": "Jogger",
+      "sprite": null,
+      "verified": false
+    },
+    "tubeline-bridge": {
+      "text": "Trains rumble underneath while we walk across the top. Bikers love bombing down this one.",
+      "who": "Biker",
+      "sprite": null,
+      "verified": false
+    },
+    "village-bridge": {
+      "text": "Folks actually live in little shops built right on the bridge! Someone's always singing out here.",
+      "who": "Guitarist",
+      "sprite": null,
+      "verified": false
+    },
+    "undella-bay": {
+      "text": "Best diving in Unova! Divers hunt for treasure on the seabed all summer long.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_BW_Swimmer_M.png",
+      "verified": false
+    }
+  }
+}

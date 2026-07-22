@@ -1,0 +1,94 @@
+/* ————————————————————————————————————————————————————————————————
+   PokeMAPs design tokens — "FIELD GUIDE, TURNED UP" (pinned 2026-07-20,
+   replacing the dark survey-chart-room; revise deliberately, never ad hoc).
+
+   Mostly-white page, huge rounded type (M PLUS Rounded 1c — the free
+   relative of the games' own FOT-NewRodin), chunky ink-outlined cards
+   like DS menu boxes. The pixel town map and the proximity band colors
+   are the color; the chrome stays white + ink.
+
+   Color is semantic only:
+     · band colors = proximity (the game's information)
+     · accent      = interactive / selection
+     · everything else is ink on white.
+   Note: CSS var names keep the historical --wm- prefix.
+   ———————————————————————————————————————————————————————————————— */
+:root {
+  /* ground */
+  --wm-ink: #ffffff; /* page */
+  --wm-panel: #ffffff; /* cards */
+  --wm-panel-2: #f4f2ec; /* inset wells */
+  --wm-line: #e5e1d6; /* soft hairlines */
+  --wm-line-strong: #17130c; /* the chunky card outline */
+
+  /* text */
+  --wm-text: #17130c;
+  --wm-text-2: #4c4638;
+  --wm-text-3: #8a8270;
+
+  /* interactive */
+  --wm-accent: #0d7fbf; /* selection / focus / primary */
+  --wm-accent-ink: #ffffff;
+
+  /* proximity bands (light-legible) */
+  --wm-hit: #1ca35e;
+  --wm-warm: #e0a800;
+  --wm-mid: #e2711d;
+  --wm-cold: #d94a4a;
+
+  --wm-radius: 18px;
+  --wm-radius-sm: 12px;
+
+  --wm-font-display: "M PLUS Rounded 1c", "Inter", system-ui, sans-serif;
+  --wm-font-body: "M PLUS Rounded 1c", "Inter", system-ui, sans-serif;
+  --wm-font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--wm-ink);
+  color: var(--wm-text);
+  font-family: var(--wm-font-body);
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+
+/* the recurring small mono eyebrow — bigger than before, still quiet */
+.survey-label {
+  font-family: var(--wm-font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--wm-text-3);
+}
+
+.display {
+  font-family: var(--wm-font-display);
+  font-weight: 900;
+  letter-spacing: 0.01em;
+}
+
+/* chunky DS-menu card */
+.card {
+  background: var(--wm-panel);
+  border: 2.5px solid var(--wm-line-strong);
+  border-radius: var(--wm-radius);
+  box-shadow: 0 4px 0 rgba(23, 19, 12, 0.9);
+}
+
+:focus-visible {
+  outline: 3px solid var(--wm-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

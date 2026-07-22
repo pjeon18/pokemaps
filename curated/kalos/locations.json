@@ -1,0 +1,383 @@
+{
+ "_comment": "Kalos pack (XY town map 256x168, dot-highlight detection). Vaniville/Aquacorde hand-placed (no highlight files). Lumiose interiors excluded.",
+ "locations": [
+  {
+   "id": "ambrette-town",
+   "name": "Ambrette Town",
+   "class": "town",
+   "bulba": "Ambrette Town",
+   "bulbaMap": "Kalos_Ambrette_Town_Map.png"
+  },
+  {
+   "id": "anistar-city",
+   "name": "Anistar City",
+   "class": "city",
+   "bulba": "Anistar City",
+   "bulbaMap": "Kalos_Anistar_City_Map.png"
+  },
+  {
+   "id": "aquacorde-town",
+   "name": "Aquacorde Town",
+   "class": "town",
+   "bulba": "Aquacorde Town",
+   "bulbaMap": null
+  },
+  {
+   "id": "azure-bay",
+   "name": "Azure Bay",
+   "class": "water",
+   "bulba": "Azure Bay",
+   "bulbaMap": "Kalos_Azure_Bay_Map.png"
+  },
+  {
+   "id": "camphrier-town",
+   "name": "Camphrier Town",
+   "class": "town",
+   "bulba": "Camphrier Town",
+   "bulbaMap": "Kalos_Camphrier_Town_Map.png"
+  },
+  {
+   "id": "chamber-of-emptiness",
+   "name": "Chamber of Emptiness",
+   "class": "cave",
+   "bulba": "Chamber of Emptiness",
+   "bulbaMap": "Kalos_Chamber_of_Emptiness_Map.png"
+  },
+  {
+   "id": "connecting-cave",
+   "name": "Connecting Cave",
+   "class": "cave",
+   "bulba": "Connecting Cave",
+   "bulbaMap": "Kalos_Connecting_Cave_Map.png"
+  },
+  {
+   "id": "coumarine-city",
+   "name": "Coumarine City",
+   "class": "city",
+   "bulba": "Coumarine City",
+   "bulbaMap": "Kalos_Coumarine_City_Map.png"
+  },
+  {
+   "id": "couriway-town",
+   "name": "Couriway Town",
+   "class": "town",
+   "bulba": "Couriway Town",
+   "bulbaMap": "Kalos_Couriway_Town_Map.png"
+  },
+  {
+   "id": "cyllage-city",
+   "name": "Cyllage City",
+   "class": "city",
+   "bulba": "Cyllage City",
+   "bulbaMap": "Kalos_Cyllage_City_Map.png"
+  },
+  {
+   "id": "dendemille-town",
+   "name": "Dendemille Town",
+   "class": "town",
+   "bulba": "Dendemille Town",
+   "bulbaMap": "Kalos_Dendemille_Town_Map.png"
+  },
+  {
+   "id": "frost-cavern",
+   "name": "Frost Cavern",
+   "class": "cave",
+   "bulba": "Frost Cavern",
+   "bulbaMap": "Kalos_Frost_Cavern_Map.png"
+  },
+  {
+   "id": "geosenge-town",
+   "name": "Geosenge Town",
+   "class": "town",
+   "bulba": "Geosenge Town",
+   "bulbaMap": "Kalos_Geosenge_Town_Map.png"
+  },
+  {
+   "id": "glittering-cave",
+   "name": "Glittering Cave",
+   "class": "cave",
+   "bulba": "Glittering Cave",
+   "bulbaMap": "Kalos_Glittering_Cave_Map.png"
+  },
+  {
+   "id": "kalos-pokemon-league",
+   "name": "Pok\u00e9mon League",
+   "class": "landmark",
+   "bulba": "Pok\u00e9mon League (Kalos)",
+   "bulbaMap": "Kalos_Pok\u00e9mon_League_Map.png"
+  },
+  {
+   "id": "kalos-power-plant",
+   "name": "Power Plant",
+   "class": "landmark",
+   "bulba": "Kalos Power Plant",
+   "bulbaMap": "Kalos_Power_Plant_Map.png"
+  },
+  {
+   "id": "kalos-route-1",
+   "name": "Route 1",
+   "class": "route",
+   "bulba": "Kalos Route 1",
+   "bulbaMap": "Kalos_Route_1_Map.png"
+  },
+  {
+   "id": "kalos-route-10",
+   "name": "Route 10",
+   "class": "route",
+   "bulba": "Kalos Route 10",
+   "bulbaMap": "Kalos_Route_10_Map.png"
+  },
+  {
+   "id": "kalos-route-11",
+   "name": "Route 11",
+   "class": "route",
+   "bulba": "Kalos Route 11",
+   "bulbaMap": "Kalos_Route_11_Map.png"
+  },
+  {
+   "id": "kalos-route-12",
+   "name": "Route 12",
+   "class": "route",
+   "bulba": "Kalos Route 12",
+   "bulbaMap": "Kalos_Route_12_Map.png"
+  },
+  {
+   "id": "kalos-route-13",
+   "name": "Route 13",
+   "class": "route",
+   "bulba": "Kalos Route 13",
+   "bulbaMap": "Kalos_Route_13_Map.png"
+  },
+  {
+   "id": "kalos-route-14",
+   "name": "Route 14",
+   "class": "route",
+   "bulba": "Kalos Route 14",
+   "bulbaMap": "Kalos_Route_14_Map.png"
+  },
+  {
+   "id": "kalos-route-15",
+   "name": "Route 15",
+   "class": "route",
+   "bulba": "Kalos Route 15",
+   "bulbaMap": "Kalos_Route_15_Map.png"
+  },
+  {
+   "id": "kalos-route-16",
+   "name": "Route 16",
+   "class": "route",
+   "bulba": "Kalos Route 16",
+   "bulbaMap": "Kalos_Route_16_Map.png"
+  },
+  {
+   "id": "kalos-route-17",
+   "name": "Route 17",
+   "class": "route",
+   "bulba": "Kalos Route 17",
+   "bulbaMap": "Kalos_Route_17_Map.png"
+  },
+  {
+   "id": "kalos-route-18",
+   "name": "Route 18",
+   "class": "route",
+   "bulba": "Kalos Route 18",
+   "bulbaMap": "Kalos_Route_18_Map.png"
+  },
+  {
+   "id": "kalos-route-19",
+   "name": "Route 19",
+   "class": "route",
+   "bulba": "Kalos Route 19",
+   "bulbaMap": "Kalos_Route_19_Map.png"
+  },
+  {
+   "id": "kalos-route-2",
+   "name": "Route 2",
+   "class": "route",
+   "bulba": "Kalos Route 2",
+   "bulbaMap": "Kalos_Route_2_Map.png"
+  },
+  {
+   "id": "kalos-route-20",
+   "name": "Route 20",
+   "class": "route",
+   "bulba": "Kalos Route 20",
+   "bulbaMap": "Kalos_Route_20_Map.png"
+  },
+  {
+   "id": "kalos-route-21",
+   "name": "Route 21",
+   "class": "route",
+   "bulba": "Kalos Route 21",
+   "bulbaMap": "Kalos_Route_21_Map.png"
+  },
+  {
+   "id": "kalos-route-22",
+   "name": "Route 22",
+   "class": "route",
+   "bulba": "Kalos Route 22",
+   "bulbaMap": "Kalos_Route_22_Map.png"
+  },
+  {
+   "id": "kalos-route-3",
+   "name": "Route 3",
+   "class": "route",
+   "bulba": "Kalos Route 3",
+   "bulbaMap": "Kalos_Route_3_Map.png"
+  },
+  {
+   "id": "kalos-route-4",
+   "name": "Route 4",
+   "class": "route",
+   "bulba": "Kalos Route 4",
+   "bulbaMap": "Kalos_Route_4_Map.png"
+  },
+  {
+   "id": "kalos-route-5",
+   "name": "Route 5",
+   "class": "route",
+   "bulba": "Kalos Route 5",
+   "bulbaMap": "Kalos_Route_5_Map.png"
+  },
+  {
+   "id": "kalos-route-6",
+   "name": "Route 6",
+   "class": "route",
+   "bulba": "Kalos Route 6",
+   "bulbaMap": "Kalos_Route_6_Map.png"
+  },
+  {
+   "id": "kalos-route-7",
+   "name": "Route 7",
+   "class": "route",
+   "bulba": "Kalos Route 7",
+   "bulbaMap": "Kalos_Route_7_Map.png"
+  },
+  {
+   "id": "kalos-route-8",
+   "name": "Route 8",
+   "class": "route",
+   "bulba": "Kalos Route 8",
+   "bulbaMap": "Kalos_Route_8_Map.png"
+  },
+  {
+   "id": "kalos-route-9",
+   "name": "Route 9",
+   "class": "route",
+   "bulba": "Kalos Route 9",
+   "bulbaMap": "Kalos_Route_9_Map.png"
+  },
+  {
+   "id": "kalos-victory-road",
+   "name": "Victory Road",
+   "class": "landmark",
+   "bulba": "Victory Road (Kalos)",
+   "bulbaMap": "Kalos_Victory_Road_Map.png"
+  },
+  {
+   "id": "kiloude-city",
+   "name": "Kiloude City",
+   "class": "city",
+   "bulba": "Kiloude City",
+   "bulbaMap": "Kalos_Kiloude_City_Map.png"
+  },
+  {
+   "id": "laverre-city",
+   "name": "Laverre City",
+   "class": "city",
+   "bulba": "Laverre City",
+   "bulbaMap": "Kalos_Laverre_City_Map.png"
+  },
+  {
+   "id": "lost-hotel",
+   "name": "Lost Hotel",
+   "class": "landmark",
+   "bulba": "Lost Hotel",
+   "bulbaMap": "Kalos_Lost_Hotel_Map.png"
+  },
+  {
+   "id": "lumiose-city",
+   "name": "Lumiose City",
+   "class": "city",
+   "bulba": "Lumiose City",
+   "bulbaMap": "Kalos_Lumiose_City_Map.png"
+  },
+  {
+   "id": "parfum-palace",
+   "name": "Parfum Palace",
+   "class": "landmark",
+   "bulba": "Parfum Palace",
+   "bulbaMap": "Kalos_Parfum_Palace_Map.png"
+  },
+  {
+   "id": "poke-ball-factory",
+   "name": "Pok\u00e9 Ball Factory",
+   "class": "building",
+   "bulba": "Pok\u00e9 Ball Factory",
+   "bulbaMap": "Kalos_Pok\u00e9_Ball_Factory_Map.png"
+  },
+  {
+   "id": "pokemon-village",
+   "name": "Pok\u00e9mon Village",
+   "class": "landmark",
+   "bulba": "Pok\u00e9mon Village",
+   "bulbaMap": "Kalos_Pok\u00e9mon_Village_Map.png"
+  },
+  {
+   "id": "reflection-cave",
+   "name": "Reflection Cave",
+   "class": "cave",
+   "bulba": "Reflection Cave",
+   "bulbaMap": "Kalos_Reflection_Cave_Map.png"
+  },
+  {
+   "id": "santalune-city",
+   "name": "Santalune City",
+   "class": "city",
+   "bulba": "Santalune City",
+   "bulbaMap": "Kalos_Santalune_City_Map.png"
+  },
+  {
+   "id": "santalune-forest",
+   "name": "Santalune Forest",
+   "class": "forest",
+   "bulba": "Santalune Forest",
+   "bulbaMap": "Kalos_Santalune_Forest_Map.png"
+  },
+  {
+   "id": "sea-spirits-den",
+   "name": "Sea Spirit's Den",
+   "class": "cave",
+   "bulba": "Sea Spirit's Den",
+   "bulbaMap": "Kalos_Sea_Spirit's_Den_Map.png"
+  },
+  {
+   "id": "shalour-city",
+   "name": "Shalour City",
+   "class": "city",
+   "bulba": "Shalour City",
+   "bulbaMap": "Kalos_Shalour_City_Map.png"
+  },
+  {
+   "id": "snowbelle-city",
+   "name": "Snowbelle City",
+   "class": "city",
+   "bulba": "Snowbelle City",
+   "bulbaMap": "Kalos_Snowbelle_City_Map.png"
+  },
+  {
+   "id": "terminus-cave",
+   "name": "Terminus Cave",
+   "class": "cave",
+   "bulba": "Terminus Cave",
+   "bulbaMap": "Kalos_Terminus_Cave_Map.png"
+  },
+  {
+   "id": "vaniville-town",
+   "name": "Vaniville Town",
+   "class": "town",
+   "bulba": "Vaniville Town",
+   "bulbaMap": null
+  }
+ ]
+}

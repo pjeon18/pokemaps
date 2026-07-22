@@ -1,0 +1,10 @@
+{
+  "_comment": "Hand-placed regions for locations without a usable Bulbapedia highlight map, anchored to auto-extracted neighbors (tile units on the 362x145 combined canvas). Merged over the auto output by pull-maps.mjs. Sinjoh Ruins is deliberately absent — it does not exist on the native HGSS town map (off-map event location).",
+  "regions": {
+    "ice-path": [[18.4, 6.2, 0.9, 0.9]],
+    "pokeathlon-dome": [[8.6, 7.5, 0.9, 0.9]],
+    "cliff-cave": [[2.4, 12.35, 0.8, 0.8]],
+    "embedded-tower": [[1.0, 12.95, 0.7, 0.7]],
+    "mt-silver": [[23.6, 7.3, 1.8, 1.9]]
+  }
+}

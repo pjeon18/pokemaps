@@ -1,0 +1,605 @@
+{
+  "_comment": "Merged Johto+Kanto Overheard lines. verified:false until QA (CURATION_TODO.md).",
+  "lines": {
+    "new-bark-town": {
+      "text": "My research is all about Pokémon evolution! Oh — and could you run an errand for me?",
+      "who": "Professor Elm",
+      "sprite": null,
+      "verified": false
+    },
+    "cherrygrove-city": {
+      "text": "I'm the Guide Gent! Follow me — I'll show you everything this town has to offer!",
+      "who": "Guide Gent",
+      "sprite": null,
+      "verified": false
+    },
+    "violet-city": {
+      "text": "The Elder of the tower here teaches that all living things are equal.",
+      "who": "Sage",
+      "sprite": "trainer-sprites/Spr_HGSS_Sage.png",
+      "verified": false
+    },
+    "azalea-town": {
+      "text": "Slowpoke are precious to this town! Whoever's been cutting their tails — unforgivable!",
+      "who": "Kurt",
+      "sprite": null,
+      "verified": false
+    },
+    "goldenrod-city": {
+      "text": "Biggest city in Johto! The Radio Tower, the Department Store, the Magnet Train — we have it all!",
+      "who": "Lass",
+      "sprite": "trainer-sprites/Spr_HGSS_Lass.png",
+      "verified": false
+    },
+    "ecruteak-city": {
+      "text": "Two great towers once stood here. One burned to the ground long ago…",
+      "who": "Kimono Girl",
+      "sprite": null,
+      "verified": false
+    },
+    "olivine-city": {
+      "text": "Our Gym Leader hasn't left the Lighthouse in days. The Pokémon up there is very sick…",
+      "who": "Sailor",
+      "sprite": "trainer-sprites/Spr_DP_Sailor.png",
+      "verified": false
+    },
+    "cianwood-city": {
+      "text": "My husband trains under the waterfall every single day. Rain or shine!",
+      "who": "Black Belt",
+      "sprite": null,
+      "verified": false
+    },
+    "mahogany-town": {
+      "text": "Try our famous RageCandyBar! …No, this shop is not a hideout. Why do you ask?",
+      "who": "Shopkeeper",
+      "sprite": null,
+      "verified": false
+    },
+    "blackthorn-city": {
+      "text": "The den behind this city is sacred. Only those the Elder approves may enter.",
+      "who": "Dragon Tamer",
+      "sprite": "trainer-sprites/Spr_DP_Dragon_Tamer.png",
+      "verified": false
+    },
+    "dark-cave": {
+      "text": "It's pitch black in here! Without Flash I can't see my own Pokémon!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "sprout-tower": {
+      "text": "The great pillar sways but never breaks — like a Bellsprout's stalk.",
+      "who": "Sage",
+      "sprite": "trainer-sprites/Spr_HGSS_Sage.png",
+      "verified": false
+    },
+    "ruins-of-alph": {
+      "text": "These carvings on the walls… they look like they're watching us, don't they?",
+      "who": "Scientist",
+      "sprite": "trainer-sprites/Spr_HGSS_Scientist.png",
+      "verified": false
+    },
+    "union-cave": {
+      "text": "This cave links three roads. Easy to get in — hard to pick your way out!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "slowpoke-well": {
+      "text": "They were down this well, cutting off Slowpoke Tails to sell. The nerve!",
+      "who": "Team Rocket Grunt",
+      "sprite": null,
+      "verified": false
+    },
+    "ilex-forest": {
+      "text": "The forest's protector rests in that tiny shrine. Show it respect.",
+      "who": "Kurt",
+      "sprite": null,
+      "verified": false
+    },
+    "national-park": {
+      "text": "I'm going to win the Bug-Catching Contest this week! Me and my Scyther!",
+      "who": "Bug Catcher",
+      "sprite": "trainer-sprites/Spr_HGSS_Bug_Catcher.png",
+      "verified": false
+    },
+    "pokeathlon-dome": {
+      "text": "Jump! Dash! Throw! Here, your Pokémon's athletic dreams come true!",
+      "who": "Ace Trainer",
+      "sprite": null,
+      "verified": false
+    },
+    "burned-tower": {
+      "text": "Ten years I've chased the beast that fled this tower. TEN years!",
+      "who": "Firebreather",
+      "sprite": null,
+      "verified": false
+    },
+    "bell-tower": {
+      "text": "A rainbow-colored Pokémon once perched at the very top of this tower.",
+      "who": "Sage",
+      "sprite": "trainer-sprites/Spr_HGSS_Sage.png",
+      "verified": false
+    },
+    "johto-lighthouse": {
+      "text": "Amphy's light guides every ship home to Olivine. Climb up and say hello!",
+      "who": "Sailor",
+      "sprite": "trainer-sprites/Spr_DP_Sailor.png",
+      "verified": false
+    },
+    "cliff-cave": {
+      "text": "These cliffs stack three layers high. Only real climbers pass through here.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "johto-safari-zone": {
+      "text": "Welcome to the brand-new Safari Zone! You can even rearrange the areas!",
+      "who": "Warden",
+      "sprite": null,
+      "verified": false
+    },
+    "mt-mortar": {
+      "text": "A karate master trains alone somewhere deep inside this mountain.",
+      "who": "Black Belt",
+      "sprite": "trainer-sprites/Spr_HGSS_Black_Belt.png",
+      "verified": false
+    },
+    "lake-of-rage": {
+      "text": "A RED Gyarados?! In this lake?! Grab your rod, kid!",
+      "who": "Fisher",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "ice-path": {
+      "text": "The ice in here never melts. One wrong step and you slide all the way back!",
+      "who": "Hiker",
+      "sprite": null,
+      "verified": false
+    },
+    "whirl-islands": {
+      "text": "The whirlpools guard something — a Pokémon they call the god of the sea.",
+      "who": "Sailor",
+      "sprite": "trainer-sprites/Spr_DP_Sailor.png",
+      "verified": false
+    },
+    "embedded-tower": {
+      "text": "A tower, embedded right into the cliff face… Who could have built such a thing?",
+      "who": "Ace Trainer",
+      "sprite": null,
+      "verified": false
+    },
+    "sinjoh-ruins": {
+      "text": "Where the cultures of two regions meet, the Original One may appear.",
+      "who": "Sailor",
+      "sprite": null,
+      "verified": false
+    },
+    "dragons-den": {
+      "text": "You stand in sacred ground. Answer truly: what do Pokémon mean to you?",
+      "who": "Elder",
+      "sprite": null,
+      "verified": false
+    },
+    "johto-route-29": {
+      "text": "You can't catch Pokémon without Poké Balls! Trust me, I tried.",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_HGSS_Youngster.png",
+      "verified": false
+    },
+    "johto-route-30": {
+      "text": "My Rattata is in the top percentage of all Rattata!",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_HGSS_Youngster.png",
+      "verified": false
+    },
+    "johto-route-31": {
+      "text": "The tower in the city ahead? The Sages there test your bond with Pokémon.",
+      "who": "Bug Catcher",
+      "sprite": "trainer-sprites/Spr_HGSS_Bug_Catcher.png",
+      "verified": false
+    },
+    "johto-route-32": {
+      "text": "Longest route in Johto, this one. The Pokémon Center is still a ways off…",
+      "who": "Fisher",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "johto-route-33": {
+      "text": "It's always drizzling on this little road. My Pokémon love the mud!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "johto-route-34": {
+      "text": "The Day Care is just up the road — my grandpa runs it with grandma!",
+      "who": "Camper",
+      "sprite": "trainer-sprites/Spr_DP_Camper.png",
+      "verified": false
+    },
+    "johto-route-35": {
+      "text": "The gate ahead leads into the park. No littering, no running, no Weedle!",
+      "who": "Ace Trainer",
+      "sprite": null,
+      "verified": false
+    },
+    "johto-route-36": {
+      "text": "A weird tree blocked this road for YEARS. Turns out it danced when you watered it!",
+      "who": "Youngster",
+      "sprite": null,
+      "verified": false
+    },
+    "johto-route-37": {
+      "text": "On stormy nights, they say three legendary beasts race past this very spot.",
+      "who": "Psychic",
+      "sprite": "trainer-sprites/Spr_DP_Psychic_M.png",
+      "verified": false
+    },
+    "johto-route-38": {
+      "text": "Strong trainers line this road — everyone's toughening up before Olivine.",
+      "who": "Beauty",
+      "sprite": "trainer-sprites/Spr_HGSS_Beauty.png",
+      "verified": false
+    },
+    "johto-route-39": {
+      "text": "Our poor Miltank stopped giving milk… She just needs Oran Berries and love.",
+      "who": "Pokéfan",
+      "sprite": null,
+      "verified": false
+    },
+    "johto-sea-route-40": {
+      "text": "The sea is calm today — perfect for the long swim out to the islands!",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_HGSS_Swimmer_F.png",
+      "verified": false
+    },
+    "johto-sea-route-41": {
+      "text": "Feel that pull? The whirlpools ahead will spit you right back out!",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_HGSS_Swimmer_M.png",
+      "verified": false
+    },
+    "johto-route-42": {
+      "text": "A mountain splits this route clean in half. Flying over beats climbing through!",
+      "who": "Fisher",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "johto-route-43": {
+      "text": "Those gate guards charging a toll? They're not even real guards!",
+      "who": "Picnicker",
+      "sprite": "trainer-sprites/Spr_DP_Picnicker.png",
+      "verified": false
+    },
+    "johto-route-44": {
+      "text": "Weather changes fast up here. The pond's full of Poliwag, though!",
+      "who": "Fisher",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "johto-route-45": {
+      "text": "This mountain road only goes DOWN. Pick your path before you hop!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "johto-route-46": {
+      "text": "See those ledges? You can hop down, but there's no climbing back up!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "johto-route-47": {
+      "text": "Cliffs above, sea caves below. This road stacks three layers high!",
+      "who": "Bird Keeper",
+      "sprite": "trainer-sprites/Spr_HGSS_Bird_Keeper.png",
+      "verified": false
+    },
+    "johto-route-48": {
+      "text": "The grass out here grows taller than me! Wild Pokémon love it.",
+      "who": "Camper",
+      "sprite": "trainer-sprites/Spr_DP_Camper.png",
+      "verified": false
+    },
+    "pallet-town": {
+      "text": "A world-famous Pokémon Lab, in our sleepy little town. Imagine that!",
+      "who": "Youngster",
+      "sprite": null,
+      "verified": false
+    },
+    "viridian-city": {
+      "text": "Our Gym stood empty for ages. The new Leader is from Pallet Town, they say.",
+      "who": "Gentleman",
+      "sprite": null,
+      "verified": false
+    },
+    "pewter-city": {
+      "text": "The museum here keeps fossils of Pokémon from ancient times.",
+      "who": "Super Nerd",
+      "sprite": null,
+      "verified": false
+    },
+    "cerulean-city": {
+      "text": "A mermaid? Oh — you mean our Gym Leader. She swims like one!",
+      "who": "Swimmer♀",
+      "sprite": "trainer-sprites/Spr_HGSS_Swimmer_F.png",
+      "verified": false
+    },
+    "vermilion-city": {
+      "text": "The S.S. Aqua sails from this port all the way to Olivine. All aboard!",
+      "who": "Sailor",
+      "sprite": "trainer-sprites/Spr_DP_Sailor.png",
+      "verified": false
+    },
+    "lavender-town": {
+      "text": "The old tower is a Radio Tower now. The departed rest in the House of Memories.",
+      "who": "Channeler",
+      "sprite": null,
+      "verified": false
+    },
+    "celadon-city": {
+      "text": "The Department Store has EVERYTHING. My wallet never stood a chance!",
+      "who": "Lass",
+      "sprite": "trainer-sprites/Spr_HGSS_Lass.png",
+      "verified": false
+    },
+    "saffron-city": {
+      "text": "Silph Co. towers over everything here. And our Gym Leader bends spoons with her mind.",
+      "who": "Psychic",
+      "sprite": "trainer-sprites/Spr_DP_Psychic_M.png",
+      "verified": false
+    },
+    "fuchsia-city": {
+      "text": "The old Safari Zone is a preserve now. The Warden still misses the old days.",
+      "who": "Warden",
+      "sprite": null,
+      "verified": false
+    },
+    "cinnabar-island": {
+      "text": "The volcano took the whole town… Only the Pokémon Center still stands.",
+      "who": "Fisher",
+      "sprite": null,
+      "verified": false
+    },
+    "indigo-plateau": {
+      "text": "Beyond this hall wait the Elite Four. Champions only past this point!",
+      "who": "Cool Trainer",
+      "sprite": null,
+      "verified": false
+    },
+    "kanto-power-plant": {
+      "text": "We're back online! This plant powers the Magnet Train itself.",
+      "who": "Scientist",
+      "sprite": "trainer-sprites/Spr_HGSS_Scientist.png",
+      "verified": false
+    },
+    "rock-tunnel": {
+      "text": "No lights in this tunnel — none! Without Flash it's a maze in the dark.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "kanto-pal-park": {
+      "text": "Pokémon from faraway lands settle here. The park welcomes them all.",
+      "who": "Scientist",
+      "sprite": null,
+      "verified": false
+    },
+    "digletts-cave": {
+      "text": "Diglett dug this whole tunnel?! All the way to the other side of the mountains?!",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_HGSS_Youngster.png",
+      "verified": false
+    },
+    "mt-moon": {
+      "text": "On clear nights, Clefairy gather here to dance around the Moon Stone.",
+      "who": "Hiker",
+      "sprite": null,
+      "verified": false
+    },
+    "viridian-forest": {
+      "text": "A natural maze full of Bug Pokémon! I could stay here forever!",
+      "who": "Bug Catcher",
+      "sprite": "trainer-sprites/Spr_HGSS_Bug_Catcher.png",
+      "verified": false
+    },
+    "seafoam-islands": {
+      "text": "Twin islands, mirrored across the strait — with icy caverns underneath.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_HGSS_Swimmer_M.png",
+      "verified": false
+    },
+    "cerulean-cave": {
+      "text": "Only proven masters may enter. Something impossibly strong lives in there.",
+      "who": "Cool Trainer",
+      "sprite": null,
+      "verified": false
+    },
+    "tohjo-falls": {
+      "text": "These falls mark the border — one region behind you, another ahead.",
+      "who": "Fisher",
+      "sprite": null,
+      "verified": false
+    },
+    "mt-silver": {
+      "text": "Even the League fears this mountain. A lone trainer waits at the peak, they say…",
+      "who": "Hiker",
+      "sprite": null,
+      "verified": false
+    },
+    "kanto-victory-road": {
+      "text": "So quiet in here now… everyone takes the waterfall shortcut these days.",
+      "who": "Cool Trainer",
+      "sprite": null,
+      "verified": false
+    },
+    "kanto-route-1": {
+      "text": "Fresh country air! This little road runs straight between two towns.",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_HGSS_Youngster.png",
+      "verified": false
+    },
+    "kanto-route-2": {
+      "text": "The forest gate is just ahead — or cut through the Diglett tunnel if you're rushed!",
+      "who": "Bug Catcher",
+      "sprite": "trainer-sprites/Spr_HGSS_Bug_Catcher.png",
+      "verified": false
+    },
+    "kanto-route-3": {
+      "text": "Everyone on this path is itching for a battle. The mountain's just ahead!",
+      "who": "Lass",
+      "sprite": "trainer-sprites/Spr_HGSS_Lass.png",
+      "verified": false
+    },
+    "kanto-route-4": {
+      "text": "The mountain tunnel spits you out here. It's all downhill to the city!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "kanto-route-5": {
+      "text": "The Underground Path is closed off… you'll have to go through the big city's gate.",
+      "who": "Lass",
+      "sprite": null,
+      "verified": false
+    },
+    "kanto-route-6": {
+      "text": "The port city is just south — you can smell the sea from here!",
+      "who": "Picnicker",
+      "sprite": "trainer-sprites/Spr_DP_Picnicker.png",
+      "verified": false
+    },
+    "kanto-route-7": {
+      "text": "The big city's just west. I swear I can smell the Department Store perfume!",
+      "who": "Lass",
+      "sprite": "trainer-sprites/Spr_HGSS_Lass.png",
+      "verified": false
+    },
+    "kanto-route-8": {
+      "text": "The gatehouse ahead used to demand a drink before letting anyone through. A DRINK!",
+      "who": "Gentleman",
+      "sprite": null,
+      "verified": false
+    },
+    "kanto-route-9": {
+      "text": "Rocky path ahead — it dead-ends at a tunnel. Bring something that glows!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "kanto-route-10": {
+      "text": "Hear that hum across the water? That's the Power Plant working again.",
+      "who": "Fisher",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "kanto-route-11": {
+      "text": "A giant sleeping Pokémon used to block this road. Snored like thunder!",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_HGSS_Youngster.png",
+      "verified": false
+    },
+    "kanto-route-12": {
+      "text": "This long wooden bridge is a fishing paradise. Quiet — they're biting!",
+      "who": "Fisher",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "kanto-route-13": {
+      "text": "These hedges twist into a maze! I've been lost for an hour…",
+      "who": "Picnicker",
+      "sprite": "trainer-sprites/Spr_DP_Picnicker.png",
+      "verified": false
+    },
+    "kanto-route-14": {
+      "text": "The flocks fly low over the tall grass here. Perfect for training my birds!",
+      "who": "Bird Keeper",
+      "sprite": "trainer-sprites/Spr_HGSS_Bird_Keeper.png",
+      "verified": false
+    },
+    "kanto-route-15": {
+      "text": "Almost there! The sea wind carries the smell of the preserve up this road.",
+      "who": "Beauty",
+      "sprite": "trainer-sprites/Spr_HGSS_Beauty.png",
+      "verified": false
+    },
+    "kanto-route-16": {
+      "text": "Cycling Road starts here — it's downhill the whole way! WHEEE!",
+      "who": "Biker",
+      "sprite": "trainer-sprites/Spr_HGSS_Biker.png",
+      "verified": false
+    },
+    "kanto-route-17": {
+      "text": "Me and my bike are one on this slope. Try to keep up!",
+      "who": "Biker",
+      "sprite": "trainer-sprites/Spr_HGSS_Biker.png",
+      "verified": false
+    },
+    "kanto-route-18": {
+      "text": "End of the Cycling Road! My legs are jelly, but what a ride.",
+      "who": "Fisher",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "kanto-sea-route-19": {
+      "text": "Straight south through open water — twin islands split the sea ahead.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_HGSS_Swimmer_M.png",
+      "verified": false
+    },
+    "kanto-sea-route-20": {
+      "text": "The current between the islands is fierce. Strong swimmers only!",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_HGSS_Swimmer_F.png",
+      "verified": false
+    },
+    "kanto-sea-route-21": {
+      "text": "From the water here you can see the little town with the famous Lab!",
+      "who": "Fisher",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "kanto-route-22": {
+      "text": "The road to the League gate starts here. Rivals like to ambush challengers…",
+      "who": "Cool Trainer",
+      "sprite": null,
+      "verified": false
+    },
+    "kanto-route-23": {
+      "text": "Only trainers with every badge make it this far up the mountain road.",
+      "who": "Cool Trainer",
+      "sprite": null,
+      "verified": false
+    },
+    "kanto-route-24": {
+      "text": "This is Nugget Bridge! Beat five trainers in a row and win a golden prize!",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_HGSS_Youngster.png",
+      "verified": false
+    },
+    "kanto-route-25": {
+      "text": "The famous inventor's Sea Cottage sits at the very end of this path!",
+      "who": "Lass",
+      "sprite": "trainer-sprites/Spr_HGSS_Lass.png",
+      "verified": false
+    },
+    "kanto-route-26": {
+      "text": "The League gate ahead checks for ALL sixteen badges. SIXTEEN!",
+      "who": "Cool Trainer",
+      "sprite": null,
+      "verified": false
+    },
+    "kanto-route-27": {
+      "text": "Across the water behind you is a whole other region. This is where it begins!",
+      "who": "Fisher",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "kanto-route-28": {
+      "text": "The trail to the silver peak… Few climb it. Fewer come back down.",
+      "who": "Cool Trainer",
+      "sprite": null,
+      "verified": false
+    }
+  }
+}

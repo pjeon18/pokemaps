@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Wherémon region editor (internal)</title>
+<style>
+  body { margin: 0; background: #0c161c; color: #e9f2f0; font: 13px ui-monospace, monospace; }
+  #bar { padding: 10px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  #wrap { position: relative; width: 864px; margin: 0 10px; }
+  canvas { display: block; cursor: crosshair; }
+  select, button { font: inherit; background: #12222b; color: #e9f2f0; border: 1px solid #355663; border-radius: 6px; padding: 6px 8px; }
+  #out { width: 95%; height: 90px; background: #0f1d24; color: #a7bec1; border: 1px solid #23404b; margin: 10px; }
+  .hint { color: #64818a; }
+</style>
+</head>
+<body>
+<div id="bar">
+  <select id="loc"></select>
+  <button id="clear">Clear rects for location</button>
+  <button id="undo">Undo last rect</button>
+  <button id="copy">Copy full JSON</button>
+  <span class="hint">drag = draw rect (snaps to ¼ tile) · rects append to the selected location</span>
+</div>
+<div id="wrap"><canvas id="cv" width="864" height="672"></canvas></div>
+<textarea id="out" readonly></textarea>
+<script type="module">
+const S = 4, T = 8 * S; // 4x display, 32px per tile
+const cv = document.getElementById("cv"), ctx = cv.getContext("2d");
+const img = new Image(); img.src = "/content/map/sinnoh-dp.png";
+const data = await (await fetch("/curated/map-regions.json")).json();
+const regions = data.regions;
+const sel = document.getElementById("loc");
+for (const id of Object.keys(regions).sort()) sel.add(new Option(id, id));
+
+let drag = null;
+const snap = (v) => Math.round(v * 4) / 4;
+
+function draw() {
+  ctx.imageSmoothingEnabled = false;
+  ctx.clearRect(0, 0, cv.width, cv.height);
+  ctx.drawImage(img, 0, 0, cv.width, cv.height);
+  ctx.strokeStyle = "rgba(0,0,0,.15)";
+  for (let x = 0; x <= 27; x++) { ctx.beginPath(); ctx.moveTo(x*T,0); ctx.lineTo(x*T,cv.height); ctx.stroke(); }
+  for (let y = 0; y <= 21; y++) { ctx.beginPath(); ctx.moveTo(0,y*T); ctx.lineTo(cv.width,y*T); ctx.stroke(); }
+  for (const [id, rects] of Object.entries(regions)) {
+    const active = id === sel.value;
+    ctx.strokeStyle = active ? "#56c4d6" : "rgba(233,242,240,.5)";
+    ctx.fillStyle = active ? "rgba(86,196,214,.25)" : "transparent";
+    ctx.lineWidth = active ? 2 : 1;
+    for (const [x, y, w, h] of rects) {
+      ctx.fillRect(x*T, y*T, w*T, h*T);
+      ctx.strokeRect(x*T, y*T, w*T, h*T);
+      if (active) { ctx.fillStyle = "#56c4d6"; ctx.fillText(id, x*T, y*T - 3); ctx.fillStyle = "rgba(86,196,214,.25)"; }
+    }
+  }
+  if (drag) {
+    ctx.strokeStyle = "#e3c54e"; ctx.lineWidth = 2;
+    ctx.strokeRect(drag.x*T, drag.y*T, drag.w*T, drag.h*T);
+  }
+  document.getElementById("out").value = JSON.stringify(regions[sel.value] ?? []);
+}
+img.onload = draw;
+sel.onchange = draw;
+
+const toTile = (e) => {
+  const r = cv.getBoundingClientRect();
+  return { x: snap((e.clientX - r.left) / T), y: snap((e.clientY - r.top) / T) };
+};
+cv.onpointerdown = (e) => { const p = toTile(e); drag = { x: p.x, y: p.y, w: 0, h: 0, ox: p.x, oy: p.y }; };
+cv.onpointermove = (e) => {
+  if (!drag) return;
+  const p = toTile(e);
+  drag.x = Math.min(drag.ox, p.x); drag.y = Math.min(drag.oy, p.y);
+  drag.w = Math.abs(p.x - drag.ox); drag.h = Math.abs(p.y - drag.oy);
+  draw();
+};
+cv.onpointerup = () => {
+  if (drag && drag.w >= 0.25 && drag.h >= 0.25)
+    (regions[sel.value] ??= []).push([drag.x, drag.y, drag.w, drag.h]);
+  drag = null; draw();
+};
+document.getElementById("undo").onclick = () => { regions[sel.value]?.pop(); draw(); };
+document.getElementById("clear").onclick = () => { regions[sel.value] = []; draw(); };
+document.getElementById("copy").onclick = async () => {
+  await navigator.clipboard.writeText(JSON.stringify({ _comment: data._comment, grid: data.grid, regions }, null, 2));
+  document.getElementById("copy").textContent = "Copied — paste into curated/map-regions.json";
+};
+</script>
+</body>
+</html>

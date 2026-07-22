@@ -1,0 +1,546 @@
+{
+ "_comment": "Hoenn pack (RSE, 257x159 base map). bulbaMap null = 352x223-only highlight, hand-placed in map-regions-manual.json.",
+ "locations": [
+  {
+   "id": "abandoned-ship",
+   "name": "Abandoned Ship",
+   "class": "landmark",
+   "bulba": "Abandoned Ship",
+   "bulbaMap": "Hoenn_Abandoned_Ship_Map.png"
+  },
+  {
+   "id": "ancient-tomb",
+   "name": "Ancient Tomb",
+   "class": "cave",
+   "bulba": "Ancient Tomb",
+   "bulbaMap": "Hoenn_Ancient_Tomb_Map.png"
+  },
+  {
+   "id": "desert-ruins",
+   "name": "Desert Ruins",
+   "class": "cave",
+   "bulba": "Desert Ruins",
+   "bulbaMap": "Hoenn_Desert_Ruins_Map.png"
+  },
+  {
+   "id": "desert-underpass",
+   "name": "Desert Underpass",
+   "class": "mountain",
+   "bulba": "Desert Underpass",
+   "bulbaMap": "Hoenn_Desert_Underpass_Map.png"
+  },
+  {
+   "id": "dewford-town",
+   "name": "Dewford Town",
+   "class": "town",
+   "bulba": "Dewford Town",
+   "bulbaMap": "Hoenn_Dewford_Town_Map.png"
+  },
+  {
+   "id": "ever-grande-city",
+   "name": "Ever Grande City",
+   "class": "city",
+   "bulba": "Ever Grande City",
+   "bulbaMap": "Hoenn_Ever_Grande_City_Map.png"
+  },
+  {
+   "id": "fallarbor-town",
+   "name": "Fallarbor Town",
+   "class": "town",
+   "bulba": "Fallarbor Town",
+   "bulbaMap": "Hoenn_Fallarbor_Town_Map.png"
+  },
+  {
+   "id": "fiery-path",
+   "name": "Fiery Path",
+   "class": "landmark",
+   "bulba": "Fiery Path",
+   "bulbaMap": "Hoenn_Fiery_Path_Map.png"
+  },
+  {
+   "id": "fortree-city",
+   "name": "Fortree City",
+   "class": "city",
+   "bulba": "Fortree City",
+   "bulbaMap": "Hoenn_Fortree_City_Map.png"
+  },
+  {
+   "id": "granite-cave",
+   "name": "Granite Cave",
+   "class": "cave",
+   "bulba": "Granite Cave",
+   "bulbaMap": "Hoenn_Granite_Cave_Map.png"
+  },
+  {
+   "id": "hoenn-battle-frontier",
+   "name": "Battle Frontier",
+   "class": "landmark",
+   "bulba": "Battle Frontier (Generation III)",
+   "bulbaMap": "Hoenn_Battle_Frontier_Map.png"
+  },
+  {
+   "id": "hoenn-route-101",
+   "name": "Route 101",
+   "class": "route",
+   "bulba": "Hoenn Route 101",
+   "bulbaMap": null
+  },
+  {
+   "id": "hoenn-route-102",
+   "name": "Route 102",
+   "class": "route",
+   "bulba": "Hoenn Route 102",
+   "bulbaMap": null
+  },
+  {
+   "id": "hoenn-route-103",
+   "name": "Route 103",
+   "class": "route",
+   "bulba": "Hoenn Route 103",
+   "bulbaMap": null
+  },
+  {
+   "id": "hoenn-route-104",
+   "name": "Route 104",
+   "class": "route",
+   "bulba": "Hoenn Route 104",
+   "bulbaMap": null
+  },
+  {
+   "id": "hoenn-route-105",
+   "name": "Route 105",
+   "class": "route",
+   "bulba": "Hoenn Route 105",
+   "bulbaMap": null
+  },
+  {
+   "id": "hoenn-route-106",
+   "name": "Route 106",
+   "class": "route",
+   "bulba": "Hoenn Route 106",
+   "bulbaMap": "Hoenn_Route_106_Map.png"
+  },
+  {
+   "id": "hoenn-route-107",
+   "name": "Route 107",
+   "class": "route",
+   "bulba": "Hoenn Route 107",
+   "bulbaMap": "Hoenn_Route_107_Map.png"
+  },
+  {
+   "id": "hoenn-route-108",
+   "name": "Route 108",
+   "class": "route",
+   "bulba": "Hoenn Route 108",
+   "bulbaMap": "Hoenn_Route_108_Map.png"
+  },
+  {
+   "id": "hoenn-route-109",
+   "name": "Route 109",
+   "class": "route",
+   "bulba": "Hoenn Route 109",
+   "bulbaMap": "Hoenn_Route_109_Map.png"
+  },
+  {
+   "id": "hoenn-route-110",
+   "name": "Route 110",
+   "class": "route",
+   "bulba": "Hoenn Route 110",
+   "bulbaMap": null
+  },
+  {
+   "id": "hoenn-route-111",
+   "name": "Route 111",
+   "class": "route",
+   "bulba": "Hoenn Route 111",
+   "bulbaMap": "Hoenn_Route_111_Map.png"
+  },
+  {
+   "id": "hoenn-route-112",
+   "name": "Route 112",
+   "class": "route",
+   "bulba": "Hoenn Route 112",
+   "bulbaMap": "Hoenn_Route_112_Map.png"
+  },
+  {
+   "id": "hoenn-route-113",
+   "name": "Route 113",
+   "class": "route",
+   "bulba": "Hoenn Route 113",
+   "bulbaMap": "Hoenn_Route_113_Map.png"
+  },
+  {
+   "id": "hoenn-route-114",
+   "name": "Route 114",
+   "class": "route",
+   "bulba": "Hoenn Route 114",
+   "bulbaMap": "Hoenn_Route_114_Map.png"
+  },
+  {
+   "id": "hoenn-route-115",
+   "name": "Route 115",
+   "class": "route",
+   "bulba": "Hoenn Route 115",
+   "bulbaMap": "Hoenn_Route_115_Map.png"
+  },
+  {
+   "id": "hoenn-route-116",
+   "name": "Route 116",
+   "class": "route",
+   "bulba": "Hoenn Route 116",
+   "bulbaMap": "Hoenn_Route_116_Map.png"
+  },
+  {
+   "id": "hoenn-route-117",
+   "name": "Route 117",
+   "class": "route",
+   "bulba": "Hoenn Route 117",
+   "bulbaMap": "Hoenn_Route_117_Map.png"
+  },
+  {
+   "id": "hoenn-route-118",
+   "name": "Route 118",
+   "class": "route",
+   "bulba": "Hoenn Route 118",
+   "bulbaMap": "Hoenn_Route_118_Map.png"
+  },
+  {
+   "id": "hoenn-route-119",
+   "name": "Route 119",
+   "class": "route",
+   "bulba": "Hoenn Route 119",
+   "bulbaMap": "Hoenn_Route_119_Map.png"
+  },
+  {
+   "id": "hoenn-route-120",
+   "name": "Route 120",
+   "class": "route",
+   "bulba": "Hoenn Route 120",
+   "bulbaMap": "Hoenn_Route_120_Map.png"
+  },
+  {
+   "id": "hoenn-route-121",
+   "name": "Route 121",
+   "class": "route",
+   "bulba": "Hoenn Route 121",
+   "bulbaMap": "Hoenn_Route_121_Map.png"
+  },
+  {
+   "id": "hoenn-route-122",
+   "name": "Route 122",
+   "class": "route",
+   "bulba": "Hoenn Route 122",
+   "bulbaMap": "Hoenn_Route_122_Map.png"
+  },
+  {
+   "id": "hoenn-route-123",
+   "name": "Route 123",
+   "class": "route",
+   "bulba": "Hoenn Route 123",
+   "bulbaMap": "Hoenn_Route_123_Map.png"
+  },
+  {
+   "id": "hoenn-route-124",
+   "name": "Route 124",
+   "class": "route",
+   "bulba": "Hoenn Route 124",
+   "bulbaMap": "Hoenn_Route_124_Map.png"
+  },
+  {
+   "id": "hoenn-route-125",
+   "name": "Route 125",
+   "class": "route",
+   "bulba": "Hoenn Route 125",
+   "bulbaMap": "Hoenn_Route_125_Map.png"
+  },
+  {
+   "id": "hoenn-route-126",
+   "name": "Route 126",
+   "class": "route",
+   "bulba": "Hoenn Route 126",
+   "bulbaMap": "Hoenn_Route_126_Map.png"
+  },
+  {
+   "id": "hoenn-route-127",
+   "name": "Route 127",
+   "class": "route",
+   "bulba": "Hoenn Route 127",
+   "bulbaMap": "Hoenn_Route_127_Map.png"
+  },
+  {
+   "id": "hoenn-route-128",
+   "name": "Route 128",
+   "class": "route",
+   "bulba": "Hoenn Route 128",
+   "bulbaMap": "Hoenn_Route_128_Map.png"
+  },
+  {
+   "id": "hoenn-route-129",
+   "name": "Route 129",
+   "class": "route",
+   "bulba": "Hoenn Route 129",
+   "bulbaMap": "Hoenn_Route_129_Map.png"
+  },
+  {
+   "id": "hoenn-route-130",
+   "name": "Route 130",
+   "class": "route",
+   "bulba": "Hoenn Route 130",
+   "bulbaMap": "Hoenn_Route_130_Map.png"
+  },
+  {
+   "id": "hoenn-route-131",
+   "name": "Route 131",
+   "class": "route",
+   "bulba": "Hoenn Route 131",
+   "bulbaMap": "Hoenn_Route_131_Map.png"
+  },
+  {
+   "id": "hoenn-route-132",
+   "name": "Route 132",
+   "class": "route",
+   "bulba": "Hoenn Route 132",
+   "bulbaMap": "Hoenn_Route_132_Map.png"
+  },
+  {
+   "id": "hoenn-route-133",
+   "name": "Route 133",
+   "class": "route",
+   "bulba": "Hoenn Route 133",
+   "bulbaMap": "Hoenn_Route_133_Map.png"
+  },
+  {
+   "id": "hoenn-route-134",
+   "name": "Route 134",
+   "class": "route",
+   "bulba": "Hoenn Route 134",
+   "bulbaMap": "Hoenn_Route_134_Map.png"
+  },
+  {
+   "id": "hoenn-safari-zone",
+   "name": "Safari Zone",
+   "class": "landmark",
+   "bulba": "Safari Zone",
+   "bulbaMap": "Hoenn_Safari_Zone_Map.png",
+   "imageFile": "Hoenn Safari Zone E.png"
+  },
+  {
+   "id": "hoenn-victory-road",
+   "name": "Victory Road",
+   "class": "landmark",
+   "bulba": "Victory Road",
+   "bulbaMap": "Hoenn_Victory_Road_Map.png",
+   "note": "The great cave beneath Ever Grande City \u2014 the final test of Trainers bound for the Pok\u00e9mon League."
+  },
+  {
+   "id": "island-cave",
+   "name": "Island Cave",
+   "class": "cave",
+   "bulba": "Island Cave",
+   "bulbaMap": "Hoenn_Island_Cave_Map.png"
+  },
+  {
+   "id": "jagged-pass",
+   "name": "Jagged Pass",
+   "class": "mountain",
+   "bulba": "Jagged Pass",
+   "bulbaMap": "Hoenn_Jagged_Pass_Map.png"
+  },
+  {
+   "id": "lavaridge-town",
+   "name": "Lavaridge Town",
+   "class": "town",
+   "bulba": "Lavaridge Town",
+   "bulbaMap": "Hoenn_Lavaridge_Town_Map.png"
+  },
+  {
+   "id": "lilycove-city",
+   "name": "Lilycove City",
+   "class": "city",
+   "bulba": "Lilycove City",
+   "bulbaMap": "Hoenn_Lilycove_City_Map.png"
+  },
+  {
+   "id": "littleroot-town",
+   "name": "Littleroot Town",
+   "class": "town",
+   "bulba": "Littleroot Town",
+   "bulbaMap": "Hoenn_Littleroot_Town_Map.png"
+  },
+  {
+   "id": "mauville-city",
+   "name": "Mauville City",
+   "class": "city",
+   "bulba": "Mauville City",
+   "bulbaMap": "Hoenn_Mauville_City_Map.png"
+  },
+  {
+   "id": "meteor-falls",
+   "name": "Meteor Falls",
+   "class": "water",
+   "bulba": "Meteor Falls",
+   "bulbaMap": "Hoenn_Meteor_Falls_Map.png"
+  },
+  {
+   "id": "mirage-island",
+   "name": "Mirage Island",
+   "class": "island",
+   "bulba": "Mirage Island",
+   "bulbaMap": "Hoenn_Mirage_Island_Map.png",
+   "note": "An island on Route 130 that only appears on rare days, shimmering above the waves."
+  },
+  {
+   "id": "mossdeep-city",
+   "name": "Mossdeep City",
+   "class": "city",
+   "bulba": "Mossdeep City",
+   "bulbaMap": "Hoenn_Mossdeep_City_Map.png"
+  },
+  {
+   "id": "mt-chimney",
+   "name": "Mt. Chimney",
+   "class": "mountain",
+   "bulba": "Mt. Chimney",
+   "bulbaMap": "Hoenn_Mt_Chimney_Map.png"
+  },
+  {
+   "id": "mt-pyre",
+   "name": "Mt. Pyre",
+   "class": "mountain",
+   "bulba": "Mt. Pyre",
+   "bulbaMap": "Hoenn_Mt_Pyre_Map.png"
+  },
+  {
+   "id": "new-mauville",
+   "name": "New Mauville",
+   "class": "building",
+   "bulba": "New Mauville",
+   "bulbaMap": "Hoenn_New_Mauville_Map.png"
+  },
+  {
+   "id": "oldale-town",
+   "name": "Oldale Town",
+   "class": "town",
+   "bulba": "Oldale Town",
+   "bulbaMap": null
+  },
+  {
+   "id": "pacifidlog-town",
+   "name": "Pacifidlog Town",
+   "class": "town",
+   "bulba": "Pacifidlog Town",
+   "bulbaMap": "Hoenn_Pacifidlog_Town_Map.png"
+  },
+  {
+   "id": "petalburg-city",
+   "name": "Petalburg City",
+   "class": "city",
+   "bulba": "Petalburg City",
+   "bulbaMap": null
+  },
+  {
+   "id": "petalburg-woods",
+   "name": "Petalburg Woods",
+   "class": "forest",
+   "bulba": "Petalburg Woods",
+   "bulbaMap": "Hoenn_Petalburg_Woods_Map.png"
+  },
+  {
+   "id": "rustboro-city",
+   "name": "Rustboro City",
+   "class": "city",
+   "bulba": "Rustboro City",
+   "bulbaMap": "Hoenn_Rustboro_City_Map.png"
+  },
+  {
+   "id": "rusturf-tunnel",
+   "name": "Rusturf Tunnel",
+   "class": "cave",
+   "bulba": "Rusturf Tunnel",
+   "bulbaMap": "Hoenn_Rusturf_Tunnel_Map.png"
+  },
+  {
+   "id": "scorched-slab",
+   "name": "Scorched Slab",
+   "class": "cave",
+   "bulba": "Scorched Slab",
+   "bulbaMap": "Hoenn_Scorched_Slab_Map.png",
+   "note": "A small cave hidden behind the waterfall on Route 120, its rock scorched black."
+  },
+  {
+   "id": "seafloor-cavern",
+   "name": "Seafloor Cavern",
+   "class": "cave",
+   "bulba": "Seafloor Cavern",
+   "bulbaMap": "Hoenn_Seafloor_Cavern_Map.png"
+  },
+  {
+   "id": "sealed-chamber",
+   "name": "Sealed Chamber",
+   "class": "cave",
+   "bulba": "Sealed Chamber",
+   "bulbaMap": "Hoenn_Sealed_Chamber_Map.png",
+   "note": "An undersea chamber on Route 134, reachable only by Dive, its walls covered in ancient braille."
+  },
+  {
+   "id": "shoal-cave",
+   "name": "Shoal Cave",
+   "class": "cave",
+   "bulba": "Shoal Cave",
+   "bulbaMap": "Hoenn_Shoal_Cave_Map.png"
+  },
+  {
+   "id": "sky-pillar",
+   "name": "Sky Pillar",
+   "class": "landmark",
+   "bulba": "Sky Pillar",
+   "bulbaMap": "Hoenn_Sky_Pillar_Map.png"
+  },
+  {
+   "id": "slateport-city",
+   "name": "Slateport City",
+   "class": "city",
+   "bulba": "Slateport City",
+   "bulbaMap": "Hoenn_Slateport_City_Map.png"
+  },
+  {
+   "id": "sootopolis-city",
+   "name": "Sootopolis City",
+   "class": "city",
+   "bulba": "Sootopolis City",
+   "bulbaMap": "Hoenn_Sootopolis_City_Map.png",
+   "merge": [
+    "cave-of-origin"
+   ]
+  },
+  {
+   "id": "team-aqua-hideout",
+   "name": "Team Aqua Hideout",
+   "class": "landmark",
+   "bulba": "Team Aqua Hideout",
+   "bulbaMap": "Hoenn_Team_Aqua_Hideout_Map.png"
+  },
+  {
+   "id": "trick-house",
+   "name": "Trick House",
+   "class": "building",
+   "bulba": "Trick House",
+   "bulbaMap": "Hoenn_Trick_House_Map.png",
+   "api": []
+  },
+  {
+   "id": "verdanturf-town",
+   "name": "Verdanturf Town",
+   "class": "town",
+   "bulba": "Verdanturf Town",
+   "bulbaMap": "Hoenn_Verdanturf_Town_Map.png"
+  },
+  {
+   "id": "weather-institute",
+   "name": "Weather Institute",
+   "class": "building",
+   "bulba": "Weather Institute",
+   "bulbaMap": "Hoenn_Weather_Institute_Map.png"
+  }
+ ]
+}

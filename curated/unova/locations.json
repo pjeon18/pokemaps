@@ -1,0 +1,547 @@
+{
+ "_comment": "Unova pack (combined BW + B2W2, 256x168). Map not separable into BW-only vs B2W2-only (all Bulbapedia highlights share the one B2W2-era canvas), so combined per Paul (2026-07-20). Encounters include black/white/black-2/white-2.",
+ "locations": [
+  {
+   "id": "abundant-shrine",
+   "name": "Abundant Shrine",
+   "class": "building",
+   "bulba": "Abundant Shrine",
+   "bulbaMap": "Unova_Abundant_Shrine_Map.png"
+  },
+  {
+   "id": "accumula-town",
+   "name": "Accumula Town",
+   "class": "town",
+   "bulba": "Accumula Town",
+   "bulbaMap": "Unova_Accumula_Town_Map.png"
+  },
+  {
+   "id": "anville-town",
+   "name": "Anville Town",
+   "class": "town",
+   "bulba": "Anville Town",
+   "bulbaMap": "Unova_Anville_Town_Map.png"
+  },
+  {
+   "id": "aspertia-city",
+   "name": "Aspertia City",
+   "class": "city",
+   "bulba": "Aspertia City",
+   "bulbaMap": "Unova_Aspertia_City_Map.png"
+  },
+  {
+   "id": "castelia-city",
+   "name": "Castelia City",
+   "class": "city",
+   "bulba": "Castelia City",
+   "bulbaMap": "Unova_Castelia_City_Map.png"
+  },
+  {
+   "id": "castelia-sewers",
+   "name": "Castelia Sewers",
+   "class": "building",
+   "bulba": "Castelia Sewers",
+   "bulbaMap": "Unova_Castelia_Sewers_Map.png"
+  },
+  {
+   "id": "cave-of-being",
+   "name": "Cave of Being",
+   "class": "cave",
+   "bulba": "Cave of Being",
+   "bulbaMap": "Unova_Cave_of_Being_Map.png"
+  },
+  {
+   "id": "celestial-tower",
+   "name": "Celestial Tower",
+   "class": "building",
+   "bulba": "Celestial Tower",
+   "bulbaMap": "Unova_Celestial_Tower_Map.png"
+  },
+  {
+   "id": "challengers-cave",
+   "name": "Challengers Cave",
+   "class": "cave",
+   "bulba": "Challengers Cave",
+   "bulbaMap": "Unova_Challengers_Cave_Map.png",
+   "note": "A cave in western Unova that only opens to Trainers who have entered the Hall of Fame \u2014 packed with tough battlers."
+  },
+  {
+   "id": "chargestone-cave",
+   "name": "Chargestone Cave",
+   "class": "cave",
+   "bulba": "Chargestone Cave",
+   "bulbaMap": "Unova_Chargestone_Cave_Map.png"
+  },
+  {
+   "id": "clay-tunnel",
+   "name": "Clay Tunnel",
+   "class": "cave",
+   "bulba": "Clay Tunnel",
+   "bulbaMap": "Unova_Clay_Tunnel_Map.png"
+  },
+  {
+   "id": "cold-storage",
+   "name": "Cold Storage",
+   "class": "water",
+   "bulba": "Cold Storage",
+   "bulbaMap": "Unova_Cold_Storage_Map.png"
+  },
+  {
+   "id": "desert-resort",
+   "name": "Desert Resort",
+   "class": "building",
+   "bulba": "Desert Resort",
+   "bulbaMap": "Unova_Desert_Resort_Map.png"
+  },
+  {
+   "id": "dragonspiral-tower",
+   "name": "Dragonspiral Tower",
+   "class": "building",
+   "bulba": "Dragonspiral Tower",
+   "bulbaMap": "Unova_Dragonspiral_Tower_Map.png"
+  },
+  {
+   "id": "dreamyard",
+   "name": "Dreamyard",
+   "class": "landmark",
+   "bulba": "Dreamyard",
+   "bulbaMap": "Unova_Dreamyard_Map.png"
+  },
+  {
+   "id": "driftveil-city",
+   "name": "Driftveil City",
+   "class": "city",
+   "bulba": "Driftveil City",
+   "bulbaMap": "Unova_Driftveil_City_Map.png"
+  },
+  {
+   "id": "driftveil-drawbridge",
+   "name": "Driftveil Drawbridge",
+   "class": "water",
+   "bulba": "Driftveil Drawbridge",
+   "bulbaMap": "Unova_Driftveil_Drawbridge_Map.png"
+  },
+  {
+   "id": "floccesy-ranch",
+   "name": "Floccesy Ranch",
+   "class": "building",
+   "bulba": "Floccesy Ranch",
+   "bulbaMap": "Unova_Floccesy_Ranch_Map.png"
+  },
+  {
+   "id": "floccesy-town",
+   "name": "Floccesy Town",
+   "class": "town",
+   "bulba": "Floccesy Town",
+   "bulbaMap": "Unova_Floccesy_Town_Map.png"
+  },
+  {
+   "id": "giant-chasm",
+   "name": "Giant Chasm",
+   "class": "landmark",
+   "bulba": "Giant Chasm",
+   "bulbaMap": "Unova_Giant_Chasm_Map.png"
+  },
+  {
+   "id": "humilau-city",
+   "name": "Humilau City",
+   "class": "city",
+   "bulba": "Humilau City",
+   "bulbaMap": "Unova_Humilau_City_Map.png"
+  },
+  {
+   "id": "icirrus-city",
+   "name": "Icirrus City",
+   "class": "city",
+   "bulba": "Icirrus City",
+   "bulbaMap": "Unova_Icirrus_City_Map.png"
+  },
+  {
+   "id": "lacunosa-town",
+   "name": "Lacunosa Town",
+   "class": "town",
+   "bulba": "Lacunosa Town",
+   "bulbaMap": "Unova_Lacunosa_Town_Map.png",
+   "imageFile": "Lacunosa Town Summer B2W2.png"
+  },
+  {
+   "id": "lentimas-town",
+   "name": "Lentimas Town",
+   "class": "town",
+   "bulba": "Lentimas Town",
+   "bulbaMap": "Unova_Lentimas_Town_Map.png"
+  },
+  {
+   "id": "liberty-garden",
+   "name": "Liberty Garden",
+   "class": "cave",
+   "bulba": "Liberty Garden",
+   "bulbaMap": "Unova_Liberty_Garden_Map.png"
+  },
+  {
+   "id": "lostlorn-forest",
+   "name": "Lostlorn Forest",
+   "class": "forest",
+   "bulba": "Lostlorn Forest",
+   "bulbaMap": "Unova_Lostlorn_Forest_Map.png"
+  },
+  {
+   "id": "marine-tube",
+   "name": "Marine Tube",
+   "class": "water",
+   "bulba": "Marine Tube",
+   "bulbaMap": "Unova_Marine_Tube_Map.png"
+  },
+  {
+   "id": "mistralton-cave",
+   "name": "Mistralton Cave",
+   "class": "cave",
+   "bulba": "Mistralton Cave",
+   "bulbaMap": "Unova_Mistralton_Cave_Map.png"
+  },
+  {
+   "id": "mistralton-city",
+   "name": "Mistralton City",
+   "class": "city",
+   "bulba": "Mistralton City",
+   "bulbaMap": "Unova_Mistralton_City_Map.png"
+  },
+  {
+   "id": "moor-of-icirrus",
+   "name": "Moor of Icirrus",
+   "class": "landmark",
+   "bulba": "Moor of Icirrus",
+   "bulbaMap": "Unova_Moor_of_Icirrus_Map.png"
+  },
+  {
+   "id": "nacrene-city",
+   "name": "Nacrene City",
+   "class": "city",
+   "bulba": "Nacrene City",
+   "bulbaMap": "Unova_Nacrene_City_Map.png"
+  },
+  {
+   "id": "nimbasa-city",
+   "name": "Nimbasa City",
+   "class": "city",
+   "bulba": "Nimbasa City",
+   "bulbaMap": "Unova_Nimbasa_City_Map.png"
+  },
+  {
+   "id": "ns-castle",
+   "name": "N's Castle",
+   "class": "building",
+   "bulba": "N's Castle",
+   "bulbaMap": "Unova_Ns_Castle_Map.png"
+  },
+  {
+   "id": "nuvema-town",
+   "name": "Nuvema Town",
+   "class": "town",
+   "bulba": "Nuvema Town",
+   "bulbaMap": "Unova_Nuvema_Town_Map.png"
+  },
+  {
+   "id": "opelucid-city",
+   "name": "Opelucid City",
+   "class": "city",
+   "bulba": "Opelucid City",
+   "bulbaMap": "Unova_Opelucid_City_Map.png"
+  },
+  {
+   "id": "p2-laboratory",
+   "name": "P2 Laboratory",
+   "class": "building",
+   "bulba": "P2 Laboratory",
+   "bulbaMap": "Unova_P2_Laboratory_Map.png"
+  },
+  {
+   "id": "pinwheel-forest",
+   "name": "Pinwheel Forest",
+   "class": "forest",
+   "bulba": "Pinwheel Forest",
+   "bulbaMap": "Unova_Pinwheel_Forest_Map.png"
+  },
+  {
+   "id": "relic-castle",
+   "name": "Relic Castle",
+   "class": "building",
+   "bulba": "Relic Castle",
+   "bulbaMap": "Unova_Relic_Castle_Map.png"
+  },
+  {
+   "id": "relic-passage",
+   "name": "Relic Passage",
+   "class": "cave",
+   "bulba": "Relic Passage",
+   "bulbaMap": "Unova_Relic_Passage_Map.png"
+  },
+  {
+   "id": "reversal-mountain",
+   "name": "Reversal Mountain",
+   "class": "mountain",
+   "bulba": "Reversal Mountain",
+   "bulbaMap": "Unova_Reversal_Mountain_Map.png"
+  },
+  {
+   "id": "seaside-cave",
+   "name": "Seaside Cave",
+   "class": "cave",
+   "bulba": "Seaside Cave",
+   "bulbaMap": "Unova_Seaside_Cave_Map.png"
+  },
+  {
+   "id": "skyarrow-bridge",
+   "name": "Skyarrow Bridge",
+   "class": "water",
+   "bulba": "Skyarrow Bridge",
+   "bulbaMap": "Unova_Skyarrow_Bridge_Map.png"
+  },
+  {
+   "id": "strange-house",
+   "name": "Strange House",
+   "class": "landmark",
+   "bulba": "Strange House",
+   "bulbaMap": "Unova_Strange_House_Map.png"
+  },
+  {
+   "id": "striaton-city",
+   "name": "Striaton City",
+   "class": "city",
+   "bulba": "Striaton City",
+   "bulbaMap": "Unova_Striaton_City_Map.png"
+  },
+  {
+   "id": "tubeline-bridge",
+   "name": "Tubeline Bridge",
+   "class": "water",
+   "bulba": "Tubeline Bridge",
+   "bulbaMap": "Unova_Tubeline_Bridge_Map.png"
+  },
+  {
+   "id": "twist-mountain",
+   "name": "Twist Mountain",
+   "class": "mountain",
+   "bulba": "Twist Mountain",
+   "bulbaMap": "Unova_Twist_Mountain_Map.png"
+  },
+  {
+   "id": "undella-bay",
+   "name": "Undella Bay",
+   "class": "water",
+   "bulba": "Undella Bay",
+   "bulbaMap": "Unova_Undella_Bay_Map.png"
+  },
+  {
+   "id": "undella-town",
+   "name": "Undella Town",
+   "class": "town",
+   "bulba": "Undella Town",
+   "bulbaMap": "Unova_Undella_Town_Map.png"
+  },
+  {
+   "id": "unova-pokemon-league",
+   "name": "Pok\u00e9mon League",
+   "class": "landmark",
+   "bulba": "Pok\u00e9mon League (Unova)",
+   "bulbaMap": "Unova_Pok\u00e9mon_League_Map.png"
+  },
+  {
+   "id": "unova-route-1",
+   "name": "Route 1",
+   "class": "route",
+   "bulba": "Unova Route 1",
+   "bulbaMap": "Unova_Route_1_Map.png"
+  },
+  {
+   "id": "unova-route-10",
+   "name": "Route 10",
+   "class": "route",
+   "bulba": "Unova Route 10",
+   "bulbaMap": "Unova_Route_10_Map.png"
+  },
+  {
+   "id": "unova-route-11",
+   "name": "Route 11",
+   "class": "route",
+   "bulba": "Unova Route 11",
+   "bulbaMap": "Unova_Route_11_Map.png"
+  },
+  {
+   "id": "unova-route-12",
+   "name": "Route 12",
+   "class": "route",
+   "bulba": "Unova Route 12",
+   "bulbaMap": "Unova_Route_12_Map.png"
+  },
+  {
+   "id": "unova-route-13",
+   "name": "Route 13",
+   "class": "route",
+   "bulba": "Unova Route 13",
+   "bulbaMap": "Unova_Route_13_Map.png"
+  },
+  {
+   "id": "unova-route-14",
+   "name": "Route 14",
+   "class": "route",
+   "bulba": "Unova Route 14",
+   "bulbaMap": "Unova_Route_14_Map.png"
+  },
+  {
+   "id": "unova-route-15",
+   "name": "Route 15",
+   "class": "route",
+   "bulba": "Unova Route 15",
+   "bulbaMap": "Unova_Route_15_Map.png"
+  },
+  {
+   "id": "unova-route-16",
+   "name": "Route 16",
+   "class": "route",
+   "bulba": "Unova Route 16",
+   "bulbaMap": "Unova_Route_16_Map.png"
+  },
+  {
+   "id": "unova-route-17",
+   "name": "Route 17",
+   "class": "route",
+   "bulba": "Unova Route 17",
+   "bulbaMap": "Unova_Route_17_Map.png"
+  },
+  {
+   "id": "unova-route-18",
+   "name": "Route 18",
+   "class": "route",
+   "bulba": "Unova Route 18",
+   "bulbaMap": "Unova_Route_18_Map.png"
+  },
+  {
+   "id": "unova-route-19",
+   "name": "Route 19",
+   "class": "route",
+   "bulba": "Unova Route 19",
+   "bulbaMap": "Unova_Route_19_Map.png"
+  },
+  {
+   "id": "unova-route-2",
+   "name": "Route 2",
+   "class": "route",
+   "bulba": "Unova Route 2",
+   "bulbaMap": "Unova_Route_2_Map.png"
+  },
+  {
+   "id": "unova-route-20",
+   "name": "Route 20",
+   "class": "route",
+   "bulba": "Unova Route 20",
+   "bulbaMap": "Unova_Route_20_Map.png"
+  },
+  {
+   "id": "unova-route-21",
+   "name": "Route 21",
+   "class": "route",
+   "bulba": "Unova Route 21",
+   "bulbaMap": "Unova_Route_21_Map.png"
+  },
+  {
+   "id": "unova-route-22",
+   "name": "Route 22",
+   "class": "route",
+   "bulba": "Unova Route 22",
+   "bulbaMap": "Unova_Route_22_Map.png"
+  },
+  {
+   "id": "unova-route-23",
+   "name": "Route 23",
+   "class": "route",
+   "bulba": "Unova Route 23",
+   "bulbaMap": "Unova_Route_23_Map.png"
+  },
+  {
+   "id": "unova-route-3",
+   "name": "Route 3",
+   "class": "route",
+   "bulba": "Unova Route 3",
+   "bulbaMap": "Unova_Route_3_Map.png"
+  },
+  {
+   "id": "unova-route-4",
+   "name": "Route 4",
+   "class": "route",
+   "bulba": "Unova Route 4",
+   "bulbaMap": "Unova_Route_4_Map.png"
+  },
+  {
+   "id": "unova-route-5",
+   "name": "Route 5",
+   "class": "route",
+   "bulba": "Unova Route 5",
+   "bulbaMap": "Unova_Route_5_Map.png"
+  },
+  {
+   "id": "unova-route-6",
+   "name": "Route 6",
+   "class": "route",
+   "bulba": "Unova Route 6",
+   "bulbaMap": "Unova_Route_6_Map.png"
+  },
+  {
+   "id": "unova-route-7",
+   "name": "Route 7",
+   "class": "route",
+   "bulba": "Unova Route 7",
+   "bulbaMap": "Unova_Route_7_Map.png"
+  },
+  {
+   "id": "unova-route-8",
+   "name": "Route 8",
+   "class": "route",
+   "bulba": "Unova Route 8",
+   "bulbaMap": "Unova_Route_8_Map.png"
+  },
+  {
+   "id": "unova-route-9",
+   "name": "Route 9",
+   "class": "route",
+   "bulba": "Unova Route 9",
+   "bulbaMap": "Unova_Route_9_Map.png"
+  },
+  {
+   "id": "unova-victory-road",
+   "name": "Victory Road",
+   "class": "landmark",
+   "bulba": "Victory Road",
+   "bulbaMap": "Unova_Victory_Road_Map.png",
+   "note": "The craggy final ascent to the Pok\u00e9mon League, laced with caves and cliffside switchbacks."
+  },
+  {
+   "id": "village-bridge",
+   "name": "Village Bridge",
+   "class": "water",
+   "bulba": "Village Bridge",
+   "bulbaMap": "Unova_Village_Bridge_Map.png"
+  },
+  {
+   "id": "virbank-city",
+   "name": "Virbank City",
+   "class": "city",
+   "bulba": "Virbank City",
+   "bulbaMap": "Unova_Virbank_City_Map.png"
+  },
+  {
+   "id": "virbank-complex",
+   "name": "Virbank Complex",
+   "class": "building",
+   "bulba": "Virbank Complex",
+   "bulbaMap": "Unova_Virbank_Complex_Map.png"
+  },
+  {
+   "id": "wellspring-cave",
+   "name": "Wellspring Cave",
+   "class": "cave",
+   "bulba": "Wellspring Cave",
+   "bulbaMap": "Unova_Wellspring_Cave_Map.png"
+  }
+ ]
+}

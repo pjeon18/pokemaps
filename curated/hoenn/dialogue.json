@@ -1,0 +1,461 @@
+{
+  "_comment": "Hoenn (RSE) Overheard lines. Best-effort gen-3 flavor; verified:false until QA'd (CURATION_TODO.md). `who` = real in-game class/name; sprite references Spr_RS_* trainer classes (build-content nulls any that didn't scrape).",
+  "lines": {
+    "littleroot-town": {
+      "text": "This town is so small there's not even one road out of it… you have to cut through the tall grass!",
+      "who": "Professor Birch",
+      "sprite": null,
+      "verified": false
+    },
+    "oldale-town": {
+      "text": "See how the two shops have different-colored roofs? That's how you tell a Mart from a Center!",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_RS_Youngster.png",
+      "verified": false
+    },
+    "petalburg-city": {
+      "text": "The Gym Leader here is my papa. He won't battle me until I've proven myself…",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_RS_Youngster.png",
+      "verified": false
+    },
+    "rustboro-city": {
+      "text": "This is Hoenn's biggest city! The Devon company and the Trainers' School are both here.",
+      "who": "Lady",
+      "sprite": "trainer-sprites/Spr_RS_Lady.png",
+      "verified": false
+    },
+    "dewford-town": {
+      "text": "Trends are everything on this island! Have you heard the latest? It's SO now.",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_RS_Fisherman.png",
+      "verified": false
+    },
+    "slateport-city": {
+      "text": "The market by the beach sells everything! And the Oceanic Museum's just up the way.",
+      "who": "Sailor",
+      "sprite": "trainer-sprites/Spr_RS_Sailor.png",
+      "verified": false
+    },
+    "mauville-city": {
+      "text": "Right in the middle of Hoenn! The Bike Shop owner will even give you a free bike.",
+      "who": "Gentleman",
+      "sprite": "trainer-sprites/Spr_RS_Gentleman.png",
+      "verified": false
+    },
+    "verdanturf-town": {
+      "text": "The air here is so clean it's famous for it! Perfect for folks who need to rest.",
+      "who": "Pokéfan",
+      "sprite": null,
+      "verified": false
+    },
+    "fallarbor-town": {
+      "text": "Ash keeps falling from Mt. Chimney… but the soil grows the best Berries because of it.",
+      "who": "Bug Catcher",
+      "sprite": "trainer-sprites/Spr_RS_Bug_Catcher.png",
+      "verified": false
+    },
+    "lavaridge-town": {
+      "text": "Soak in the hot springs a while! The sand bath'll do your Pokémon good, too.",
+      "who": "Old lady",
+      "sprite": null,
+      "verified": false
+    },
+    "fortree-city": {
+      "text": "Every house here is built up in the treetops! Careful crossing the bridges.",
+      "who": "Bird Keeper",
+      "sprite": "trainer-sprites/Spr_RS_Bird_Keeper.png",
+      "verified": false
+    },
+    "lilycove-city": {
+      "text": "The Department Store here is the biggest in Hoenn. And the Contest Hall's next door!",
+      "who": "Lady",
+      "sprite": "trainer-sprites/Spr_RS_Lady.png",
+      "verified": false
+    },
+    "mossdeep-city": {
+      "text": "The Space Center launches real rockets! Our Gym Leaders are twins, you know.",
+      "who": "Psychic",
+      "sprite": "trainer-sprites/Spr_RS_Psychic_F.png",
+      "verified": false
+    },
+    "sootopolis-city": {
+      "text": "This whole town sits inside a crater! You can only reach it by diving or flying.",
+      "who": "Beauty",
+      "sprite": "trainer-sprites/Spr_RS_Beauty.png",
+      "verified": false
+    },
+    "pacifidlog-town": {
+      "text": "Our town floats on rafts lashed together! When the tide's right, the currents change.",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_RS_Fisherman.png",
+      "verified": false
+    },
+    "ever-grande-city": {
+      "text": "All that stands between you and the League now is Victory Road. Good luck, Trainer.",
+      "who": "Cool Trainer",
+      "sprite": "trainer-sprites/Spr_RS_Cooltrainer_M.png",
+      "verified": false
+    },
+    "petalburg-woods": {
+      "text": "Watch out for that shady man in the woods — he's from some team or another.",
+      "who": "Bug Catcher",
+      "sprite": "trainer-sprites/Spr_RS_Bug_Catcher.png",
+      "verified": false
+    },
+    "granite-cave": {
+      "text": "There are wall paintings deep inside! The old man in the entrance can tell you about them.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "meteor-falls": {
+      "text": "A meteorite fell here ages ago. The falls run deep — deep enough for a Waterfall.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "mt-chimney": {
+      "text": "The cable car takes you right to the crater's rim. Feel that heat!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "jagged-pass": {
+      "text": "Mind the slope — it's all loose ash and switchbacks down to Lavaridge.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "fiery-path": {
+      "text": "This tunnel cuts straight through the mountain's fire. Watch where you step!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "rusturf-tunnel": {
+      "text": "They stopped digging this tunnel so the Whismur wouldn't be disturbed. Shh!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "mt-pyre": {
+      "text": "The departed rest at the summit. Two orbs were once kept here — red and blue.",
+      "who": "Old lady",
+      "sprite": null,
+      "verified": false
+    },
+    "shoal-cave": {
+      "text": "The cave floods and empties with the tide! Come back at low tide for the shells.",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_RS_Fisherman.png",
+      "verified": false
+    },
+    "seafloor-cavern": {
+      "text": "Deep under the sea… this is where they woke the slumbering titan.",
+      "who": "Aqua Grunt",
+      "sprite": "trainer-sprites/Spr_RS_Team_Aqua_Grunt_M.png",
+      "verified": false
+    },
+    "team-aqua-hideout": {
+      "text": "For a world covered by the sea! That's Team Aqua's dream, land-dweller!",
+      "who": "Aqua Grunt",
+      "sprite": "trainer-sprites/Spr_RS_Team_Aqua_Grunt_M.png",
+      "verified": false
+    },
+    "weather-institute": {
+      "text": "We study Hoenn's rain here — some of the heaviest in the world falls just outside.",
+      "who": "Scientist",
+      "sprite": null,
+      "verified": false
+    },
+    "abandoned-ship": {
+      "text": "This wreck ran aground years ago. Divers say there's still treasure in the flooded rooms.",
+      "who": "Sailor",
+      "sprite": "trainer-sprites/Spr_RS_Sailor.png",
+      "verified": false
+    },
+    "sky-pillar": {
+      "text": "The tower where the sky dragon sleeps. Only the Mach Bike can cross that crumbling floor.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "hoenn-victory-road": {
+      "text": "The final cave before the League. Every Trainer here has all eight badges — like you.",
+      "who": "Cool Trainer",
+      "sprite": "trainer-sprites/Spr_RS_Cooltrainer_F.png",
+      "verified": false
+    },
+    "desert-underpass": {
+      "text": "A passage under the desert… fossils of Pokémon long gone are buried down here.",
+      "who": "Scientist",
+      "sprite": null,
+      "verified": false
+    },
+    "hoenn-route-101": {
+      "text": "This is where the Professor got attacked by a wild Pokémon! You should grab a partner.",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_RS_Youngster.png",
+      "verified": false
+    },
+    "hoenn-route-102": {
+      "text": "The grass here is full of Berries to pick and little Pokémon to catch!",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_RS_Youngster.png",
+      "verified": false
+    },
+    "hoenn-route-103": {
+      "text": "Cross the water and you can battle your rival by the shore.",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_RS_Youngster.png",
+      "verified": false
+    },
+    "hoenn-route-104": {
+      "text": "The beach on one end, the flower shop on the other, and a forest between!",
+      "who": "Lady",
+      "sprite": "trainer-sprites/Spr_RS_Lady.png",
+      "verified": false
+    },
+    "hoenn-route-105": {
+      "text": "Watch the tides out here — the little islands go under when the water rises.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_F.png",
+      "verified": false
+    },
+    "hoenn-route-106": {
+      "text": "Granite Cave's just up the beach. The Gym Leader trains in there sometimes.",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_RS_Fisherman.png",
+      "verified": false
+    },
+    "hoenn-route-107": {
+      "text": "Nothing but open sea between the islands here. Great fishing if you Surf out.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_M.png",
+      "verified": false
+    },
+    "hoenn-route-108": {
+      "text": "There's a rusted old ship anchored out here. Divers love poking around it.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_M.png",
+      "verified": false
+    },
+    "hoenn-route-109": {
+      "text": "Best beach in Hoenn! Watch the little kids building sandcastles.",
+      "who": "Tuber",
+      "sprite": "trainer-sprites/Spr_RS_Tuber_M.png",
+      "verified": false
+    },
+    "hoenn-route-110": {
+      "text": "Cycling Road runs right over this route — and the trick house is hidden nearby!",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_RS_Youngster.png",
+      "verified": false
+    },
+    "hoenn-route-111": {
+      "text": "The sandstorm never quits in the desert stretch. You'll need special goggles to enter.",
+      "who": "Camper",
+      "sprite": "trainer-sprites/Spr_RS_Camper.png",
+      "verified": false
+    },
+    "hoenn-route-112": {
+      "text": "The cable car station is right here — it hauls you up to Mt. Chimney's peak.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "hoenn-route-113": {
+      "text": "It's not snow — it's volcanic ash! Collect it and the glassworker will make you something.",
+      "who": "Camper",
+      "sprite": "trainer-sprites/Spr_RS_Camper.png",
+      "verified": false
+    },
+    "hoenn-route-114": {
+      "text": "My brother the Fossil Maniac dug his whole house into the hill over there.",
+      "who": "Picnicker",
+      "sprite": "trainer-sprites/Spr_RS_Picnicker.png",
+      "verified": false
+    },
+    "hoenn-route-115": {
+      "text": "The wind off the sea is fierce here. Good training weather, if you can stand up in it!",
+      "who": "Battle Girl",
+      "sprite": "trainer-sprites/Spr_RS_Battle_Girl.png",
+      "verified": false
+    },
+    "hoenn-route-116": {
+      "text": "This road runs to the tunnel where they're digging — carefully — around the Whismur.",
+      "who": "Bug Catcher",
+      "sprite": "trainer-sprites/Spr_RS_Bug_Catcher.png",
+      "verified": false
+    },
+    "hoenn-route-117": {
+      "text": "The Pokémon Day Care is right here. Leave two and who knows — you might get an Egg!",
+      "who": "Triathlete",
+      "sprite": null,
+      "verified": false
+    },
+    "hoenn-route-118": {
+      "text": "A wide river cuts this route in two. You'll need to Surf, or catch a ride across.",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_RS_Fisherman.png",
+      "verified": false
+    },
+    "hoenn-route-119": {
+      "text": "It rains without stopping here. The Weather Institute studies it — and a rare Pokémon lives up top.",
+      "who": "Bug Catcher",
+      "sprite": "trainer-sprites/Spr_RS_Bug_Catcher.png",
+      "verified": false
+    },
+    "hoenn-route-120": {
+      "text": "The bridge is long and the rain is thick. Something invisible brushed past me…",
+      "who": "Bug Catcher",
+      "sprite": "trainer-sprites/Spr_RS_Bug_Catcher.png",
+      "verified": false
+    },
+    "hoenn-route-121": {
+      "text": "Team's up to something on Mt. Pyre, just south of here. Gives me the creeps.",
+      "who": "Cool Trainer",
+      "sprite": "trainer-sprites/Spr_RS_Cooltrainer_F.png",
+      "verified": false
+    },
+    "hoenn-route-122": {
+      "text": "Mt. Pyre rises right out of the sea here. Best pay your respects before you pass.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_M.png",
+      "verified": false
+    },
+    "hoenn-route-123": {
+      "text": "There's a Berry garden along this route. The old couple will teach you all about growing them.",
+      "who": "Aroma Lady",
+      "sprite": "trainer-sprites/Spr_RS_Aroma_Lady.png",
+      "verified": false
+    },
+    "hoenn-route-124": {
+      "text": "Divers go down all over this bay hunting for the treasure on the seafloor.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_F.png",
+      "verified": false
+    },
+    "hoenn-route-125": {
+      "text": "Shoal Cave's on the island out here. Bring shells to the old man for a prize!",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_M.png",
+      "verified": false
+    },
+    "hoenn-route-126": {
+      "text": "The town under the sea is near here — Sootopolis, in its crater. You have to Dive to reach it.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_F.png",
+      "verified": false
+    },
+    "hoenn-route-127": {
+      "text": "Deep water all around. Perfect for Surfing races — and for the big biters lurking below.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_M.png",
+      "verified": false
+    },
+    "hoenn-route-128": {
+      "text": "The sea churns here… I heard the two ancient titans clashed somewhere close by.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_F.png",
+      "verified": false
+    },
+    "hoenn-route-129": {
+      "text": "Whirlpools and deep water. The waves have been strange ever since the weather turned.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_M.png",
+      "verified": false
+    },
+    "hoenn-route-130": {
+      "text": "There's a mirage island out here that only appears some days. My grandpa's chased it for years!",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_F.png",
+      "verified": false
+    },
+    "hoenn-route-131": {
+      "text": "The sky-tower rises from an island near here. They say a legendary dragon sleeps at its peak.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_M.png",
+      "verified": false
+    },
+    "hoenn-route-132": {
+      "text": "The currents shove you around out here — you can only go the way the water lets you.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_M.png",
+      "verified": false
+    },
+    "hoenn-route-133": {
+      "text": "Almost to the far island! The current finally works with you on this stretch.",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_F.png",
+      "verified": false
+    },
+    "hoenn-route-134": {
+      "text": "Last leg of the crossing. Ride the strong current straight west and don't fight it!",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_M.png",
+      "verified": false
+    },
+    "hoenn-safari-zone": {
+      "text": "No regular Poké Balls in here! Use the Safari Balls and don't scare them off.",
+      "who": "Warden",
+      "sprite": null,
+      "verified": false
+    },
+    "island-cave": {
+      "text": "The braille on the wall speaks of a titan of ice sealed away long ago.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "desert-ruins": {
+      "text": "Something slumbers behind these sandstone walls — a titan of rock, the legend says.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "ancient-tomb": {
+      "text": "An old tomb in the trees. The braille inside speaks of a titan of steel.",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_RS_Hiker.png",
+      "verified": false
+    },
+    "sealed-chamber": {
+      "text": "You have to Dive to even find this place. The walls are covered in braille…",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_RS_Swimmer_M.png",
+      "verified": false
+    },
+    "scorched-slab": {
+      "text": "A small cave behind the waterfall. The rock inside is scorched black.",
+      "who": "Bird Keeper",
+      "sprite": "trainer-sprites/Spr_RS_Bird_Keeper.png",
+      "verified": false
+    },
+    "new-mauville": {
+      "text": "A generator underground went haywire — the whole facility hums with loose Voltorb!",
+      "who": "Guitarist",
+      "sprite": "trainer-sprites/Spr_RS_Guitarist.png",
+      "verified": false
+    },
+    "trick-house": {
+      "text": "Welcome to my Trick House! Solve my puzzle — if you can find me first. Heheh!",
+      "who": "Trick Master",
+      "sprite": null,
+      "verified": false
+    },
+    "mirage-island": {
+      "text": "Some days the island is just… there, shimmering over the water. Then it's gone.",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_RS_Fisherman.png",
+      "verified": false
+    },
+    "hoenn-battle-frontier": {
+      "text": "Seven facilities, seven Frontier Brains. This island is the ultimate test!",
+      "who": "Cool Trainer",
+      "sprite": "trainer-sprites/Spr_RS_Cooltrainer_M.png",
+      "verified": false
+    }
+  }
+}

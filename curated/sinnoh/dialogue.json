@@ -1,0 +1,407 @@
+{
+  "_comment": "One chosen line per location (Overheard hint). Best-effort from DPPt game text; wording needs QA against a text dump before we claim exact quotation — every line is verified:false until checked (see CURATION_TODO.md). `who` is deliberately simple/unrevealing (Paul, 2026-07-20); `sprite` is a public/content-relative path to the speaker's sprite (null = text only).",
+  "lines": {
+    "twinleaf-town": {
+      "text": "If you're late, I'm fining you $10 million!",
+      "who": "Barry",
+      "sprite": "npc-sprites/barry.png",
+      "verified": false
+    },
+    "sandgem-town": {
+      "text": "This world is inhabited by creatures known as Pokémon.",
+      "who": "Professor Rowan",
+      "sprite": "npc-sprites/rowan.png",
+      "verified": false
+    },
+    "jubilife-city": {
+      "text": "This is the most modern city in all of Sinnoh!",
+      "who": "Clown",
+      "sprite": "trainer-sprites/Spr_DP_Clown.png",
+      "verified": false
+    },
+    "oreburgh-city": {
+      "text": "This is an energetic mining town. Almost everyone works in the coal mine.",
+      "who": "Worker",
+      "sprite": "trainer-sprites/Spr_DP_Worker.png",
+      "verified": false
+    },
+    "floaroma-town": {
+      "text": "Isn't it lovely here? The whole town smells sweet like flowers and honey.",
+      "who": "Aroma Lady",
+      "sprite": "trainer-sprites/Spr_DP_Aroma_Lady.png",
+      "verified": false
+    },
+    "eterna-city": {
+      "text": "That statue depicts an ancient Pokémon said to have shaped this land.",
+      "who": "Gentleman",
+      "sprite": "trainer-sprites/Spr_DP_Gentleman.png",
+      "verified": false
+    },
+    "hearthome-city": {
+      "text": "Ohohoho! You have come to challenge moi?",
+      "who": "Gym Leader Fantina",
+      "sprite": "leaders/fantina.png",
+      "verified": false
+    },
+    "solaceon-town": {
+      "text": "Leave your Pokémon with us, and we'll raise it with care!",
+      "who": "Day-Care Lady",
+      "sprite": "trainer-sprites/Spr_DP_Pok_mon_Breeder_F.png",
+      "verified": false
+    },
+    "veilstone-city": {
+      "text": "I've been training here forever… but I still don't know what it means to be truly strong.",
+      "who": "Gym Leader Maylene",
+      "sprite": "leaders/maylene.png",
+      "verified": false
+    },
+    "pastoria-city": {
+      "text": "Crash! Crash! Crasher Wake!",
+      "who": "Gym Leader Crasher Wake",
+      "sprite": "leaders/wake.png",
+      "verified": false
+    },
+    "celestic-town": {
+      "text": "Our little town has guarded the old stories of Sinnoh for generations.",
+      "who": "Elder",
+      "sprite": null,
+      "verified": false
+    },
+    "canalave-city": {
+      "text": "My boat sails for Iron Island. Hop aboard whenever you like!",
+      "who": "Sailor",
+      "sprite": "trainer-sprites/Spr_DP_Sailor.png",
+      "verified": false
+    },
+    "snowpoint-city": {
+      "text": "I'm tough because I know how to focus!",
+      "who": "Gym Leader Candice",
+      "sprite": "leaders/candice.png",
+      "verified": false
+    },
+    "sunyshore-city": {
+      "text": "He shut himself in the lighthouse… Our Gym Leader is bored of battling.",
+      "who": "Guitarist",
+      "sprite": "trainer-sprites/Spr_DP_Guitarist.png",
+      "verified": false
+    },
+    "sinnoh-pokemon-league": {
+      "text": "Only Trainers who have defeated all eight Gyms may enter here.",
+      "who": "Ace Trainer",
+      "sprite": "trainer-sprites/Spr_DP_Veteran.png",
+      "verified": false
+    },
+    "fight-area": {
+      "text": "Strong Trainers from every region gather on this island!",
+      "who": "Ace Trainer",
+      "sprite": "trainer-sprites/Spr_DP_Ace_Trainer_M_1.png",
+      "verified": false
+    },
+    "survival-area": {
+      "text": "This is a town for real survivalists! The mountain is no joke.",
+      "who": "Camper",
+      "sprite": "trainer-sprites/Spr_DP_Camper.png",
+      "verified": false
+    },
+    "resort-area": {
+      "text": "Ahhh, this is the place where adults come to play.",
+      "who": "Gentleman",
+      "sprite": "trainer-sprites/Spr_DP_Socialite.png",
+      "verified": false
+    },
+    "lake-verity": {
+      "text": "They say a Pokémon of emotion sleeps at the bottom of this lake.",
+      "who": "Fisherman",
+      "sprite": null,
+      "verified": false
+    },
+    "oreburgh-gate": {
+      "text": "Take this! It's Rock Smash! Smash those cracked boulders right out of your way!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "valley-windworks": {
+      "text": "This facility is now under the control of Team Galactic!",
+      "who": "Galactic Grunt",
+      "sprite": "trainer-sprites/Spr_DP_Galactic_Grunt_M.png",
+      "verified": false
+    },
+    "eterna-forest": {
+      "text": "Um… may I go through the forest with you? It's a little scary alone.",
+      "who": "Cheryl",
+      "sprite": null,
+      "verified": false
+    },
+    "wayward-cave": {
+      "text": "Mira is lost… Can you take Mira to the exit?",
+      "who": "Mira",
+      "sprite": null,
+      "verified": false
+    },
+    "mt-coronet": {
+      "text": "This mountain divides Sinnoh in two. They say the region began here.",
+      "who": "Cyrus",
+      "sprite": "npc-sprites/cyrus.png",
+      "verified": false
+    },
+    "maniac-tunnel": {
+      "text": "I'm digging my way to the ruins! Don't rush me — archaeology takes time!",
+      "who": "Ruin Maniac",
+      "sprite": "trainer-sprites/Spr_DP_Ruin_Maniac.png",
+      "verified": false
+    },
+    "pal-park": {
+      "text": "Welcome! Pokémon that migrated from faraway regions live in this preserve.",
+      "who": "Scientist",
+      "sprite": "trainer-sprites/Spr_DP_Scientist.png",
+      "verified": false
+    },
+    "iron-island": {
+      "text": "The mine here is abandoned… but it's perfect for training. Shall we team up?",
+      "who": "Riley",
+      "sprite": null,
+      "verified": false
+    },
+    "lake-valor": {
+      "text": "The lake… they drained the whole lake! Those Galactic monsters!",
+      "who": "Galactic Grunt",
+      "sprite": null,
+      "verified": false
+    },
+    "lake-acuity": {
+      "text": "Hmph. You're just not strong enough to protect anything.",
+      "who": "Commander Jupiter",
+      "sprite": "npc-sprites/jupiter.png",
+      "verified": false
+    },
+    "fuego-ironworks": {
+      "text": "We forge parts for Poké Balls here! The floor tiles move — watch your step!",
+      "who": "Worker",
+      "sprite": "trainer-sprites/Spr_DP_Worker.png",
+      "verified": false
+    },
+    "spear-pillar": {
+      "text": "Time and space will bend to me. Here, I will create my new world.",
+      "who": "Cyrus",
+      "sprite": "npc-sprites/cyrus.png",
+      "verified": false
+    },
+    "turnback-cave": {
+      "text": "No matter how far you walk… you end up back where you began.",
+      "who": "Ace Trainer",
+      "sprite": null,
+      "verified": false
+    },
+    "sinnoh-victory-road": {
+      "text": "This is the final test. If your team can't cut it, turn back now!",
+      "who": "Veteran",
+      "sprite": "trainer-sprites/Spr_DP_Veteran.png",
+      "verified": false
+    },
+    "fullmoon-island": {
+      "text": "On nights of the full moon, a Pokémon here shares pleasant dreams.",
+      "who": "Sailor",
+      "sprite": "trainer-sprites/Spr_DP_Sailor.png",
+      "verified": false
+    },
+    "newmoon-island": {
+      "text": "A nightmare that never ends… that is the gift of the one who lives here.",
+      "who": "Sailor",
+      "sprite": null,
+      "verified": false
+    },
+    "stark-mountain": {
+      "text": "I'm taking the Magma Stone home as a souvenir! …What? The volcano's rumbling?",
+      "who": "Buck",
+      "sprite": null,
+      "verified": false
+    },
+    "flower-paradise": {
+      "text": "Flowers as far as the eye can see… They say a gratitude Pokémon plays here.",
+      "who": "Sailor",
+      "sprite": null,
+      "verified": false
+    },
+    "sinnoh-route-201": {
+      "text": "Wait! Don't go into the tall grass! Wild Pokémon will attack you!",
+      "who": "Professor Rowan",
+      "sprite": "npc-sprites/rowan.png",
+      "verified": false
+    },
+    "sinnoh-route-202": {
+      "text": "Here, let me show you how to catch a Pokémon!",
+      "who": "Assistant",
+      "sprite": "npc-sprites/dawn.png",
+      "verified": false
+    },
+    "sinnoh-route-203": {
+      "text": "You know what? Shorts are comfy and easy to wear!",
+      "who": "Youngster",
+      "sprite": "trainer-sprites/Spr_DP_Youngster.png",
+      "verified": false
+    },
+    "sinnoh-route-204": {
+      "text": "The path ahead was ravaged by rockslides. You'll need to smash through!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "sinnoh-route-205": {
+      "text": "Have you seen my papa? He works at the windworks, but the door is locked…",
+      "who": "Lass",
+      "sprite": null,
+      "verified": false
+    },
+    "sinnoh-route-206": {
+      "text": "This is Cycling Road! No bike, no entry — them's the rules!",
+      "who": "Ace Trainer",
+      "sprite": "trainer-sprites/Spr_DP_Cyclist_M.png",
+      "verified": false
+    },
+    "sinnoh-route-207": {
+      "text": "This slope's too steep to climb on foot. You'd need a bicycle!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Hiker.png",
+      "verified": false
+    },
+    "sinnoh-route-208": {
+      "text": "The Berry Master lives just west of here. He'll share Berries every day!",
+      "who": "Aroma Lady",
+      "sprite": null,
+      "verified": false
+    },
+    "sinnoh-route-209": {
+      "text": "The tower here is where departed Pokémon are laid to rest.",
+      "who": "Channeler",
+      "sprite": null,
+      "verified": false
+    },
+    "sinnoh-route-210": {
+      "text": "Moo! I mean — welcome to Café Cabin! Our Moomoo Milk is fresh!",
+      "who": "Waitress",
+      "sprite": "trainer-sprites/Spr_DP_Cowgirl.png",
+      "verified": false
+    },
+    "sinnoh-route-211": {
+      "text": "The wind howls through here from Mt. Coronet. Hold onto your hat!",
+      "who": "Hiker",
+      "sprite": "trainer-sprites/Spr_DP_Bird_Keeper.png",
+      "verified": false
+    },
+    "sinnoh-route-212": {
+      "text": "The mansion's Trophy Garden is famous — rare Pokémon appear there!",
+      "who": "Beauty",
+      "sprite": "trainer-sprites/Spr_DP_Socialite.png",
+      "verified": false
+    },
+    "sinnoh-route-213": {
+      "text": "Hold still! Let me read your Pokémon's footprints… fascinating!",
+      "who": "Scientist",
+      "sprite": "trainer-sprites/Spr_DP_Scientist.png",
+      "verified": false
+    },
+    "sinnoh-route-214": {
+      "text": "I sell rare bones from the ruins. Interested in some… archaeology?",
+      "who": "Collector",
+      "sprite": "trainer-sprites/Spr_DP_Collector.png",
+      "verified": false
+    },
+    "sinnoh-route-215": {
+      "text": "It never stops raining on this road. My Pokémon love it, though!",
+      "who": "Ace Trainer",
+      "sprite": "trainer-sprites/Spr_DP_Ace_Trainer_M_2.png",
+      "verified": false
+    },
+    "sinnoh-route-216": {
+      "text": "The snow never lets up here. There's a lodge ahead — go warm up!",
+      "who": "Skier",
+      "sprite": "trainer-sprites/Spr_DP_Skier_F.png",
+      "verified": false
+    },
+    "sinnoh-route-217": {
+      "text": "This blizzard? This is nothing to the folks of Snowpoint!",
+      "who": "Skier",
+      "sprite": "trainer-sprites/Spr_DP_Skier_M.png",
+      "verified": false
+    },
+    "sinnoh-route-218": {
+      "text": "The fish Pokémon here bite better than anywhere on the coast!",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "sinnoh-route-219": {
+      "text": "The sea south of here goes on and on… all the way to Pal Park!",
+      "who": "Fisher",
+      "sprite": null,
+      "verified": false
+    },
+    "sinnoh-sea-route-220": {
+      "text": "Swimming across? Watch for Trainers — they'll battle you mid-stroke!",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_DP_Swimmer_M.png",
+      "verified": false
+    },
+    "sinnoh-route-221": {
+      "text": "That old man at the shrine gives a prize if your Pokémon's level ends in 1!",
+      "who": "Lass",
+      "sprite": "trainer-sprites/Spr_DP_Lass.png",
+      "verified": false
+    },
+    "sinnoh-route-222": {
+      "text": "The beach here sparkles! Sunyshore is just up the road!",
+      "who": "Tuber",
+      "sprite": "trainer-sprites/Spr_DP_Tuber_F.png",
+      "verified": false
+    },
+    "sinnoh-sea-route-223": {
+      "text": "Beyond these waves is the Pokémon League. Almost there, Trainer!",
+      "who": "Sailor",
+      "sprite": "trainer-sprites/Spr_DP_Sailor.png",
+      "verified": false
+    },
+    "sinnoh-route-224": {
+      "text": "That white rock… I've never seen anything like it. Want to write a message?",
+      "who": "Hiker",
+      "sprite": null,
+      "verified": false
+    },
+    "sinnoh-route-225": {
+      "text": "The Battle Zone's paths are rough and wild — just how I like it!",
+      "who": "Ace Trainer",
+      "sprite": "trainer-sprites/Spr_DP_Ace_Trainer_F_1.png",
+      "verified": false
+    },
+    "sinnoh-sea-route-226": {
+      "text": "The currents here are fierce! Only strong swimmers make the crossing.",
+      "who": "Fisherman",
+      "sprite": "trainer-sprites/Spr_DP_Fisherman.png",
+      "verified": false
+    },
+    "sinnoh-route-227": {
+      "text": "That volcano ahead? Stark Mountain. Even the ground here is warm.",
+      "who": "Dragon Tamer",
+      "sprite": "trainer-sprites/Spr_DP_Dragon_Tamer.png",
+      "verified": false
+    },
+    "sinnoh-route-228": {
+      "text": "This sandstorm never quits! It's the best training weather there is!",
+      "who": "Ace Trainer",
+      "sprite": "trainer-sprites/Spr_DP_Camper.png",
+      "verified": false
+    },
+    "sinnoh-route-229": {
+      "text": "Trainers gather in this meadow to battle all day, every day.",
+      "who": "Battler",
+      "sprite": "trainer-sprites/Spr_DP_Battle_Girl.png",
+      "verified": false
+    },
+    "sinnoh-sea-route-230": {
+      "text": "Just a little farther and you're back at the Resort Area. What a swim!",
+      "who": "Swimmer",
+      "sprite": "trainer-sprites/Spr_DP_Swimmer_F.png",
+      "verified": false
+    }
+  }
+}
