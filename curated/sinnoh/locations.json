@@ -1,74 +1,532 @@
 {
   "_comment": "Eligible guessable locations = the Gen 4 town map. `id` is the primary PokéAPI slug; `merge` = PokéAPI sub-areas collapsed into this map spot (encounters pooled); `bulba` = Bulbapedia page title for the trainer/image scrape; `nearby` = adjacency fallback for encounter-less locations (hints labeled 'heard nearby').",
   "locations": [
-    { "id": "twinleaf-town", "name": "Twinleaf Town", "class": "town", "bulba": "Twinleaf Town" },
-    { "id": "sandgem-town", "name": "Sandgem Town", "class": "town", "bulba": "Sandgem Town", "nearby": "sinnoh-route-201" },
-    { "id": "jubilife-city", "name": "Jubilife City", "class": "city", "bulba": "Jubilife City", "nearby": "sinnoh-route-202" },
-    { "id": "oreburgh-city", "name": "Oreburgh City", "class": "city", "bulba": "Oreburgh City", "merge": ["oreburgh-mine"] },
-    { "id": "floaroma-town", "name": "Floaroma Town", "class": "town", "bulba": "Floaroma Town", "merge": ["floaroma-meadow"] },
-    { "id": "eterna-city", "name": "Eterna City", "class": "city", "bulba": "Eterna City" },
-    { "id": "hearthome-city", "name": "Hearthome City", "class": "city", "bulba": "Hearthome City", "merge": ["amity-square"] },
-    { "id": "solaceon-town", "name": "Solaceon Town", "class": "town", "bulba": "Solaceon Town", "merge": ["solaceon-ruins"] },
-    { "id": "veilstone-city", "name": "Veilstone City", "class": "city", "bulba": "Veilstone City" },
-    { "id": "pastoria-city", "name": "Pastoria City", "class": "city", "bulba": "Pastoria City", "merge": ["great-marsh"] },
-    { "id": "celestic-town", "name": "Celestic Town", "class": "town", "bulba": "Celestic Town" },
-    { "id": "canalave-city", "name": "Canalave City", "class": "city", "bulba": "Canalave City" },
-    { "id": "snowpoint-city", "name": "Snowpoint City", "class": "city", "bulba": "Snowpoint City", "merge": ["snowpoint-temple"] },
-    { "id": "sunyshore-city", "name": "Sunyshore City", "class": "city", "bulba": "Sunyshore City" },
-    { "id": "sinnoh-pokemon-league", "name": "Pokémon League", "class": "landmark", "bulba": "Pokémon League (Sinnoh)" },
-    { "id": "fight-area", "name": "Fight Area", "class": "town", "bulba": "Fight Area", "nearby": "sinnoh-route-225" },
-    { "id": "survival-area", "name": "Survival Area", "class": "town", "bulba": "Survival Area", "nearby": "sinnoh-route-225" },
-    { "id": "resort-area", "name": "Resort Area", "class": "town", "bulba": "Resort Area" },
-
-    { "id": "lake-verity", "name": "Lake Verity", "class": "lake", "bulba": "Lake Verity", "merge": ["verity-lakefront", "verity-cavern"] },
-    { "id": "oreburgh-gate", "name": "Oreburgh Gate", "class": "cave", "bulba": "Oreburgh Gate" },
-    { "id": "valley-windworks", "name": "Valley Windworks", "class": "building", "bulba": "Valley Windworks" },
-    { "id": "eterna-forest", "name": "Eterna Forest", "class": "forest", "bulba": "Eterna Forest", "merge": ["old-chateau"] },
-    { "id": "wayward-cave", "name": "Wayward Cave", "class": "cave", "bulba": "Wayward Cave" },
-    { "id": "mt-coronet", "name": "Mt. Coronet", "class": "mountain", "bulba": "Mt. Coronet" },
-    { "id": "maniac-tunnel", "name": "Maniac Tunnel", "class": "cave", "bulba": "Maniac Tunnel", "merge": ["ruin-maniac-cave"] },
-    { "id": "pal-park", "name": "Pal Park", "class": "landmark", "bulba": "Pal Park", "nearby": "sinnoh-route-221" },
-    { "id": "iron-island", "name": "Iron Island", "class": "island", "bulba": "Iron Island" },
-    { "id": "lake-valor", "name": "Lake Valor", "class": "lake", "bulba": "Lake Valor", "merge": ["valor-lakefront", "valor-cavern"] },
-    { "id": "lake-acuity", "name": "Lake Acuity", "class": "lake", "bulba": "Lake Acuity", "merge": ["acuity-lakefront", "acuity-cavern"] },
-    { "id": "fuego-ironworks", "name": "Fuego Ironworks", "class": "building", "bulba": "Fuego Ironworks" },
-    { "id": "spear-pillar", "name": "Spear Pillar", "class": "landmark", "bulba": "Spear Pillar", "nearby": "mt-coronet" },
-    { "id": "turnback-cave", "name": "Turnback Cave", "class": "cave", "bulba": "Turnback Cave", "merge": ["sendoff-spring", "spring-path"] },
-    { "id": "sinnoh-victory-road", "name": "Victory Road", "class": "cave", "bulba": "Victory Road (Sinnoh)" },
-    { "id": "fullmoon-island", "name": "Fullmoon Island", "class": "island", "bulba": "Fullmoon Island", "nearby": "canalave-city" },
-    { "id": "newmoon-island", "name": "Newmoon Island", "class": "island", "bulba": "Newmoon Island", "nearby": "fullmoon-island" },
-    { "id": "stark-mountain", "name": "Stark Mountain", "class": "mountain", "bulba": "Stark Mountain" },
-    { "id": "flower-paradise", "name": "Flower Paradise", "class": "landmark", "bulba": "Flower Paradise", "merge": ["seabreak-path"] },
-
-    { "id": "sinnoh-route-201", "name": "Route 201", "class": "route", "bulba": "Sinnoh Route 201" },
-    { "id": "sinnoh-route-202", "name": "Route 202", "class": "route", "bulba": "Sinnoh Route 202" },
-    { "id": "sinnoh-route-203", "name": "Route 203", "class": "route", "bulba": "Sinnoh Route 203" },
-    { "id": "sinnoh-route-204", "name": "Route 204", "class": "route", "bulba": "Sinnoh Route 204", "merge": ["ravaged-path"] },
-    { "id": "sinnoh-route-205", "name": "Route 205", "class": "route", "bulba": "Sinnoh Route 205" },
-    { "id": "sinnoh-route-206", "name": "Route 206", "class": "route", "bulba": "Sinnoh Route 206" },
-    { "id": "sinnoh-route-207", "name": "Route 207", "class": "route", "bulba": "Sinnoh Route 207" },
-    { "id": "sinnoh-route-208", "name": "Route 208", "class": "route", "bulba": "Sinnoh Route 208" },
-    { "id": "sinnoh-route-209", "name": "Route 209", "class": "route", "bulba": "Sinnoh Route 209", "merge": ["lost-tower"] },
-    { "id": "sinnoh-route-210", "name": "Route 210", "class": "route", "bulba": "Sinnoh Route 210" },
-    { "id": "sinnoh-route-211", "name": "Route 211", "class": "route", "bulba": "Sinnoh Route 211" },
-    { "id": "sinnoh-route-212", "name": "Route 212", "class": "route", "bulba": "Sinnoh Route 212", "merge": ["trophy-garden"] },
-    { "id": "sinnoh-route-213", "name": "Route 213", "class": "route", "bulba": "Sinnoh Route 213" },
-    { "id": "sinnoh-route-214", "name": "Route 214", "class": "route", "bulba": "Sinnoh Route 214" },
-    { "id": "sinnoh-route-215", "name": "Route 215", "class": "route", "bulba": "Sinnoh Route 215" },
-    { "id": "sinnoh-route-216", "name": "Route 216", "class": "route", "bulba": "Sinnoh Route 216" },
-    { "id": "sinnoh-route-217", "name": "Route 217", "class": "route", "bulba": "Sinnoh Route 217" },
-    { "id": "sinnoh-route-218", "name": "Route 218", "class": "route", "bulba": "Sinnoh Route 218" },
-    { "id": "sinnoh-route-219", "name": "Route 219", "class": "route", "bulba": "Sinnoh Route 219" },
-    { "id": "sinnoh-sea-route-220", "name": "Route 220", "class": "sea-route", "bulba": "Sinnoh Route 220" },
-    { "id": "sinnoh-route-221", "name": "Route 221", "class": "route", "bulba": "Sinnoh Route 221" },
-    { "id": "sinnoh-route-222", "name": "Route 222", "class": "route", "bulba": "Sinnoh Route 222" },
-    { "id": "sinnoh-sea-route-223", "name": "Route 223", "class": "sea-route", "bulba": "Sinnoh Route 223" },
-    { "id": "sinnoh-route-224", "name": "Route 224", "class": "route", "bulba": "Sinnoh Route 224" },
-    { "id": "sinnoh-route-225", "name": "Route 225", "class": "route", "bulba": "Sinnoh Route 225" },
-    { "id": "sinnoh-sea-route-226", "name": "Route 226", "class": "sea-route", "bulba": "Sinnoh Route 226" },
-    { "id": "sinnoh-route-227", "name": "Route 227", "class": "route", "bulba": "Sinnoh Route 227" },
-    { "id": "sinnoh-route-228", "name": "Route 228", "class": "route", "bulba": "Sinnoh Route 228" },
-    { "id": "sinnoh-route-229", "name": "Route 229", "class": "route", "bulba": "Sinnoh Route 229" },
-    { "id": "sinnoh-sea-route-230", "name": "Route 230", "class": "sea-route", "bulba": "Sinnoh Route 230" }
+    {
+      "id": "twinleaf-town",
+      "name": "Twinleaf Town",
+      "class": "town",
+      "bulba": "Twinleaf Town",
+      "bulbaMap": "Sinnoh_Twinleaf_Town_Map.png"
+    },
+    {
+      "id": "sandgem-town",
+      "name": "Sandgem Town",
+      "class": "town",
+      "bulba": "Sandgem Town",
+      "nearby": "sinnoh-route-201",
+      "bulbaMap": "Sinnoh_Sandgem_Town_Map.png"
+    },
+    {
+      "id": "jubilife-city",
+      "name": "Jubilife City",
+      "class": "city",
+      "bulba": "Jubilife City",
+      "nearby": "sinnoh-route-202",
+      "bulbaMap": "Sinnoh_Jubilife_City_Map.png"
+    },
+    {
+      "id": "oreburgh-city",
+      "name": "Oreburgh City",
+      "class": "city",
+      "bulba": "Oreburgh City",
+      "merge": [
+        "oreburgh-mine"
+      ],
+      "bulbaMap": "Sinnoh_Oreburgh_City_Map.png"
+    },
+    {
+      "id": "floaroma-town",
+      "name": "Floaroma Town",
+      "class": "town",
+      "bulba": "Floaroma Town",
+      "merge": [
+        "floaroma-meadow"
+      ],
+      "bulbaMap": "Sinnoh_Floaroma_Town_Map.png"
+    },
+    {
+      "id": "eterna-city",
+      "name": "Eterna City",
+      "class": "city",
+      "bulba": "Eterna City",
+      "bulbaMap": "Sinnoh_Eterna_City_Map.png"
+    },
+    {
+      "id": "hearthome-city",
+      "name": "Hearthome City",
+      "class": "city",
+      "bulba": "Hearthome City",
+      "merge": [
+        "amity-square"
+      ],
+      "bulbaMap": "Sinnoh_Hearthome_City_Map.png"
+    },
+    {
+      "id": "solaceon-town",
+      "name": "Solaceon Town",
+      "class": "town",
+      "bulba": "Solaceon Town",
+      "merge": [
+        "solaceon-ruins"
+      ],
+      "bulbaMap": "Sinnoh_Solaceon_Town_Map.png"
+    },
+    {
+      "id": "veilstone-city",
+      "name": "Veilstone City",
+      "class": "city",
+      "bulba": "Veilstone City",
+      "bulbaMap": "Sinnoh_Veilstone_City_Map.png"
+    },
+    {
+      "id": "pastoria-city",
+      "name": "Pastoria City",
+      "class": "city",
+      "bulba": "Pastoria City",
+      "merge": [
+        "great-marsh"
+      ],
+      "bulbaMap": "Sinnoh_Pastoria_City_Map.png"
+    },
+    {
+      "id": "celestic-town",
+      "name": "Celestic Town",
+      "class": "town",
+      "bulba": "Celestic Town",
+      "bulbaMap": "Sinnoh_Celestic_Town_Map.png"
+    },
+    {
+      "id": "canalave-city",
+      "name": "Canalave City",
+      "class": "city",
+      "bulba": "Canalave City",
+      "bulbaMap": "Sinnoh_Canalave_City_Map.png"
+    },
+    {
+      "id": "snowpoint-city",
+      "name": "Snowpoint City",
+      "class": "city",
+      "bulba": "Snowpoint City",
+      "merge": [
+        "snowpoint-temple"
+      ],
+      "bulbaMap": "Sinnoh_Snowpoint_City_Map.png"
+    },
+    {
+      "id": "sunyshore-city",
+      "name": "Sunyshore City",
+      "class": "city",
+      "bulba": "Sunyshore City",
+      "bulbaMap": "Sinnoh_Sunyshore_City_Map.png"
+    },
+    {
+      "id": "sinnoh-pokemon-league",
+      "name": "Pokémon League",
+      "class": "landmark",
+      "bulba": "Pokémon League (Sinnoh)",
+      "bulbaMap": "Sinnoh_Pokémon_League_Map.png"
+    },
+    {
+      "id": "fight-area",
+      "name": "Fight Area",
+      "class": "town",
+      "bulba": "Fight Area",
+      "nearby": "sinnoh-route-225",
+      "bulbaMap": "Sinnoh_Fight_Area_Map.png"
+    },
+    {
+      "id": "survival-area",
+      "name": "Survival Area",
+      "class": "town",
+      "bulba": "Survival Area",
+      "nearby": "sinnoh-route-225",
+      "bulbaMap": "Sinnoh_Survival_Area_Map.png"
+    },
+    {
+      "id": "resort-area",
+      "name": "Resort Area",
+      "class": "town",
+      "bulba": "Resort Area",
+      "bulbaMap": "Sinnoh_Resort_Area_Map.png"
+    },
+    {
+      "id": "lake-verity",
+      "name": "Lake Verity",
+      "class": "lake",
+      "bulba": "Lake Verity",
+      "merge": [
+        "verity-lakefront",
+        "verity-cavern"
+      ],
+      "bulbaMap": "Sinnoh_Lake_Verity_Map.png"
+    },
+    {
+      "id": "oreburgh-gate",
+      "name": "Oreburgh Gate",
+      "class": "cave",
+      "bulba": "Oreburgh Gate",
+      "bulbaMap": "Sinnoh_Oreburgh_Gate_Map.png"
+    },
+    {
+      "id": "valley-windworks",
+      "name": "Valley Windworks",
+      "class": "building",
+      "bulba": "Valley Windworks",
+      "bulbaMap": "Sinnoh_Valley_Windworks_Map.png"
+    },
+    {
+      "id": "eterna-forest",
+      "name": "Eterna Forest",
+      "class": "forest",
+      "bulba": "Eterna Forest",
+      "merge": [
+        "old-chateau"
+      ],
+      "bulbaMap": "Sinnoh_Eterna_Forest_Map.png"
+    },
+    {
+      "id": "wayward-cave",
+      "name": "Wayward Cave",
+      "class": "cave",
+      "bulba": "Wayward Cave"
+    },
+    {
+      "id": "mt-coronet",
+      "name": "Mt. Coronet",
+      "class": "mountain",
+      "bulba": "Mt. Coronet",
+      "bulbaMap": "Sinnoh_Mt_Coronet_Map.png"
+    },
+    {
+      "id": "maniac-tunnel",
+      "name": "Maniac Tunnel",
+      "class": "cave",
+      "bulba": "Maniac Tunnel",
+      "merge": [
+        "ruin-maniac-cave"
+      ],
+      "bulbaMap": "Sinnoh_Maniac_Tunnel_Map.png"
+    },
+    {
+      "id": "pal-park",
+      "name": "Pal Park",
+      "class": "landmark",
+      "bulba": "Pal Park",
+      "nearby": "sinnoh-route-221",
+      "bulbaMap": "Sinnoh_Pal_Park_Map.png"
+    },
+    {
+      "id": "iron-island",
+      "name": "Iron Island",
+      "class": "island",
+      "bulba": "Iron Island",
+      "bulbaMap": "Sinnoh_Iron_Island_Map.png"
+    },
+    {
+      "id": "lake-valor",
+      "name": "Lake Valor",
+      "class": "lake",
+      "bulba": "Lake Valor",
+      "merge": [
+        "valor-lakefront",
+        "valor-cavern"
+      ],
+      "bulbaMap": "Sinnoh_Lake_Valor_Map.png"
+    },
+    {
+      "id": "lake-acuity",
+      "name": "Lake Acuity",
+      "class": "lake",
+      "bulba": "Lake Acuity",
+      "merge": [
+        "acuity-lakefront",
+        "acuity-cavern"
+      ],
+      "bulbaMap": "Sinnoh_Lake_Acuity_Map.png"
+    },
+    {
+      "id": "fuego-ironworks",
+      "name": "Fuego Ironworks",
+      "class": "building",
+      "bulba": "Fuego Ironworks",
+      "bulbaMap": "Sinnoh_Fuego_Ironworks_Map.png"
+    },
+    {
+      "id": "spear-pillar",
+      "name": "Spear Pillar",
+      "class": "landmark",
+      "bulba": "Spear Pillar",
+      "nearby": "mt-coronet",
+      "bulbaMap": "Sinnoh_Spear_Pillar_Hall_of_Origin_Map.png"
+    },
+    {
+      "id": "turnback-cave",
+      "name": "Turnback Cave",
+      "class": "cave",
+      "bulba": "Turnback Cave",
+      "merge": [
+        "sendoff-spring",
+        "spring-path"
+      ],
+      "bulbaMap": "Sinnoh_Turnback_Cave_Map.png"
+    },
+    {
+      "id": "sinnoh-victory-road",
+      "name": "Victory Road",
+      "class": "cave",
+      "bulba": "Victory Road (Sinnoh)"
+    },
+    {
+      "id": "fullmoon-island",
+      "name": "Fullmoon Island",
+      "class": "island",
+      "bulba": "Fullmoon Island",
+      "nearby": "canalave-city",
+      "bulbaMap": "Sinnoh_Fullmoon_Island_DP_Map.png"
+    },
+    {
+      "id": "newmoon-island",
+      "name": "Newmoon Island",
+      "class": "island",
+      "bulba": "Newmoon Island",
+      "nearby": "fullmoon-island",
+      "bulbaMap": "Sinnoh_Newmoon_Island_Map.png"
+    },
+    {
+      "id": "stark-mountain",
+      "name": "Stark Mountain",
+      "class": "mountain",
+      "bulba": "Stark Mountain",
+      "bulbaMap": "Sinnoh_Stark_Mountain_Map.png"
+    },
+    {
+      "id": "flower-paradise",
+      "name": "Flower Paradise",
+      "class": "landmark",
+      "bulba": "Flower Paradise",
+      "merge": [
+        "seabreak-path"
+      ],
+      "bulbaMap": "Sinnoh_Flower_Paradise_Map.png"
+    },
+    {
+      "id": "sinnoh-route-201",
+      "name": "Route 201",
+      "class": "route",
+      "bulba": "Sinnoh Route 201",
+      "bulbaMap": "Sinnoh_Route_201_Map.png"
+    },
+    {
+      "id": "sinnoh-route-202",
+      "name": "Route 202",
+      "class": "route",
+      "bulba": "Sinnoh Route 202",
+      "bulbaMap": "Sinnoh_Route_202_Map.png"
+    },
+    {
+      "id": "sinnoh-route-203",
+      "name": "Route 203",
+      "class": "route",
+      "bulba": "Sinnoh Route 203",
+      "bulbaMap": "Sinnoh_Route_203_Map.png"
+    },
+    {
+      "id": "sinnoh-route-204",
+      "name": "Route 204",
+      "class": "route",
+      "bulba": "Sinnoh Route 204",
+      "merge": [
+        "ravaged-path"
+      ],
+      "bulbaMap": "Sinnoh_Route_204_Map.png"
+    },
+    {
+      "id": "sinnoh-route-205",
+      "name": "Route 205",
+      "class": "route",
+      "bulba": "Sinnoh Route 205",
+      "bulbaMap": "Sinnoh_Route_205_Map.png"
+    },
+    {
+      "id": "sinnoh-route-206",
+      "name": "Route 206",
+      "class": "route",
+      "bulba": "Sinnoh Route 206",
+      "bulbaMap": "Sinnoh_Route_206_Map.png"
+    },
+    {
+      "id": "sinnoh-route-207",
+      "name": "Route 207",
+      "class": "route",
+      "bulba": "Sinnoh Route 207",
+      "bulbaMap": "Sinnoh_Route_207_Map.png"
+    },
+    {
+      "id": "sinnoh-route-208",
+      "name": "Route 208",
+      "class": "route",
+      "bulba": "Sinnoh Route 208",
+      "bulbaMap": "Sinnoh_Route_208_Map.png"
+    },
+    {
+      "id": "sinnoh-route-209",
+      "name": "Route 209",
+      "class": "route",
+      "bulba": "Sinnoh Route 209",
+      "merge": [
+        "lost-tower"
+      ],
+      "bulbaMap": "Sinnoh_Route_209_Map.png"
+    },
+    {
+      "id": "sinnoh-route-210",
+      "name": "Route 210",
+      "class": "route",
+      "bulba": "Sinnoh Route 210",
+      "bulbaMap": "Sinnoh_Route_210_Map.png"
+    },
+    {
+      "id": "sinnoh-route-211",
+      "name": "Route 211",
+      "class": "route",
+      "bulba": "Sinnoh Route 211",
+      "bulbaMap": "Sinnoh_Route_211_Map.png"
+    },
+    {
+      "id": "sinnoh-route-212",
+      "name": "Route 212",
+      "class": "route",
+      "bulba": "Sinnoh Route 212",
+      "merge": [
+        "trophy-garden"
+      ],
+      "bulbaMap": "Sinnoh_Route_212_Map.png"
+    },
+    {
+      "id": "sinnoh-route-213",
+      "name": "Route 213",
+      "class": "route",
+      "bulba": "Sinnoh Route 213",
+      "bulbaMap": "Sinnoh_Route_213_Map.png"
+    },
+    {
+      "id": "sinnoh-route-214",
+      "name": "Route 214",
+      "class": "route",
+      "bulba": "Sinnoh Route 214",
+      "bulbaMap": "Sinnoh_Route_214_Map.png"
+    },
+    {
+      "id": "sinnoh-route-215",
+      "name": "Route 215",
+      "class": "route",
+      "bulba": "Sinnoh Route 215",
+      "bulbaMap": "Sinnoh_Route_215_Map.png"
+    },
+    {
+      "id": "sinnoh-route-216",
+      "name": "Route 216",
+      "class": "route",
+      "bulba": "Sinnoh Route 216",
+      "bulbaMap": "Sinnoh_Route_216_Map.png"
+    },
+    {
+      "id": "sinnoh-route-217",
+      "name": "Route 217",
+      "class": "route",
+      "bulba": "Sinnoh Route 217",
+      "bulbaMap": "Sinnoh_Route_217_Map.png"
+    },
+    {
+      "id": "sinnoh-route-218",
+      "name": "Route 218",
+      "class": "route",
+      "bulba": "Sinnoh Route 218",
+      "bulbaMap": "Sinnoh_Route_218_Map.png"
+    },
+    {
+      "id": "sinnoh-route-219",
+      "name": "Route 219",
+      "class": "route",
+      "bulba": "Sinnoh Route 219",
+      "bulbaMap": "Sinnoh_Route_219_Map.png"
+    },
+    {
+      "id": "sinnoh-sea-route-220",
+      "name": "Route 220",
+      "class": "sea-route",
+      "bulba": "Sinnoh Route 220",
+      "bulbaMap": "Sinnoh_Route_220_Map.png"
+    },
+    {
+      "id": "sinnoh-route-221",
+      "name": "Route 221",
+      "class": "route",
+      "bulba": "Sinnoh Route 221",
+      "bulbaMap": "Sinnoh_Route_221_Map.png"
+    },
+    {
+      "id": "sinnoh-route-222",
+      "name": "Route 222",
+      "class": "route",
+      "bulba": "Sinnoh Route 222",
+      "bulbaMap": "Sinnoh_Route_222_Map.png"
+    },
+    {
+      "id": "sinnoh-sea-route-223",
+      "name": "Route 223",
+      "class": "sea-route",
+      "bulba": "Sinnoh Route 223",
+      "bulbaMap": "Sinnoh_Route_223_Map.png"
+    },
+    {
+      "id": "sinnoh-route-224",
+      "name": "Route 224",
+      "class": "route",
+      "bulba": "Sinnoh Route 224",
+      "bulbaMap": "Sinnoh_Route_224_Map.png"
+    },
+    {
+      "id": "sinnoh-route-225",
+      "name": "Route 225",
+      "class": "route",
+      "bulba": "Sinnoh Route 225",
+      "bulbaMap": "Sinnoh_Route_225_Map.png"
+    },
+    {
+      "id": "sinnoh-sea-route-226",
+      "name": "Route 226",
+      "class": "sea-route",
+      "bulba": "Sinnoh Route 226",
+      "bulbaMap": "Sinnoh_Route_226_Map.png"
+    },
+    {
+      "id": "sinnoh-route-227",
+      "name": "Route 227",
+      "class": "route",
+      "bulba": "Sinnoh Route 227",
+      "bulbaMap": "Sinnoh_Route_227_Map.png"
+    },
+    {
+      "id": "sinnoh-route-228",
+      "name": "Route 228",
+      "class": "route",
+      "bulba": "Sinnoh Route 228",
+      "bulbaMap": "Sinnoh_Route_228_Map.png"
+    },
+    {
+      "id": "sinnoh-route-229",
+      "name": "Route 229",
+      "class": "route",
+      "bulba": "Sinnoh Route 229",
+      "bulbaMap": "Sinnoh_Route_229_Map.png"
+    },
+    {
+      "id": "sinnoh-sea-route-230",
+      "name": "Route 230",
+      "class": "sea-route",
+      "bulba": "Sinnoh Route 230",
+      "bulbaMap": "Sinnoh_Route_230_Map.png"
+    }
   ]
 }

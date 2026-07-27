@@ -10,7 +10,7 @@
     "platinum"
    ],
    "mapdescTag": "DPPt|DP|Pt",
-   "regionSource": "manual",
+   "regionSource": "auto",
    "mapFile": "Sinnoh_DP.png",
    "spriteGen": "generation-iv/platinum",
    "maxDex": 493

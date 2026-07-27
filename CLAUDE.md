@@ -103,14 +103,20 @@ Order: `node pipeline/pull-pokeapi.mjs` → `pull-cries-mp3.mjs` →
     (Johto 212w at x=0, Kanto 192w at x+170, 362w seam files as-is).
   - `dotColors` packs (Unova): exact moving-dot colors (#eb1c24 towns,
     #d84870 routes) + recurring-rect dedupe.
-  - default (Hoenn, Kalos): **palette-cluster diff** — group files by
-    background palette, per-group per-pixel-mode base, diff = the recolored
-    highlight. Kalos additionally has `regionShift` (−0.63,+0.69) applied to
-    NON-route classes only (the town glyph anchors bottom-left; routes
-    highlight the actual path and must NOT be shifted — Paul calibrated this).
+  - default (Hoenn, Kalos, **Sinnoh**): **palette-cluster diff** — group files
+    by background palette, per-group per-pixel-mode base, diff = the recolored
+    highlight. The extractor writes the largest group's mode-base as the
+    displayed map (`cache/map/{pack}.png`), so regions and the base map share
+    one coordinate space — this is why auto beats hand-authoring. Kalos
+    additionally has `regionShift` (−0.63,+0.69) applied to NON-route classes
+    only (the town glyph anchors bottom-left; routes highlight the actual path
+    and must NOT be shifted — Paul calibrated this).
   - Manual overrides per pack in `curated/{pack}/map-regions-manual.json`
     (authored in the FINAL frame). NEVER hand-edit the generated
-    `map-regions.json` (except Sinnoh, which is fully hand-authored).
+    `map-regions.json`. Sinnoh's DP highlight maps come in 3 revisions; 5
+    locations can't be auto-extracted (wayward-cave/victory-road share another
+    location's map; oreburgh-city/eterna-forest/route-228 are a revision
+    mismatch → empty/bogus diff) and live in Sinnoh's manual file.
 - **Coverage gate**: `build-content.mjs` FAILS if any location has <5 of 6
   hint slots. Fallback chains: hint-5 note = mapdesc → slogan → trainer →
   curated `note` field; roaming/event spots (Plasma Frigate, Marine Cave,
@@ -126,7 +132,12 @@ Order: `node pipeline/pull-pokeapi.mjs` → `pull-cries-mp3.mjs` →
 - `npm install` · `npm run dev` (port from `.claude/launch.json`: 5201) ·
   `npm run build` (tsc + vite) · `npm run preview`
 - Region editor (dev-only): `/tools/region-editor/` on the dev server
-  (Sinnoh-frame; other packs are auto-extracted).
+  (Sinnoh-frame). All packs including Sinnoh are now auto-extracted; the editor
+  is only for authoring manual fallbacks.
+- QA a pack's regions offline with `node slides/overlay-check.mjs` (draws every
+  rect on the base map) and `slides/audit-sinnoh.mjs` (drives the app's `?debug`
+  region overlay); the definitive check is replicating `hitTest` from
+  `MapPicker.tsx` and confirming each location's center-tap resolves to itself.
 - Before declaring anything done: `npx tsc -b`, `npm run build`, verify in the
   browser (Paul reviews by looking at the running app — screenshot changes),
   update `VALIDATION.md` if acceptance behavior changed.
@@ -142,8 +153,10 @@ Order: `node pipeline/pull-pokeapi.mjs` → `pull-cries-mp3.mjs` →
 - Bulbapedia location pages sometimes embed OTHER regions' counterparts
   (Safari Zone) or only anime art (Lacunosa) — use the curated `imageFile`
   override, don't loosen the picker.
-- Sinnoh's hand-authored regions live in `curated/sinnoh/map-regions.json`
-  WITH its grid header; every other pack's generated file is disposable.
+- Sinnoh's `map-regions.json` is now AUTO-GENERATED (was hand-authored; switched
+  to auto-extraction 2026-07-22 to fix town/route drift). Edit its 5 manual
+  fallbacks in `curated/sinnoh/map-regions-manual.json`, never the generated
+  file. Every pack's generated `map-regions.json` is disposable.
 - Two players in different timezones can briefly be on different puzzle
   numbers (local-midnight rollover) — correct behavior, not a bug.
 - Deploy: GitHub Pages workflow builds with `BASE_PATH="/<repo>/"`; keep all

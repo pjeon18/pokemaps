@@ -1,5 +1,22 @@
 # VALIDATION — traced against PRD §16 (2026-07-20)
 
+> **Addendum 5 (2026-07-22 — Sinnoh regions switched to auto-extraction):**
+> Paul reported Sinnoh towns/routes were slightly off and frames mismatched
+> the map shapes (e.g. Snowpoint too far left, Route 223 too far right) — the
+> drift of the original hand-authored regions. Fix: Sinnoh now uses the same
+> palette-cluster-diff auto-extraction as Hoenn/Kalos, pulling Bulbapedia's
+> per-location DP highlight maps (`Sinnoh_{Location}_Map.png`, all 216×168 —
+> identical to the base). Regions and the displayed base map now share one
+> coordinate space, so click boxes land exactly on their markers. 62 of 67
+> resolved on the first name-pattern probe, 64 auto-extract cleanly; 5 use
+> manual fallbacks (`map-regions-manual.json`): wayward-cave & victory-road
+> (no distinct DP highlight — share Route 206 / the Pokémon League map),
+> oreburgh-city, eterna-forest & route-228 (a map-revision mismatch yields an
+> empty/bogus diff). Verified by replicating `MapPicker.hitTest`: **66/67
+> locations' center-tap resolves to themselves** (the one exception, Route 203
+> → Oreburgh Gate, is correct — the gate physically sits on the route and
+> "smallest region wins"). `tsc` + build clean; region overlay screenshotted.
+>
 > **Addendum 4 (2026-07-21 — Paul's playtest fixes + Kalos, CONCEPT D15):**
 > **373 locations across 5 packs** (Sinnoh 67 · Johto & Kanto 99 · Hoenn 76 ·
 > Unova 77 · Kalos 54). Fixed from playtest: anime/manga reveal images banned
