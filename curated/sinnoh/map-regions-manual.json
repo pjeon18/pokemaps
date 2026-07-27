@@ -1,5 +1,5 @@
 {
- "_comment": "Manual fallbacks for Sinnoh locations the auto-extractor cannot handle: no distinct DP highlight (wayward-cave shares Route 206; victory-road shares the Pokemon League map), or a map-revision mismatch that yields an empty/bogus diff (oreburgh-city, eterna-forest, route-228 — their highlight PNGs are a different rendering than the 39-file base group). The other 64 Sinnoh regions are auto-extracted. Tile space, 27x21 grid, 8px tiles.",
+ "_comment": "Manual overrides for Sinnoh. Auto-extraction (pull-maps.mjs) covers the rest. Reasons: no distinct DP highlight map (wayward-cave shares Route 206, victory-road shares the Pokemon League map); map-revision mismatch → empty/bogus/full-map diff (hearthome-city, oreburgh-city, eterna-forest, route-228, route-205 — their highlight PNGs are a different rendering than the base group, so hand-anchored against accurate auto neighbors); or a shape/size tweak the auto bbox got wrong (route-212 authored as its true L, route-205 as the Eterna<->Floaroma corridor instead of one merged box, turnback-cave nudged lower+bigger per Paul). Tile space, 27x21 grid, 8px tiles.",
  "regions": {
   "wayward-cave": [
    [
@@ -39,6 +39,50 @@
     9.1,
     2,
     1.5
+   ]
+  ],
+  "hearthome-city": [
+   [
+    12.4,
+    13.6,
+    1.75,
+    1.6
+   ]
+  ],
+  "sinnoh-route-205": [
+   [
+    5.4,
+    10.5,
+    1.5,
+    3.1
+   ],
+   [
+    6.9,
+    9.2,
+    1.4,
+    1.5
+   ]
+  ],
+  "sinnoh-route-212": [
+   [
+    12.25,
+    15.38,
+    1.6,
+    3
+   ],
+   [
+    12.25,
+    17.9,
+    3.63,
+    1.1
+   ]
+  ],
+  "turnback-cave": [
+   [
+    20.9,
+    13.8,
+    1.5,
+    1.6
    ]
   ]
  }
