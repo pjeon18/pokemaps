@@ -96,3 +96,25 @@ Tier 1 build. ✅ = verified · ⚠️ = partially verified / caveat.
 - Keyboard-only map guessing isn't possible yet (pointer-centric); a search/
   list fallback is a candidate for Tier 2.
 - Lighthouse pass not yet run; bundle is 124 KB gz JS + per-puzzle lazy assets.
+
+## Addendum 2026-09-10 — items opener, regional dex, assists, map-first layout (CONCEPT D16)
+
+- **Hint ladder:** slot 1 is now *Items found* (icon chips, TMs/HMs first, ≤12,
+  "Nothing to pick up here" when empty). Verified in-browser on Eterna City
+  (HM01 Cut · TM46 Thief · Moon Stone · … with PokéAPI bag icons) and the
+  empty-state copy on an item-less location. Hint labels/ball tiers unchanged.
+- **Regional dex gate:** `pull-pokeapi.mjs` intersects encounters with
+  `packs.json:regionalDex`; 832 dropped (Sinnoh 242, J&K 367, Hoenn 24, Unova
+  199, Kalos 0). Spot-checked: Accumula/Floccesy lost only NPC-trade Pokémon
+  (Ambipom, Alakazam, Dratini, Gible) → now correctly "no wild Pokémon".
+- **Coverage gate:** still ≥5/6 for all 373; slot 1 counts like slot 2
+  (informative absence). Data holes it exposed were fixed at the source, not by
+  loosening the gate: 3 disambiguation `bulba` titles, 4 curated notes, 4
+  `imageFile` overrides. Report tags `(no items)` for the 26 item-less spots.
+- **Assists:** `assist` persisted in the `pokemaps` key (defaults preview=off,
+  arrows=on). Verified: preview thumbnail renders in the map readout for the
+  selected location; arrows=off renders band-colored pills with no glyph.
+- **Layout:** desktop map column 1.65fr, container 1360px; phone map card
+  bleeds `-mx-2`. Screenshots: `slides/shots/v2-*.png`.
+- `npx tsc -b` and `npm run build` clean; item icons 455/470 slugs resolved
+  (misses render as text chips).

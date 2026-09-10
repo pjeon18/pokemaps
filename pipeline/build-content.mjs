@@ -83,14 +83,51 @@ async function copyDir(from, to) {
   }
   return n;
 }
-// per-generation sprite folders (sprites/<gen-dir>/<id>.png)
-let nSprites = 0;
-for (const dir of await fs.readdir(path.join(CACHE, "sprites"))) {
-  const full = path.join(CACHE, "sprites", dir);
-  if (!(await fs.stat(full)).isDirectory()) continue;
-  nSprites += await copyDir(`sprites/${dir}`, `sprites/${dir}`);
+// Only ship cries/sprites for species that survive the regional-dex gate —
+// the cache keeps the full National Dex pulls, the bundle shouldn't.
+const usedByGen = new Map(); // spriteDir -> Set(id)
+const usedIds = new Set();
+for (const pack of packs) {
+  const enc = await read(path.join(CACHE, `encounters-${pack.id}.json`));
+  const dir = (pack.spriteGen ?? "").replace(/\//g, "-");
+  if (!usedByGen.has(dir)) usedByGen.set(dir, new Set());
+  for (const list of Object.values(enc))
+    for (const s of list) {
+      usedIds.add(s.id);
+      usedByGen.get(dir).add(s.id);
+    }
 }
-const nCries = await copyDir("cries-mp3", "cries");
+async function copyFiltered(from, to, keep) {
+  await fs.mkdir(path.join(PUB, to), { recursive: true });
+  let n = 0;
+  for (const f of await fs.readdir(path.join(CACHE, from))) {
+    if (!keep(f)) continue;
+    await fs.copyFile(path.join(CACHE, from, f), path.join(PUB, to, f));
+    n++;
+  }
+  return n;
+}
+const idOf = (f) => Number(f.replace(/\.\w+$/, ""));
+let nSprites = 0;
+for (const [dir, ids] of usedByGen) {
+  if (!dir) continue;
+  nSprites += await copyFiltered(`sprites/${dir}`, `sprites/${dir}`, (f) => ids.has(idOf(f)));
+}
+const nCries = await copyFiltered("cries-mp3", "cries", (f) => usedIds.has(idOf(f)));
+// item bag icons, only the slugs some location actually lists
+const usedItemSprites = new Set();
+for (const pack of packs) {
+  const b = await read(path.join(CACHE, `bulba-extract-${pack.id}.json`));
+  for (const e of Object.values(b)) for (const it of e.items ?? []) if (it.sprite) usedItemSprites.add(it.sprite);
+}
+let nItemSprites = 0;
+try {
+  nItemSprites = await copyFiltered("item-sprites", "item-sprites", (f) =>
+    usedItemSprites.has(f.replace(/\.png$/, ""))
+  );
+} catch {
+  console.warn("  ! item-sprites/ not in cache — run pipeline/scrape-bulbapedia.mjs");
+}
 const nTrainerSprites = await copyDir("trainer-sprites", "trainer-sprites");
 for (const extra of ["leaders", "npc-sprites", "balls"]) {
   try {
@@ -178,8 +215,17 @@ for (const pack of packs) {
     else if (b.slogan) noteType = "slogan";
     else if (trainersOk.length > 0) noteType = "trainer";
 
+    // Hint 1 is the item list (Paul, 2026-09-10 — classification chips were too
+    // vague to reward recall). Like field audio, an EMPTY list is itself a hint
+    // ("nothing to pick up here" narrows the map to a handful of quiet spots),
+    // so the slot always counts; the report still flags item-less locations.
+    const items = [];
+    for (const it of b.items ?? []) {
+      const has = it.sprite && (await exists(path.join(PUB, "item-sprites", `${it.sprite}.png`)));
+      items.push({ name: it.name, sprite: has ? it.sprite : null });
+    }
     const slots = {
-      h1_class: true,
+      h1_items: true,
       h2_audio: true,
       h3_overheard: !!line,
       h4_sprites: enc.length > 0,
@@ -187,7 +233,9 @@ for (const pack of packs) {
       h6_image: !!screenshot,
     };
     const filled = Object.values(slots).filter(Boolean).length;
-    report.push(`${filled}/6  [${pack.id}] ${loc.id}${enc.length === 0 ? "  (no wild Pokémon)" : ""}`);
+    report.push(
+      `${filled}/6  [${pack.id}] ${loc.id}${enc.length === 0 ? "  (no wild Pokémon)" : ""}${items.length === 0 ? "  (no items)" : ""}`
+    );
     if (filled < 5)
       failures.push(`[${pack.id}] ${loc.id}: only ${filled}/6 hints (${JSON.stringify(slots)})`);
 
@@ -201,6 +249,7 @@ for (const pack of packs) {
       name: loc.name,
       class: loc.class,
       terrain: await terrainFor(loc, versions),
+      items,
       encounters: enc,
       trainers: trainersOk,
       noteType,
@@ -258,7 +307,7 @@ for (let i = 1; i < schedule.length; i++) {
 console.log("— coverage —");
 for (const r of report.sort()) console.log(" ", r);
 console.log(
-  `\n${locations.length} locations across ${packs.length} packs · ${nSprites} sprites · ${nCries} cries · ${nTrainerSprites} trainer sprites · schedule ${schedule.length} days (spacing ≥ ${SPACING})`
+  `\n${locations.length} locations across ${packs.length} packs · ${nSprites} sprites · ${nCries} cries · ${nTrainerSprites} trainer sprites · ${nItemSprites} item icons · schedule ${schedule.length} days (spacing ≥ ${SPACING})`
 );
 if (failures.length) {
   console.error("\nCOVERAGE GATE FAILED:");

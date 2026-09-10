@@ -38,11 +38,17 @@ Sinnoh 67 (DPPt) · Johto & Kanto 99 (HGSS, combined 362×145 map) ·
 Hoenn 76 (RSE) · Unova 77 (BW+B2W2 combined) · Kalos 54 (XY).
 Each pack ships **era-correct Pokémon sprites** (`spriteGen` per pack).
 
-- **Hint ladder** (hardest→giveaway, ball-tier numbered Poké→Master):
-  Classification → Field audio (ALL cries in the area; "No Pokémon in this
-  area" when empty — that's a hint, not a bug) → Overheard (real in-game
-  class/name speakers + sprite) → Wild sprites → Town-map note → Photograph
-  (blurred until game end).
+- **Hint ladder** (recall-rewarding→giveaway, ball-tier numbered Poké→Master):
+  Items found (icon chips, TMs/HMs first, ≤12; "Nothing to pick up here" when
+  empty — a hint, not a bug) → Field audio (ALL cries in the area, REGIONAL
+  DEX ONLY; "No Pokémon in this area" when empty — also a hint) → Overheard
+  (real in-game class/name speakers + sprite) → Wild sprites (regional dex) →
+  Town-map note → Photograph (blurred until game end). CONCEPT D16.
+- **Assists** (persisted, toggles under the map): `preview` shows the photo of
+  what you tap; `arrows` off = band color only in the guess log. Never show
+  distance as a number regardless.
+- **Layout is map-first**: desktop grid 1.65fr/1fr, container to 1360px; the
+  map card bleeds to the phone edge.
 - **Feedback is direction-only**: 8-way arrow + proximity band color
   (never show tile numbers). Distance computed internally in tile units.
 - **Determinism**: same date → same puzzle + same seeded hint picks worldwide;
@@ -96,7 +102,17 @@ Order: `node pipeline/pull-pokeapi.mjs` → `pull-cries-mp3.mjs` →
   `versions`, **`maxDex`** (per-generation dex ceiling — a global 493 once
   silently emptied all Gen 5 encounters; don't reintroduce), `mapdescTag`
   (which generation's infobox text to keep), `spriteGen`, region-extraction
-  method, optional `regionShift`.
+  method, optional `regionShift`, **`regionalDex`** (PokéAPI pokedex names;
+  encounters outside their union are dropped — post-game swarms/radar/trades
+  read as nonsense for the area) and **`itemFlags`** (Bulbapedia `{{Itemlist}}`
+  game flags that count as this pack, e.g. D/P/Pt).
+- **Items** (`scrape-bulbapedia.mjs:extractItems`): version-filtered Itemlist
+  rows, `display=` rendered ("TM46 Thief"), PokéAPI bag-icon slug from the
+  sprite-name param (roman-numeral gen suffix stripped, alias table for
+  DeepSeaTooth-style names). Underground goods and ≥6-gem dust-cloud sets are
+  filtered as non-cues. Icons cached in `item-sprites/`; a 404 → text chip.
+  A curated `bulba` title MUST be the region-specific page — three were
+  disambiguation pages and silently yielded nothing.
 - **Click-region auto-extraction** (`pull-maps.mjs`) from Bulbapedia's
   per-location highlighted town maps, three methods:
   - `johto-kanto`: stitched-frame crimson-ring/orange-fill detection
@@ -118,7 +134,10 @@ Order: `node pipeline/pull-pokeapi.mjs` → `pull-cries-mp3.mjs` →
     location's map; oreburgh-city/eterna-forest/route-228 are a revision
     mismatch → empty/bogus diff) and live in Sinnoh's manual file.
 - **Coverage gate**: `build-content.mjs` FAILS if any location has <5 of 6
-  hint slots. Fallback chains: hint-5 note = mapdesc → slogan → trainer →
+  hint slots. Slots 1 (items) and 2 (audio) always count — their absence is
+  itself a hint — so a failure means a real hole; fix it at the source
+  (curated `note`, `imageFile`, correct `bulba` title), never by loosening the
+  gate. Fallback chains: hint-5 note = mapdesc → slogan → trainer →
   curated `note` field; roaming/event spots (Plasma Frigate, Marine Cave,
   Sinjoh Ruins) are NOT locations — don't add them back.
 - Curated per pack (`curated/{pack}/`): `locations.json` (eligibility, API

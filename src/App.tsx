@@ -3,6 +3,7 @@ import MapPicker from "./components/MapPicker";
 import HintPanel from "./components/HintPanel";
 import GuessLog from "./components/GuessLog";
 import SearchBar from "./components/SearchBar";
+import AssistBar from "./components/AssistBar";
 import RevealPanel from "./components/RevealPanel";
 import DebugPanel from "./components/DebugPanel";
 import { HowTo, StatsModal, PracticePicker, StreakEndModal } from "./components/Modals";
@@ -70,7 +71,7 @@ export default function App() {
 
   return (
     <div className="min-h-dvh">
-      <header className="max-w-md lg:max-w-5xl mx-auto px-4 pt-6 pb-3">
+      <header className="max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pt-6 pb-3">
         <div className="flex items-center justify-between gap-3 flex-wrap">
           <h1 className="display text-[40px] leading-none">
             Poké<span className="text-[var(--wm-accent)]">MAPs</span>
@@ -122,9 +123,11 @@ export default function App() {
         </div>
       </header>
 
-      <main className="max-w-md lg:max-w-5xl mx-auto px-4 pb-24 lg:grid lg:grid-cols-[1.15fr_1fr] lg:gap-5 lg:items-start">
+      {/* the map is the game — it takes ~62% of the desktop width (Paul, 2026-09-10) */}
+      <main className="max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pb-24 lg:grid lg:grid-cols-[1.65fr_1fr] lg:gap-6 lg:items-start">
         <div className="space-y-4">
           <MapPicker />
+          <AssistBar />
           <SearchBar />
           <GuessLog guesses={game.guesses} />
         </div>
@@ -134,7 +137,7 @@ export default function App() {
         </div>
       </main>
 
-      <footer className="max-w-md lg:max-w-5xl mx-auto px-4 pb-10 space-y-4">
+      <footer className="max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pb-10 space-y-4">
         <MusicCorner />
         <p className="survey-label leading-relaxed normal-case tracking-normal">
           A free fan-made puzzle. Not affiliated with Nintendo, Game Freak, or The

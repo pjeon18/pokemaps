@@ -54,6 +54,10 @@ interface GameState {
   stats: Stats;
   seenHowTo: boolean;
   selectedId: string | null;
+  /** Player-chosen assists (Paul, 2026-09-10). `preview` shows the photo of
+   * whatever you tap on the map; `arrows` is the direction hint in the guess
+   * log — off means band color only, for a harder run. Persisted. */
+  assist: { preview: boolean; arrows: boolean };
   // debug (never persisted meaningfully; offset lives in sessionStorage)
   debug: boolean;
   dayOffset: number;
@@ -66,6 +70,7 @@ interface GameState {
   clearStreakEnd: () => void;
   exitPractice: () => void;
   markHowToSeen: () => void;
+  toggleAssist: (key: "preview" | "arrows") => void;
   setDayOffset: (n: number) => void;
   toggleAudit: () => void;
   resetAll: () => void;
@@ -102,6 +107,7 @@ export const useGameStore = create<GameState>()(
       stats: emptyStats,
       seenHowTo: false,
       selectedId: null,
+      assist: { preview: false, arrows: true },
       debug: isDebug(),
       dayOffset: Number(sessionStorage.getItem("pokemaps-dayoffset") ?? 0),
       audit: false,
@@ -190,6 +196,7 @@ export const useGameStore = create<GameState>()(
 
       exitPractice: () => set({ mode: "daily", practice: null, selectedId: null }),
       markHowToSeen: () => set({ seenHowTo: true }),
+      toggleAssist: (key) => set((s) => ({ assist: { ...s.assist, [key]: !s.assist[key] } })),
 
       setDayOffset: (n) => {
         sessionStorage.setItem("pokemaps-dayoffset", String(n));
@@ -211,6 +218,7 @@ export const useGameStore = create<GameState>()(
         practiceStreak: s.practiceStreak,
         practicePack: s.practicePack,
         seenHowTo: s.seenHowTo,
+        assist: s.assist,
       }),
     }
   )

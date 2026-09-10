@@ -281,6 +281,33 @@ session). Gen 7+ stays out (encounter-data gap). Offered as the next pack.
 Etiquette: build-side only, cache everything, ~1 req/s, descriptive UA. Bulbapedia
 is CC BY-NC-SA → non-commercial + attribution (footer credit + per-image credit).
 
+**D16 — Items opener, regional-dex gate, assists, map-first layout.**
+(2026-09-10, Paul)
+- **Hint 1 = items found there.** Classification chips (class + terrain) were
+  too vague to reward anyone; the item list rewards real recall ("TM24 is on
+  Route 212"). Source: Bulbapedia `{{Itemlist|sprite|where|D=yes|…|display=}}`
+  rows filtered by per-pack `itemFlags`; TMs render as "TM46 Thief"; icons are
+  PokéAPI bag sprites keyed by the row's sprite-name param. Filtered out as
+  non-cues: Sinnoh Underground goods (Underground Man's tutorial gifts in
+  Eterna) and B2W2 dust-cloud type-Gem sets identical across every Unova cave.
+  TMs/HMs always make the 12-chip cut. An empty list is itself a hint ("Nothing
+  to pick up here" — 26 locations), so the coverage slot always counts, like
+  field audio. Fallout fixed along the way: three curated `bulba` titles were
+  disambiguation pages (Safari Zone, Victory Road ×2), the Regi chambers and
+  Embedded Tower lacked town-map notes, and four Unova/Hoenn spots lacked any
+  in-game image.
+- **Regional dex only.** PokéAPI location-area encounters include every
+  post-National-Dex arrival (swarms, Poké Radar, dual-slot inserts, even NPC
+  trades listed as encounters). Encounters are now intersected with the pack's
+  regional dex (`regionalDex`: extended-sinnoh, updated-johto, hoenn,
+  updated-unova, the three kalos dexes). 832 encounters dropped; sprite bundle
+  1330→953, cries 562→540. Kalos lost nothing (XY's dex already covers it).
+- **Assists.** `assist.preview` (photo of what you tap, default off) and
+  `assist.arrows` (default on; off = band color only) — persisted, always
+  visible under the map. Direction-only feedback (D-series) is untouched.
+- **Map-first layout.** Desktop grid 1.65fr/1fr (map ≈ 62%), container up to
+  1360px; on phones the map card bleeds to the screen edge.
+
 ## 6. Risks
 
 - **Nintendo/TPC takedown** — mitigated by the §15 posture in the PRD (free, no

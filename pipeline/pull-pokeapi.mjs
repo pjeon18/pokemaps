@@ -50,6 +50,24 @@ for (const pack of packs) {
   const maxDex = pack.maxDex ?? 1025; // per-generation national dex ceiling
   const encountersByLocation = {};
 
+  // Regional dex gate (Paul, 2026-09-10): PokéAPI's location-area encounters
+  // include every post-game National Dex arrival — swarms, Poké Radar, dual-slot
+  // GBA inserts — which read as nonsensical for the area. Keep only species in
+  // the pack's regional dex so cries + sprites stay native to the region.
+  let regional = null;
+  if (pack.regionalDex?.length) {
+    regional = new Set();
+    for (const dex of pack.regionalDex) {
+      const d = await cachedFetch(`https://pokeapi.co/api/v2/pokedex/${dex}`, `pokedex/${dex}.json`);
+      for (const e of d.pokemon_entries) {
+        const m = e.pokemon_species.url.match(/\/pokemon-species\/(\d+)\//);
+        if (m) regional.add(Number(m[1]));
+      }
+    }
+    console.log(`[${pack.id}] regional dex: ${regional.size} species (${pack.regionalDex.join(" + ")})`);
+  }
+  let droppedTotal = 0;
+
   for (const loc of curated.locations) {
     const slugs = loc.api ?? [loc.id, ...(loc.merge ?? [])];
     const species = new Map();
@@ -77,6 +95,14 @@ for (const pack of packs) {
         }
       }
     }
+    if (regional) {
+      for (const id of [...species.keys()]) {
+        if (!regional.has(id)) {
+          species.delete(id);
+          droppedTotal++;
+        }
+      }
+    }
     const list = [...species.entries()]
       .sort((a, b) => a[0] - b[0])
       .map(([id, name]) => ({ id, name }));
@@ -94,7 +120,9 @@ for (const pack of packs) {
     path.join(CACHE, `encounters-${pack.id}.json`),
     JSON.stringify(encountersByLocation, null, 2)
   );
-  console.log(`[${pack.id}] ${Object.keys(encountersByLocation).length} locations\n`);
+  console.log(
+    `[${pack.id}] ${Object.keys(encountersByLocation).length} locations · ${droppedTotal} non-regional encounters dropped\n`
+  );
 }
 console.log(`${allSpecies.size} unique species across all packs`);
 

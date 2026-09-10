@@ -1,5 +1,5 @@
 {
- "_comment": "Region packs. `versions` filters Pok\u00e9API encounters; `mapdescTag` picks the right generation's town-map description from Bulbapedia infoboxes; `regionSource` = manual (curated map-regions.json, Sinnoh) or auto (extracted from Bulbapedia per-location highlight maps by pull-maps.mjs; manual overrides merge from map-regions-manual.json).",
+ "_comment": "Region packs. `versions` filters PokéAPI encounters; `mapdescTag` picks the right generation's town-map description from Bulbapedia infoboxes; `regionSource` = manual (curated map-regions.json, Sinnoh) or auto (extracted from Bulbapedia per-location highlight maps by pull-maps.mjs; manual overrides merge from map-regions-manual.json). `regionalDex` = PokéAPI pokedex names whose union is the pack's regional dex — encounters outside it (post-National-Dex swarms, dual-slot, radar, etc.) are dropped so cries/sprites stay native to the region (Paul, 2026-09-10). `itemFlags` = Bulbapedia {{Itemlist}} game flags that count as this pack's versions (items hint).",
  "packs": [
   {
    "id": "sinnoh",
@@ -13,7 +13,15 @@
    "regionSource": "auto",
    "mapFile": "Sinnoh_DP.png",
    "spriteGen": "generation-iv/platinum",
-   "maxDex": 493
+   "maxDex": 493,
+   "regionalDex": [
+    "extended-sinnoh"
+   ],
+   "itemFlags": [
+    "D",
+    "P",
+    "Pt"
+   ]
   },
   {
    "id": "johto-kanto",
@@ -25,7 +33,14 @@
    "mapdescTag": "HGSS",
    "regionSource": "auto",
    "spriteGen": "generation-iv/heartgold-soulsilver",
-   "maxDex": 493
+   "maxDex": 493,
+   "regionalDex": [
+    "updated-johto"
+   ],
+   "itemFlags": [
+    "HG",
+    "SS"
+   ]
   },
   {
    "id": "hoenn",
@@ -40,7 +55,15 @@
    "highlightPrefix": "Hoenn",
    "mapFile": "Hoenn_RSE_Map.png",
    "spriteGen": "generation-iii/emerald",
-   "maxDex": 386
+   "maxDex": 386,
+   "regionalDex": [
+    "hoenn"
+   ],
+   "itemFlags": [
+    "R",
+    "S",
+    "E"
+   ]
   },
   {
    "id": "unova",
@@ -67,6 +90,15 @@
      72,
      112
     ]
+   ],
+   "regionalDex": [
+    "updated-unova"
+   ],
+   "itemFlags": [
+    "B",
+    "W",
+    "B2",
+    "W2"
    ]
   },
   {
@@ -84,6 +116,15 @@
    "regionShift": [
     -0.63,
     0.69
+   ],
+   "regionalDex": [
+    "kalos-central",
+    "kalos-coastal",
+    "kalos-mountain"
+   ],
+   "itemFlags": [
+    "X",
+    "Y"
    ]
   }
  ]

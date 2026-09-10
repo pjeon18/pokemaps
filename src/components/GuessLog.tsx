@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { byId } from "../lib/content";
 import { DIR_ARROWS } from "../lib/distance";
-import { MAX_GUESSES, type Guess } from "../store/useGameStore";
+import { MAX_GUESSES, useGameStore, type Guess } from "../store/useGameStore";
 
 const BAND_COLOR: Record<string, string> = {
   hit: "var(--wm-hit)",
@@ -13,6 +13,8 @@ const BAND_COLOR: Record<string, string> = {
 /** Direction-only feedback (2026-07-20, Paul): the arrow points toward the
  * answer; the band color says how close. Never a number. */
 export default function GuessLog({ guesses }: { guesses: Guess[] }) {
+  // "Direction arrows" assist off → the pill keeps its band color, loses the glyph
+  const arrows = useGameStore((s) => s.assist.arrows);
   return (
     <section className="card overflow-hidden">
       <div className="px-4 py-3 border-b-[2.5px] border-[var(--wm-line-strong)]">
@@ -40,7 +42,7 @@ export default function GuessLog({ guesses }: { guesses: Guess[] }) {
                     className="shrink-0 flex items-center justify-center gap-1.5 pl-2 h-9 min-w-[52px] rounded-full px-3 text-white font-black text-[18px]"
                     style={{ background: BAND_COLOR[g.band] }}
                   >
-                    {g.band === "hit" ? "★" : DIR_ARROWS[g.dir]}
+                    {g.band === "hit" ? "★" : arrows ? DIR_ARROWS[g.dir] : ""}
                   </span>
                 </motion.div>
               ) : (

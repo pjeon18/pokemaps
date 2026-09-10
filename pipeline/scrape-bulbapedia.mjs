@@ -98,6 +98,112 @@ function extractTrainers(wikitext) {
   return out;
 }
 
+/** Render one item's display text from {{Itemlist}} markup: resolve the
+ * templates Bulbapedia uses inside `display=` ({{TM|35|Flamethrower}},
+ * {{HM|01|Cut}}, {{DL|page|text}}, {{i|Poké Ball}}), unwrap links, and drop
+ * quantities/notes so "[[Chesto Berry]] ×2" reads "Chesto Berry". */
+function renderItem(raw) {
+  let s = raw
+    .replace(/\{\{(?:TM|HM)\|0*(\d+)\|([^}|]+)[^}]*\}\}/gi, (_, n, mv) => `${_.startsWith("{{H") ? "HM" : "TM"}${String(n).padStart(2, "0")} ${mv}`)
+    .replace(/\{\{DL\|[^}|]*\|([^}|]+)[^}]*\}\}/gi, "$1")
+    .replace(/\{\{[a-z]+\|([^}|]+)[^}]*\}\}/gi, "$1")
+    .replace(/\[\[([^\]|#]*)#[^\]|]*\]\]/g, "[[$1]]") // [[Accessory#List]] → [[Accessory]]
+    .replace(/\[\[([^\]|]*\|)?([^\]]*)\]\]/g, "$2")
+    .replace(/×\s*\d+/g, "")
+    .replace(/''[^']*''/g, "")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+  return s;
+}
+
+/** Gen III–V compound names that PokéAPI spells with a hyphen. */
+const ITEM_SLUG_ALIAS = {
+  deepseatooth: "deep-sea-tooth",
+  deepseascale: "deep-sea-scale",
+  blackglasses: "black-glasses",
+  brightpowder: "bright-powder",
+  silverpowder: "silver-powder",
+  twistedspoon: "twisted-spoon",
+  nevermeltice: "never-melt-ice",
+  thunderstone: "thunder-stone",
+  balmmushroom: "balm-mushroom",
+  tinymushroom: "tiny-mushroom",
+  "dowsing-mchn": "dowsing-machine",
+  "prof-s-letter": "profs-letter",
+  itemfinder: "item-finder",
+  "vs-seeker": "vs-seeker",
+};
+
+/** Items obtainable at the location in this pack's games, in page order,
+ * deduped. Parses {{Itemlist|<sprite-name>|<where>|D=yes|Pt=yes|display=…}}
+ * (one nested-template level allowed for `display=`). A row counts if any
+ * of the pack's game flags is set; the sprite-name param carries game
+ * suffixes ("Potion BDSP") so `display=` wins when present. */
+function extractItems(wikitext, flags) {
+  const out = [];
+  const seen = new Set();
+  const re = /\{\{[Ii]temlist\s*\|((?:[^{}]|\{\{[^{}]*\}\})*)\}\}/g;
+  let m;
+  while ((m = re.exec(wikitext))) {
+    // split on top-level pipes only — pipes inside {{…}} AND [[page|text]] links
+    // belong to their template/link, not to the Itemlist parameter list
+    const parts = [];
+    let depth = 0,
+      cur = "";
+    const src = m[1];
+    for (let i = 0; i < src.length; i++) {
+      const ch = src[i];
+      if (ch === "{" || ch === "[") depth++;
+      if (ch === "}" || ch === "]") depth--;
+      if (ch === "|" && depth === 0) {
+        parts.push(cur);
+        cur = "";
+      } else cur += ch;
+    }
+    parts.push(cur);
+    const positional = parts.filter((p) => !/^\s*[A-Za-z0-9]+\s*=/.test(p)).map((p) => p.trim());
+    const named = Object.fromEntries(
+      parts
+        .filter((p) => /^\s*[A-Za-z0-9]+\s*=/.test(p))
+        .map((p) => {
+          const i = p.indexOf("=");
+          return [p.slice(0, i).trim(), p.slice(i + 1).trim()];
+        })
+    );
+    const inPack = flags.some((f) => /^yes$/i.test(named[f] ?? ""));
+    if (!inPack) continue;
+    // param 1 is Bulbapedia's bag-sprite name ("TM Fire", "Potion BDSP") — a
+    // game suffix marks a later-gen sprite variant of the same item
+    const spriteName = (positional[0] ?? "").replace(/\s+(BDSP|HGSS|ORAS|FRLG|RSE|DPPt|BW|B2W2|XY|SM|USUM|LGPE|SwSh|Gen\s*\w+)$/i, "");
+    const raw = named.display || spriteName;
+    const name = renderItem(raw);
+    if (!name || name.length > 40) continue;
+    const key = name.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    // PokéAPI item slug ("X Sp. Def" → x-sp-def, "TM Fire VI" → tm-fire); the
+    // icon is resolved against PokéAPI's sprite repo after the scrape.
+    let sprite = spriteName
+      .replace(/\s+(I{1,3}|IV|VI{0,3}|IX)$/i, "") // Bulbapedia's per-gen sprite variants
+      .normalize("NFD")
+      .replace(/[̀-ͯ]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
+    sprite = ITEM_SLUG_ALIAS[sprite] ?? sprite;
+    out.push({ name, sprite: sprite || null });
+  }
+  // Noise that isn't a memory cue for the PLACE: Sinnoh Underground goods
+  // (Underground Man's tutorial gifts in Eterna — spheres, traps, furniture)
+  // and B2W2 dust-cloud type-Gem sets that every Unova cave lists identically.
+  const UNDERGROUND = /\bSphere \d|\bTrap\b|Digger Drill|Plain Table|Wooden Chair|Small Bookshelf|Cushion|\bFence\b|\bRug\b|Carpet|\bDesk\b|\bClock\b|Statue|Poster|^(Pretty|Shiny|Mystic|Glitter) Gem$|^(?!Poké )\S+ Doll$/;
+  let list = out.filter((it) => !UNDERGROUND.test(it.name));
+  const gems = list.filter((it) => /\bGem$/.test(it.name));
+  if (gems.length >= 6) list = list.filter((it) => !/\bGem$/.test(it.name));
+  return list;
+}
+
 function cleanWiki(v) {
   return v
     .replace(/<br\s*\/?\s*>/g, " ")
@@ -162,12 +268,14 @@ function pickImage(wikitext, packId) {
 
 const { packs } = JSON.parse(await fs.readFile(path.join(ROOT, "curated", "packs.json"), "utf8"));
 const trainerSprites = new Set();
+const itemSprites = new Set();
 
 for (const pack of packs) {
   const curated = JSON.parse(
     await fs.readFile(path.join(ROOT, "curated", pack.id, "locations.json"), "utf8")
   );
   const tagRe = new RegExp(pack.mapdescTag, "i");
+  const itemFlags = pack.itemFlags ?? [];
   const extract = {};
 
   for (const loc of curated.locations) {
@@ -201,15 +309,18 @@ for (const pack of packs) {
         console.warn(`  ! [${pack.id}] image for ${loc.id}: ${e.message}`);
       }
     }
+    const items = extractItems(wikitext, itemFlags);
+    for (const it of items) if (it.sprite) itemSprites.add(it.sprite);
     extract[loc.id] = {
       slogan: infoboxParam(wikitext, "slogan", tagRe),
       mapdesc: infoboxParam(wikitext, "mapdesc", tagRe),
       trainers,
+      items,
       imageFile,
       imagePath,
     };
     console.log(
-      `[${pack.id}] ${loc.id}: ${trainers.length} trainers, slogan=${!!extract[loc.id].slogan}, mapdesc=${!!extract[loc.id].mapdesc}, img=${imageFile ?? "none"}`
+      `[${pack.id}] ${loc.id}: ${trainers.length} trainers, ${items.length} items, slogan=${!!extract[loc.id].slogan}, mapdesc=${!!extract[loc.id].mapdesc}, img=${imageFile ?? "none"}`
     );
   }
   await fs.writeFile(
@@ -232,3 +343,31 @@ for (const sprite of trainerSprites) {
   }
 }
 console.log(`${trainerSprites.size} trainer class sprites`);
+
+// Item bag icons from PokéAPI's sprite repo (uniform style across gens); a
+// slug that 404s simply renders as a text-only chip.
+let itemOk = 0,
+  itemMiss = 0;
+for (const slug of itemSprites) {
+  const fp = `item-sprites/${slug}.png`;
+  try {
+    await cached(
+      fp,
+      async () => {
+        await new Promise((r) => setTimeout(r, 120));
+        const res = await fetch(
+          `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${slug}.png`,
+          { headers: { "user-agent": UA } }
+        );
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return Buffer.from(await res.arrayBuffer());
+      },
+      { binary: true }
+    );
+    itemOk++;
+  } catch {
+    itemMiss++;
+    console.warn(`  ! item sprite ${slug}: none on PokéAPI`);
+  }
+}
+console.log(`item sprites: ${itemOk} ok, ${itemMiss} missing`);

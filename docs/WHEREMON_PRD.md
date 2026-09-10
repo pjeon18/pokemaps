@@ -93,12 +93,18 @@ Ball is the photograph, because it never fails.
 
 | # | Ball | Visible | Hint | Source |
 |---|------|---------|------|--------|
-| 1 | Poké | at start | Classification: location class + terrain chips | PokéAPI |
-| 2 | Great | after guess 1 | **Field audio:** the cries of **every** wild Pokémon in the area, as numbered play chips (deterministic shuffled order). If the area has no wild Pokémon, the hint says so — only 6 areas are that quiet, so the absence is itself a strong hint | Showdown mp3s via pipeline |
+| 1 | Poké | at start | **Items found** (2026-09-10, replacing classification chips, which were too vague to reward anyone): the items obtainable there in this pack's games as icon chips — TMs/HMs always shown ("TM46 Thief"), the rest a seeded pick, up to 12. Someone who remembers which TM sits on which route solves in one. If nothing is obtainable, the hint says so (26 locations — itself a strong hint) | Bulbapedia `{{Itemlist}}` (version-flagged) + PokéAPI bag icons |
+| 2 | Great | after guess 1 | **Field audio:** the cries of **every** wild Pokémon in the area **from the regional dex** (post-National-Dex arrivals — swarms, Poké Radar, dual-slot, NPC trades — are excluded so cries stay native to the region), as numbered play chips (deterministic shuffled order). If the area has no wild Pokémon, the hint says so — the absence is itself a strong hint | Showdown mp3s via pipeline |
 | 3 | Ultra | after guess 2 | **Overheard:** one NPC dialogue line, attributed by real in-game class/name (2026-07-20: "Youngster Joey", "Gym Leader Fantina", "Aqua Grunt" — real trainer classes and named NPCs, not invented nouns) with the speaker's sprite where one exists | Curated (manual) |
-| 4 | Quick | after guess 3 | Sprites of three wild encounters (or the no-Pokémon message) | PokéAPI |
+| 4 | Quick | after guess 3 | Sprites of three wild encounters, regional dex only, in the pack's era (or the no-Pokémon message) | PokéAPI |
 | 5 | Dusk | after guess 4 | **Town-map note:** the in-game map description (fallbacks: town slogan → trainer card) | Bulbapedia scrape |
 | 6 | Master | after guess 5 | Screenshot of the area, heavily blurred (near-giveaway by design) | Bulbapedia infobox image |
+
+**Assists (2026-09-10):** two persisted, player-chosen toggles under the map.
+*Location preview* shows the photo of whatever you tap before you commit;
+*Direction arrows* can be switched off so the guess log shows band color only
+(a harder run). Neither touches the direction-only principle — distance is
+still never shown as a number.
 
 **Coverage rule:** every location in the schedule must have **≥ 5 of 6** hint slots
 filled; the content build **fails** otherwise (see §11). Fallbacks as built:

@@ -203,7 +203,8 @@ export default function MapPicker() {
   }
 
   return (
-    <div className="card overflow-hidden">
+    // bleeds to the screen edge on phones — the map is the game (Paul, 2026-09-10)
+    <div className="card overflow-hidden -mx-2 sm:mx-0">
       {/* plate header */}
       <div className="flex items-center justify-between px-4 py-3 border-b-[2.5px] border-[var(--wm-line-strong)]">
         <span className="display text-[19px]">{pack.name}</span>
@@ -272,9 +273,18 @@ export default function MapPicker() {
         {playing ? (
           readout ? (
             <>
-              <div className="min-w-0">
-                <div className="text-[19px] font-bold leading-tight truncate">{readout.name}</div>
-                <div className="survey-label">{readout.class}</div>
+              <div className="min-w-0 flex items-center gap-3">
+                {s.assist.preview && readout.screenshot && (
+                  <img
+                    src={asset(`content/images/${readout.screenshot}`)}
+                    alt=""
+                    className="h-14 w-[84px] object-cover rounded-[8px] border-[2.5px] border-[var(--wm-line-strong)] shrink-0"
+                  />
+                )}
+                <div className="min-w-0">
+                  <div className="text-[19px] font-bold leading-tight truncate">{readout.name}</div>
+                  <div className="survey-label">{readout.class}</div>
+                </div>
               </div>
               {s.selectedId && (
                 <div className="flex gap-2 shrink-0">

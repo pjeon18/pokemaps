@@ -54,8 +54,8 @@ export function HowTo({ open, onClose }: { open: boolean; onClose: () => void })
     <Overlay open={open} onClose={onClose} title="How to play">
       <ol className="text-[16px] leading-relaxed space-y-3.5 list-decimal ml-5 font-medium">
         <li>
-          One Sinnoh location per day. <b>Tap the town map</b> to guess — or
-          search it by name if you already know it.
+          One location per day, somewhere across five regions. <b>Tap the town
+          map</b> to guess — or search it by name if you already know it.
         </li>
         <li>
           You have <b>{MAX_GUESSES} guesses</b>. Each wrong guess shows an{" "}
@@ -64,8 +64,14 @@ export function HowTo({ open, onClose }: { open: boolean; onClose: () => void })
         </li>
         <li>
           Hints get progressively more obvious — from Poké Ball to Master Ball:
-          classification, the wild cries, something overheard, wild sprites,
-          the town-map note, and finally a blurred photograph.
+          the items found there, the wild cries, something overheard, wild
+          sprites, the town-map note, and finally a blurred photograph. Remember
+          which TM sits on which route and you can solve it in one.
+        </li>
+        <li>
+          <b>Assists</b> live under the map: <b>Location preview</b> shows a
+          photo of whatever you tap, and <b>Direction arrows</b> can be switched
+          off for a harder run (color only).
         </li>
         <li>
           Keep a daily streak and climb the Sinnoh gauntlet — a new Gym Leader

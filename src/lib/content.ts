@@ -21,7 +21,10 @@ export interface Loc {
   name: string;
   class: string;
   terrain: string[];
-  encounters: { id: number; name: string }[];
+  /** Obtainable items in this pack's games (TMs as "TM35 Flamethrower");
+   * `sprite` is a PokéAPI bag-icon slug under content/item-sprites/, or null. */
+  items: { name: string; sprite: string | null }[];
+  encounters: { id: number; name: string }[]; // regional-dex species only
   trainers: Trainer[];
   noteType: "mapdesc" | "slogan" | "trainer" | null;
   dialogue: DialogueLine | null;

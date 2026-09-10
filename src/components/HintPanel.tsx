@@ -5,11 +5,13 @@ import { titleCase, spritePath } from "../lib/content";
 import { seededPick } from "../lib/seed";
 import { asset } from "../lib/assets";
 
-/** Ladder order (2026-07-20, tuned for difficulty): vaguest first, giveaway
- * last. Each hint number is a ball tier — Poké Ball opener, Master Ball
- * photograph (it never fails). */
+/** Ladder order: recall-rewarding first, giveaway last. Each hint number is a
+ * ball tier — Poké Ball opener, Master Ball photograph (it never fails).
+ * 2026-09-10 (Paul): the opener is the item list — someone who remembers which
+ * TM sits on which route can solve in one; the classification chips were too
+ * vague to reward anyone. Field audio is regional-dex only. */
 const HINT_LABELS = [
-  "Classification",
+  "Items found",
   "Field audio",
   "Overheard",
   "Wild sprites",
@@ -75,6 +77,15 @@ export default function HintPanel({
   unlocked: number;
   ended: boolean;
 }) {
+  // TMs/HMs are the sharpest recall cues ("TM24 is on Route 212"), so they
+  // always make the cut; the remaining slots are a seeded pick of the rest.
+  const MAX_ITEMS = 12;
+  const machines = loc.items.filter((it) => /^(TM|HM)\d/.test(it.name)).slice(0, MAX_ITEMS);
+  const others = loc.items.filter((it) => !/^(TM|HM)\d/.test(it.name));
+  const items = [
+    ...machines,
+    ...seededPick(seed, 1, others, Math.max(0, Math.min(MAX_ITEMS - machines.length, others.length))),
+  ];
   const allCries = seededPick(seed, 2, loc.encounters, loc.encounters.length);
   const sprites = seededPick(seed, 3, loc.encounters, 3);
   const trainer = seededPick(seed, 4, loc.trainers, 1)[0];
@@ -89,17 +100,43 @@ export default function HintPanel({
   );
 
   const bodies: (React.ReactNode | null)[] = [
-    // 1 — classification (vaguest opener)
-    <div key="h1" className="flex flex-wrap gap-2">
-      {[loc.class, ...loc.terrain].map((c) => (
-        <span
-          key={c}
-          className="font-bold text-[15px] uppercase tracking-wider px-4 py-2 rounded-full border-[2.5px] border-[var(--wm-line-strong)]"
-        >
-          {c}
+    // 1 — items found here (TMs, held items, key items). Empty is a hint too.
+    loc.items.length > 0 ? (
+      <div key="h1">
+        <div className="flex flex-wrap gap-2">
+          {items.map((it) => (
+            <span
+              key={it.name}
+              className="flex items-center gap-1.5 font-bold text-[14px] pl-2 pr-3.5 py-1 rounded-full border-[2.5px] border-[var(--wm-line-strong)]"
+            >
+              {it.sprite ? (
+                <img
+                  src={asset(`content/item-sprites/${it.sprite}.png`)}
+                  alt=""
+                  className="h-7 w-7 -my-0.5"
+                  style={{ imageRendering: "pixelated" }}
+                />
+              ) : (
+                <span className="w-1" />
+              )}
+              {it.name}
+            </span>
+          ))}
+        </div>
+        <div className="survey-label mt-2.5">
+          {loc.items.length > MAX_ITEMS
+            ? `${MAX_ITEMS} of ${loc.items.length} items found here`
+            : `${loc.items.length} ${loc.items.length === 1 ? "item" : "items"} found here`}
+        </div>
+      </div>
+    ) : (
+      <p key="h1" className="text-[19px] font-bold">
+        Nothing to pick up here.
+        <span className="block text-[15px] font-medium text-[var(--wm-text-2)] mt-1">
+          Not even a hidden item — few places are this bare…
         </span>
-      ))}
-    </div>,
+      </p>
+    ),
     // 2 — field audio: every cry in the area
     loc.encounters.length > 0 ? (
       <CryChips key="h2" ids={allCries.map((e) => e.id)} />
