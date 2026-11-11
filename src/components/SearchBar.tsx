@@ -26,19 +26,19 @@ export default function SearchBar() {
   if (!playing) return null;
 
   return (
-    <div className="relative">
+    <div className="relative flex-1 min-w-0">
       <input
         ref={inputRef}
         value={q}
         onChange={(e) => setQ(e.target.value)}
         onFocus={() => setFocus(true)}
         onBlur={() => setTimeout(() => setFocus(false), 150)}
-        placeholder="Know the name? Search it…"
+        placeholder="Search by name"
         aria-label="Search a location by name"
-        className="w-full h-[56px] px-5 rounded-full border-[2.5px] border-[var(--wm-line-strong)] bg-[var(--wm-panel)] text-[17px] font-bold placeholder:font-medium placeholder:text-[var(--wm-text-3)] shadow-[0_4px_0_rgba(23,19,12,0.9)]"
+        className="w-full h-[42px] px-4 rounded-full border-[2.5px] border-[var(--wm-line-strong)] bg-[var(--wm-panel-2)] focus:bg-[var(--wm-panel)] text-[16px] font-bold placeholder:font-medium placeholder:text-[var(--wm-text-3)]"
       />
       {focus && matches.length > 0 && (
-        <ul className="absolute z-30 left-2 right-2 mt-2 card overflow-hidden">
+        <ul className="absolute z-30 left-0 right-0 mt-2 card overflow-hidden">
           {matches.map((l) => {
             const done = guessed.has(l.id);
             return (

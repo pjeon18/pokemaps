@@ -2,13 +2,12 @@ import { useEffect, useState } from "react";
 import MapPicker from "./components/MapPicker";
 import HintPanel from "./components/HintPanel";
 import GuessLog from "./components/GuessLog";
-import SearchBar from "./components/SearchBar";
 import AssistBar from "./components/AssistBar";
 import RevealPanel from "./components/RevealPanel";
 import DebugPanel from "./components/DebugPanel";
 import { FooterMon, ForestBackdrop } from "./components/Scene";
 import { HowTo, StatsModal, PracticePicker, StreakEndModal } from "./components/Modals";
-import { byId, packById } from "./lib/content";
+import { byId } from "./lib/content";
 import { asset } from "./lib/assets";
 import { leaderForStreak } from "./lib/leaders";
 import { useGameStore, currentGame, hintsUnlocked } from "./store/useGameStore";
@@ -67,18 +66,21 @@ export default function App() {
   const ended = game.status !== "playing";
   const seed = s.mode === "daily" ? game.puzzle : s.practiceSeed;
 
-  const navBtn = "btn btn-sm";
+  const navBtn = "btn btn-sm max-sm:h-[38px] max-sm:px-3 max-sm:text-[14px]";
 
   return (
     <div className="relative min-h-dvh">
       <ForestBackdrop seed={seed} />
       <div className="relative z-10 bg-[var(--wm-panel)] border-b-[2.5px] border-[var(--wm-line-strong)]">
-      <header className="max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pt-4 pb-3">
-        <div className="flex items-center justify-between gap-3 flex-wrap">
-          <h1 className="display text-[40px] leading-none">
+      <header className="max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pt-4 pb-4">
+        <div className="flex items-center justify-between gap-x-2 gap-y-3 flex-wrap">
+          <h1 className="display text-[30px] sm:text-[40px] leading-none">
             Poké<span className="text-[var(--wm-accent)]">MAPs</span>
           </h1>
-          <nav className="flex items-center gap-2">
+          <div className="order-last w-full lg:order-none lg:w-auto lg:flex-1 lg:flex lg:justify-center">
+            <AssistBar />
+          </div>
+          <nav className="flex items-center gap-1.5 sm:gap-2">
             {(() => {
               const streak = s.mode === "practice" ? s.practiceStreak : s.stats.streak;
               const leader = leaderForStreak(streak);
@@ -90,7 +92,7 @@ export default function App() {
                   <img
                     src={asset(`content/leaders/${leader.key}.png`)}
                     alt={leader.name}
-                    className="h-14 w-14 object-contain"
+                    className="h-10 w-10 sm:h-14 sm:w-14 object-contain"
                     style={{ imageRendering: "pixelated" }}
                   />
                   <span className="survey-label leading-none">
@@ -116,13 +118,6 @@ export default function App() {
             </button>
           </nav>
         </div>
-        <div className="survey-label mt-2">
-          {s.mode === "daily" ? (
-            <>Daily location puzzle · {packById.get(loc.pack)?.name} · Nº {game.puzzle}</>
-          ) : (
-            <>Practice · {packById.get(loc.pack)?.name}</>
-          )}
-        </div>
       </header>
       </div>
 
@@ -130,8 +125,6 @@ export default function App() {
       <main className="relative z-10 pt-6 max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pb-24 lg:grid lg:grid-cols-[1.65fr_1fr] lg:gap-6 lg:items-start">
         <div className="space-y-4">
           <MapPicker />
-          <AssistBar />
-          <SearchBar />
           <GuessLog guesses={game.guesses} />
         </div>
         <div className="space-y-4 mt-4 lg:mt-0">

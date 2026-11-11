@@ -325,6 +325,19 @@ Pocket Tactics cut in `public/scene/`, and the sprites are in
 `public/scene/mons/`. This revises the pinned "colour is semantic only" rule for the
 page chrome, while the proximity bands keep their meaning.
 
+**D18 — Tighter screen, plain How to play, red-hot colours.** (2026-11-11, Paul)
+The assist toggles moved into the header bar, between the wordmark and the nav
+(their own row on a phone). The name search sits inside the Guesses card's
+header, next to the title, instead of being a separate input. How to play is
+four plain facts and the colour key (Found, Hot, Warm, Cold), with nothing else.
+The band colours now follow the usual hot and cold reading: green Found, red Hot
+(≤ 4 tiles), yellow Warm (≤ 10 tiles) and grey Cold. The share string uses
+🟩 🟥 🟨 ⬜ to match, and a lost game's headline is ink instead of red. The puzzle
+label under the wordmark ("Daily location puzzle · region · Nº"), the "n/6
+revealed" count and the "after guess N" tags are gone, because the greyed-out
+balls already show which hints are locked. The map's scale bar no longer wraps
+or grows past 120 px when zoomed in.
+
 ## 6. Risks
 
 - **Nintendo/TPC takedown** — mitigated by the §15 posture in the PRD (free, no

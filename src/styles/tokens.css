@@ -30,11 +30,14 @@
   --wm-accent: #0d7fbf; /* selection / focus / primary */
   --wm-accent-ink: #ffffff;
 
-  /* proximity bands (light-legible) */
+  /* proximity bands (Paul, 2026-11-11): green found, red hot, yellow warm,
+     grey cold. The names are the band keys in distance.ts: "warm" is the
+     closest miss (Hot), "mid" is Warm, "cold" is Cold. */
   --wm-hit: #1ca35e;
-  --wm-warm: #e0a800;
-  --wm-mid: #e2711d;
-  --wm-cold: #d94a4a;
+  --wm-warm: #e0443a;
+  --wm-mid: #e6b417;
+  --wm-cold: #8e8e96;
+  --wm-loss: #17130c; /* a lost game's headline: ink, since red now means close */
 
   --wm-radius: 18px;
   --wm-radius-sm: 12px;

@@ -81,7 +81,7 @@ export default function RevealPanel() {
       <div className="px-5 pt-5">
         <div
           className="text-[15px] font-black uppercase tracking-wider"
-          style={{ color: won ? "var(--wm-hit)" : "var(--wm-cold)" }}
+          style={{ color: won ? "var(--wm-hit)" : "var(--wm-loss)" }}
         >
           {won ? `★ Found in ${game.guesses.length}` : "Not found"}
         </div>

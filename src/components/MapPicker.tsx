@@ -208,10 +208,10 @@ export default function MapPicker() {
       {/* plate header */}
       <div className="flex items-center justify-between px-4 py-3 border-b-[2.5px] border-[var(--wm-line-strong)]">
         <span className="display text-[19px]">{pack.name}</span>
-        <span className="survey-label flex items-center gap-2">
+        <span className="survey-label flex items-center gap-2 whitespace-nowrap">
           <span
             className="inline-block h-[3px] bg-[var(--wm-text-3)]"
-            style={{ width: Math.max(16, tileDisplay * 3) }}
+            style={{ width: Math.min(120, Math.max(16, tileDisplay * 3)) }}
           />
           3 tiles · N↑
         </span>
@@ -315,7 +315,7 @@ export default function MapPicker() {
             {answerLoc?.name}
             <span
               className="ml-2.5 text-[15px] font-black uppercase"
-              style={{ color: game!.status === "won" ? "var(--wm-hit)" : "var(--wm-cold)" }}
+              style={{ color: game!.status === "won" ? "var(--wm-hit)" : "var(--wm-loss)" }}
             >
               {game!.status === "won" ? "★ Found" : "Not found"}
             </span>

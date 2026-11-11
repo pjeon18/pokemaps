@@ -70,7 +70,8 @@ Every wrong guess converts to information:
   internally (Euclidean, map-tile units, region centroids) only to drive the
   band color, which is the sole "how close" signal.
 - **Distance bands** (drive guess-row color, map tinting, and the share string):
-  - 🟩 correct · 🟨 ≤ 4 tiles · 🟧 ≤ 10 tiles · 🟥 beyond
+  - 🟩 correct (Found) · 🟥 ≤ 4 tiles (Hot) · 🟨 ≤ 10 tiles (Warm) · ⬜ beyond (Cold).
+    Red means close and grey means far (Paul, 2026-11-11, CONCEPT D18).
   - (Rescaled at build time: the DP town map is a 27×21-tile grid, max distance
     ≈ 34, so the PRD's original illustrative values were resized to fit.)
   - Band thresholds are named constants in `src/lib/distance.ts` — expect tuning
@@ -100,7 +101,7 @@ Ball is the photograph, because it never fails.
 | 5 | Dusk | after guess 4 | **Town-map note:** the in-game map description (fallbacks: town slogan → trainer card) | Bulbapedia scrape |
 | 6 | Master | after guess 5 | Screenshot of the area, heavily blurred (near-giveaway by design) | Bulbapedia infobox image |
 
-**Assists (2026-09-10):** two persisted, player-chosen toggles under the map.
+**Assists (2026-09-10):** two persisted, player-chosen toggles in the header (under the map until 2026-11-11).
 *Location preview* shows the photo of whatever you tap before you commit;
 *Direction arrows* can be switched off so the guess log shows band color only
 (a harder run). Neither touches the direction-only principle — distance is
@@ -135,7 +136,7 @@ Share string (clipboard, spoiler-free):
 
 ```
 PokeMAPs #142 — 3/6
-🟥↘ 🟧→ 🟩
+⬜↘ 🟨→ 🟩
 <site url>
 ```
 

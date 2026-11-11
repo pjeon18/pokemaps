@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { byId } from "../lib/content";
 import { DIR_ARROWS } from "../lib/distance";
 import { MAX_GUESSES, useGameStore, type Guess } from "../store/useGameStore";
+import SearchBar from "./SearchBar";
 
 const BAND_COLOR: Record<string, string> = {
   hit: "var(--wm-hit)",
@@ -16,9 +17,10 @@ export default function GuessLog({ guesses }: { guesses: Guess[] }) {
   // "Direction arrows" assist off → the pill keeps its band color, loses the glyph
   const arrows = useGameStore((s) => s.assist.arrows);
   return (
-    <section className="card overflow-hidden">
-      <div className="px-4 py-3 border-b-[2.5px] border-[var(--wm-line-strong)]">
-        <span className="display text-[19px]">Guesses</span>
+    <section className="card">
+      <div className="flex items-center gap-4 px-4 py-2.5 min-h-[62px] border-b-[2.5px] border-[var(--wm-line-strong)]">
+        <span className="display text-[19px] shrink-0">Guesses</span>
+        <SearchBar />
       </div>
       <ol>
         {Array.from({ length: MAX_GUESSES }).map((_, i) => {

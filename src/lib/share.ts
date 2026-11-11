@@ -3,9 +3,9 @@ import { DIR_ARROWS } from "./distance";
 
 const BAND_SQUARE: Record<Band, string> = {
   hit: "🟩",
-  warm: "🟨",
-  mid: "🟧",
-  cold: "🟥",
+  warm: "🟥",
+  mid: "🟨",
+  cold: "⬜",
 };
 
 /** Streak-run share string — used by the streak-end popup. */

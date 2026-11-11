@@ -134,3 +134,16 @@ Tier 1 build. ✅ = verified · ⚠️ = partially verified / caveat.
   (`Share result`) at both widths.
 - `npx tsc -b` and `npm run build` are clean.
 
+## 2026-11-11 addendum: tighter screen and new band colours (CONCEPT D18)
+
+- The assists are in the header (one row at 1440, their own row on a phone),
+  and the search box is inside the Guesses card header. The search dropdown
+  opens over the guess rows. Checked at 1440, 1000 and 390.
+- Three misses chosen by band (Hot, Warm, Cold) render red, yellow and grey in
+  the guess log and on the map. The share squares are 🟥 🟨 ⬜, and a won game
+  still shows green.
+- How to play shows four facts and the Found, Hot, Warm and Cold key. The
+  puzzle label, the "n/6 revealed" count and the "after guess N" tags are gone.
+- No horizontal overflow and no console errors at any of the three widths.
+  `npx tsc -b` and `npm run build` are clean.
+

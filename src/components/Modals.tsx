@@ -52,37 +52,17 @@ export function Overlay({
 export function HowTo({ open, onClose }: { open: boolean; onClose: () => void }) {
   return (
     <Overlay open={open} onClose={onClose} title="How to play">
-      <ol className="text-[16px] leading-relaxed space-y-3.5 list-decimal ml-5 font-medium">
-        <li>
-          One location per day, somewhere across five regions. <b>Tap the town
-          map</b> to guess — or search it by name if you already know it.
-        </li>
-        <li>
-          You have <b>{MAX_GUESSES} guesses</b>. Each wrong guess shows an{" "}
-          <b>arrow pointing toward the answer</b>, its color says how close you
-          are — and the next hint unlocks.
-        </li>
-        <li>
-          Hints get progressively more obvious — from Poké Ball to Master Ball:
-          the items found there, the wild cries, something overheard, wild
-          sprites, the town-map note, and finally a blurred photograph. Remember
-          which TM sits on which route and you can solve it in one.
-        </li>
-        <li>
-          <b>Assists</b> live under the map: <b>Location preview</b> shows a
-          photo of whatever you tap, and <b>Direction arrows</b> can be switched
-          off for a harder run (color only).
-        </li>
-        <li>
-          Keep a daily streak and climb the Sinnoh gauntlet — a new Gym Leader
-          travels with you at every streak level, all the way to the Champion.
-        </li>
+      <ol className="text-[16px] leading-relaxed space-y-3 list-decimal ml-5 font-medium">
+        <li>Find today's location. Tap it on the map or search it by name.</li>
+        <li>You have {MAX_GUESSES} guesses.</li>
+        <li>A wrong guess shows an arrow toward the answer and unlocks the next hint.</li>
+        <li>The colour says how close you were.</li>
       </ol>
-      <p className="text-[14px] font-bold mt-5 flex items-center gap-2 flex-wrap">
-        <span className="h-4 w-4 rounded inline-block" style={{ background: "var(--wm-hit)" }} /> found
-        <span className="h-4 w-4 rounded inline-block ml-2" style={{ background: "var(--wm-warm)" }} /> hot
-        <span className="h-4 w-4 rounded inline-block ml-2" style={{ background: "var(--wm-mid)" }} /> warm
-        <span className="h-4 w-4 rounded inline-block ml-2" style={{ background: "var(--wm-cold)" }} /> cold
+      <p className="text-[15px] font-bold mt-5 flex items-center gap-2 flex-wrap">
+        <span className="h-4 w-4 rounded inline-block" style={{ background: "var(--wm-hit)" }} /> Found
+        <span className="h-4 w-4 rounded inline-block ml-2" style={{ background: "var(--wm-warm)" }} /> Hot
+        <span className="h-4 w-4 rounded inline-block ml-2" style={{ background: "var(--wm-mid)" }} /> Warm
+        <span className="h-4 w-4 rounded inline-block ml-2" style={{ background: "var(--wm-cold)" }} /> Cold
       </p>
     </Overlay>
   );

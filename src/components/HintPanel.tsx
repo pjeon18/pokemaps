@@ -229,9 +229,8 @@ export default function HintPanel({
 
   return (
     <section className="card overflow-hidden">
-      <div className="px-4 py-3 border-b-[2.5px] border-[var(--wm-line-strong)] flex items-baseline justify-between">
+      <div className="px-4 py-3 border-b-[2.5px] border-[var(--wm-line-strong)]">
         <span className="display text-[19px]">Hints</span>
-        <span className="survey-label">{Math.min(unlocked, 6)}/6 revealed</span>
       </div>
       <ol>
         {HINT_LABELS.map((label, i) => {
@@ -262,7 +261,6 @@ export default function HintPanel({
                   />
                   <span className="font-bold">0{n}</span> {shownLabel}
                 </span>
-                {!open && <span className="survey-label">after guess {n - 1}</span>}
               </div>
               <AnimatePresence initial={false}>
                 {open && body && (

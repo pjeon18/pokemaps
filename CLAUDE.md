@@ -44,7 +44,7 @@ Each pack ships **era-correct Pokémon sprites** (`spriteGen` per pack).
   DEX ONLY; "No Pokémon in this area" when empty — also a hint) → Overheard
   (real in-game class/name speakers + sprite) → Wild sprites (regional dex) →
   Town-map note → Photograph (blurred until game end). CONCEPT D16.
-- **Assists** (persisted, toggles under the map): `preview` shows the photo of
+- **Assists** (persisted, toggles in the header bar): `preview` shows the photo of
   what you tap; `arrows` off = band color only in the guess log. Never show
   distance as a number regardless.
 - **Layout is map-first**: desktop grid 1.65fr/1fr, container to 1360px; the
