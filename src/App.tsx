@@ -74,8 +74,16 @@ export default function App() {
       <div className="relative z-10 bg-[var(--wm-panel)] border-b-[2.5px] border-[var(--wm-line-strong)]">
       <header className="max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pt-4 pb-4">
         <div className="flex items-center justify-between gap-x-2 gap-y-3 flex-wrap">
-          <h1 className="display text-[30px] sm:text-[40px] leading-none">
-            Poké<span className="text-[var(--wm-accent)]">MAPs</span>
+          <h1 className="display text-[30px] sm:text-[40px] leading-none flex items-center gap-2">
+            <img
+              src={asset("logo/town-map.png")}
+              alt=""
+              className="h-[1.1em] w-[1.1em] shrink-0"
+              style={{ imageRendering: "pixelated" }}
+            />
+            <span>
+              Poké<span className="text-[var(--wm-accent)]">MAPs</span>
+            </span>
           </h1>
           <div className="order-last w-full lg:order-none lg:w-auto lg:flex-1 lg:flex lg:justify-center">
             <AssistBar />
@@ -130,6 +138,16 @@ export default function App() {
         <div className="space-y-4 mt-4 lg:mt-0">
           {ended && <RevealPanel />}
           <HintPanel loc={loc} seed={seed} unlocked={hintsUnlocked(game)} ended={ended} />
+          {/* The sister game. Under the hints on desktop, at the bottom on a phone. */}
+          <a href="/pokefinder/" className="btn w-full">
+            <img
+              src={asset("logo/poke-radar.png")}
+              alt=""
+              className="h-8 w-8 -my-1"
+              style={{ imageRendering: "pixelated" }}
+            />
+            Try the PokéFinder game
+          </a>
         </div>
       </main>
 
