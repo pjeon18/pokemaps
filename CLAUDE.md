@@ -65,8 +65,13 @@ Each pack ships **era-correct Pokémon sprites** (`spriteGen` per pack).
 "Field guide, turned up": white page, very large **M PLUS Rounded 1c** type
 (free stand-in for FOT-NewRodin, which is commercial — one-line swap in
 tokens.css if licensed), chunky ink-outlined cards with hard drop shadows
-(DS-menu energy). Color is semantic only: proximity bands + one interactive
-blue; the pixel maps carry all other color. Wordmark: Poké (ink) MAPs (blue).
+(DS-menu energy). Proximity bands and the one interactive blue carry meaning.
+Decoration comes from the overworld: one fixed forest clearing behind the
+game, with one seeded friendly animated Pokémon in the bottom-right corner (at
+the page end on phones), and the header as a white bar at the very top (`components/Scene.tsx`,
+CONCEPT D17). Keep the scene in that one fixed layer; a scrolling band over it
+reads as a second map. Action buttons use
+`.btn` / `.btn-primary` / `.btn-sm` from tokens.css. Wordmark: Poké (ink) MAPs (blue).
 IBM Plex Mono for small labels. No pixel fonts. No emoji in UI chrome
 (share-string emoji are fine — that's clipboard text).
 

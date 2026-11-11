@@ -31,7 +31,7 @@ function ThemeModule({ videoId, name }: { videoId: string; name: string }) {
       {state === "idle" ? (
         <button
           onClick={() => setState("playing")}
-          className="w-full text-[16px] font-black px-4 py-3.5 rounded-full border-[2.5px] border-[var(--wm-line-strong)] hover:bg-[var(--wm-panel-2)]"
+          className="btn w-full"
         >
           ▶ Play the {name} theme
         </button>
@@ -130,7 +130,7 @@ export default function RevealPanel() {
             <>
               <button
                 onClick={share}
-                className="text-[16px] font-black px-6 py-3 rounded-full bg-[var(--wm-line-strong)] text-white shadow-[0_4px_0_rgba(23,19,12,0.35)]"
+                className="btn btn-primary"
               >
                 {copied ? "Copied!" : "Share result"}
               </button>
@@ -139,7 +139,7 @@ export default function RevealPanel() {
           ) : (
             <button
               onClick={() => s.startPractice()}
-              className="text-[16px] font-black px-6 py-3 rounded-full bg-[var(--wm-line-strong)] text-white"
+              className="btn btn-primary"
             >
               Play another
             </button>

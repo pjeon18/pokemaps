@@ -37,7 +37,7 @@ export function Overlay({
           >
             <div className="flex items-center justify-between px-4 py-3 border-b-[2.5px] border-[var(--wm-line-strong)]">
               <span className="display text-[19px]">{title}</span>
-              <button onClick={onClose} className="text-[15px] font-bold px-2">
+              <button onClick={onClose} className="btn btn-sm">
                 Close
               </button>
             </div>
@@ -159,7 +159,7 @@ export function StreakEndModal() {
         <div className="flex items-center justify-center gap-3 mt-5">
           <button
             onClick={share}
-            className="text-[16px] font-black px-6 py-3 rounded-full bg-[var(--wm-line-strong)] text-white"
+            className="btn btn-primary"
           >
             {copied ? "Copied!" : "Share your run"}
           </button>
@@ -169,7 +169,7 @@ export function StreakEndModal() {
                 s.clearStreakEnd();
                 s.startPractice();
               }}
-              className="text-[16px] font-black px-5 py-3 rounded-full border-[2.5px] border-[var(--wm-line-strong)]"
+              className="btn"
             >
               Run it back
             </button>

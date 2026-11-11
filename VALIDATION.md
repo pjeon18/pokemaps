@@ -118,3 +118,19 @@ Tier 1 build. ✅ = verified · ⚠️ = partially verified / caveat.
   bleeds `-mx-2`. Screenshots: `slides/shots/v2-*.png`.
 - `npx tsc -b` and `npm run build` clean; item icons 455/470 slugs resolved
   (misses render as text chips).
+
+## 2026-11-11 addendum: scenery and buttons (CONCEPT D17)
+
+- The header bar sits at the very top, over one fixed forest backdrop, and
+  the footer is a card. Checked at the top, middle and bottom of the scroll at
+  1440 and 390: nothing in the scene moves against anything else, there is no
+  horizontal overflow and there are no console errors.
+- The one Pokémon comes from `seededPick(seed, …)`, so it stays the same
+  across a reload of the same puzzle. On desktop it stands in the bottom-right
+  corner, and on a phone at the bottom right of the page end (so it never
+  shows as a sliver between cards). The daily puzzle path is unchanged.
+- The nav, map confirm, reveal, modal and streak-end buttons use `.btn`, and the
+  assist toggles carry the same hard lip. Checked on a won Daily
+  (`Share result`) at both widths.
+- `npx tsc -b` and `npm run build` are clean.
+

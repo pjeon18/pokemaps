@@ -308,6 +308,23 @@ is CC BY-NC-SA → non-commercial + attribution (footer credit + per-image credi
 - **Map-first layout.** Desktop grid 1.65fr/1fr (map ≈ 62%), container up to
   1360px; on phones the map card bleeds to the screen edge.
 
+**D17 — Overworld scenery and chunky buttons from the Speed Quiz.** (2026-11-11, Paul)
+Paul asked for the Speed Quiz's look here. The game sits on one fixed forest
+clearing: grass, trees down both sides and along the bottom, and one friendly
+animated Black and White Pokémon in the bottom-right corner. On a phone the
+cards cover the backdrop, so it stands at the bottom right of the page end
+instead. It is picked with `seededPick`, so everyone sees the same one for the
+same puzzle. Paul asked for that one Pokémon and nothing else. The header and
+nav stay at the very top as a white bar, and the footer is a white card. A
+first version put a scrolling route band above the header, but Paul found it
+read as a second map that came apart from the fixed backdrop while scrolling,
+so the whole scene now lives in one fixed layer. Every action button uses the shared `.btn` class: a white pill with an ink
+outline and a hard lip that presses down when tapped. Primary actions are ink.
+The scenery is decoration only and never part of the puzzle. The tiles are the
+Pocket Tactics cut in `public/scene/`, and the sprites are in
+`public/scene/mons/`. This revises the pinned "colour is semantic only" rule for the
+page chrome, while the proximity bands keep their meaning.
+
 ## 6. Risks
 
 - **Nintendo/TPC takedown** — mitigated by the §15 posture in the PRD (free, no

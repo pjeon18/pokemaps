@@ -290,7 +290,7 @@ export default function MapPicker() {
                 <div className="flex gap-2 shrink-0">
                   <button
                     onClick={() => s.select(null)}
-                    className="text-[15px] font-bold px-4 py-2.5 rounded-full border-[2.5px] border-[var(--wm-line-strong)]"
+                    className="btn btn-sm"
                   >
                     Cancel
                   </button>
@@ -298,7 +298,7 @@ export default function MapPicker() {
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     onClick={s.confirmGuess}
-                    className="text-[15px] font-black px-5 py-2.5 rounded-full bg-[var(--wm-line-strong)] text-white"
+                    className="btn btn-sm btn-primary"
                   >
                     Guess it!
                   </motion.button>

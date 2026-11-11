@@ -6,16 +6,16 @@ export default function AssistBar() {
   const assist = useGameStore((s) => s.assist);
   const toggle = useGameStore((s) => s.toggleAssist);
   const pill = (on: boolean) =>
-    `flex items-center gap-2 text-[13px] font-bold px-3.5 py-2 rounded-full border-[2.5px] transition-colors ${
+    `flex items-center gap-2 text-[14px] font-extrabold h-[42px] px-4 rounded-full border-[2.5px] shadow-[0_3px_0_rgba(23,19,12,0.92)] active:translate-y-[2px] active:shadow-[0_1px_0_rgba(23,19,12,0.92)] transition ${
       on
-        ? "border-[var(--wm-accent)] bg-[var(--wm-accent)] text-[var(--wm-accent-ink)]"
+        ? "border-[var(--wm-line-strong)] bg-[var(--wm-accent)] text-[var(--wm-accent-ink)]"
         : "border-[var(--wm-line-strong)] bg-[var(--wm-panel)] text-[var(--wm-text-2)]"
     }`;
   const state = (on: boolean) => (
     <span className="font-mono text-[11px] tracking-[0.14em] uppercase opacity-80">{on ? "on" : "off"}</span>
   );
   return (
-    <div className="flex items-center gap-2 flex-wrap px-1">
+    <div className="card flex items-center gap-2 flex-wrap px-3 py-2.5">
       <span className="survey-label mr-1">Assists</span>
       <button
         onClick={() => toggle("preview")}

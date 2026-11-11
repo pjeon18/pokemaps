@@ -79,6 +79,44 @@ body {
   box-shadow: 0 4px 0 rgba(23, 19, 12, 0.9);
 }
 
+/* Chunky pill buttons, shared with the Speed Quiz: white with an ink outline
+   and a hard lip that presses down when tapped. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  padding: 0 24px;
+  border-radius: 999px;
+  border: 2.5px solid var(--wm-line-strong);
+  background: var(--wm-panel);
+  box-shadow: 0 4px 0 rgba(23, 19, 12, 0.92);
+  font-family: var(--wm-font-body);
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--wm-text);
+  cursor: pointer;
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out, background-color 120ms;
+}
+.btn:hover {
+  background: var(--wm-panel-2);
+}
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 rgba(23, 19, 12, 0.92);
+}
+.btn-primary,
+.btn-primary:hover {
+  background: var(--wm-line-strong);
+  color: #fff;
+}
+.btn-sm {
+  height: 44px;
+  padding: 0 18px;
+  font-size: 15px;
+}
+
 :focus-visible {
   outline: 3px solid var(--wm-accent);
   outline-offset: 2px;

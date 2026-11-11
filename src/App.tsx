@@ -6,6 +6,7 @@ import SearchBar from "./components/SearchBar";
 import AssistBar from "./components/AssistBar";
 import RevealPanel from "./components/RevealPanel";
 import DebugPanel from "./components/DebugPanel";
+import { FooterMon, ForestBackdrop } from "./components/Scene";
 import { HowTo, StatsModal, PracticePicker, StreakEndModal } from "./components/Modals";
 import { byId, packById } from "./lib/content";
 import { asset } from "./lib/assets";
@@ -22,9 +23,9 @@ function MusicCorner() {
     return (
       <button
         onClick={() => setOpen(true)}
-        className="text-[13px] font-bold px-4 py-2 rounded-full border-[2.5px] border-[var(--wm-line)] text-[var(--wm-text-2)] hover:border-[var(--wm-line-strong)]"
+        className="btn btn-sm"
       >
-        ♪ Play Pokémon music while you guess
+        ♪ Play Pokémon music
       </button>
     );
   }
@@ -66,12 +67,13 @@ export default function App() {
   const ended = game.status !== "playing";
   const seed = s.mode === "daily" ? game.puzzle : s.practiceSeed;
 
-  const navBtn =
-    "text-[14px] font-black uppercase tracking-wide px-4 py-2.5 rounded-full border-[2.5px] border-[var(--wm-line-strong)] bg-[var(--wm-panel)] shadow-[0_3px_0_rgba(23,19,12,0.9)]";
+  const navBtn = "btn btn-sm";
 
   return (
-    <div className="min-h-dvh">
-      <header className="max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pt-6 pb-3">
+    <div className="relative min-h-dvh">
+      <ForestBackdrop seed={seed} />
+      <div className="relative z-10 bg-[var(--wm-panel)] border-b-[2.5px] border-[var(--wm-line-strong)]">
+      <header className="max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pt-4 pb-3">
         <div className="flex items-center justify-between gap-3 flex-wrap">
           <h1 className="display text-[40px] leading-none">
             Poké<span className="text-[var(--wm-accent)]">MAPs</span>
@@ -122,9 +124,10 @@ export default function App() {
           )}
         </div>
       </header>
+      </div>
 
       {/* the map is the game — it takes ~62% of the desktop width (Paul, 2026-09-10) */}
-      <main className="max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pb-24 lg:grid lg:grid-cols-[1.65fr_1fr] lg:gap-6 lg:items-start">
+      <main className="relative z-10 pt-6 max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pb-24 lg:grid lg:grid-cols-[1.65fr_1fr] lg:gap-6 lg:items-start">
         <div className="space-y-4">
           <MapPicker />
           <AssistBar />
@@ -137,7 +140,8 @@ export default function App() {
         </div>
       </main>
 
-      <footer className="max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 pb-10 space-y-4">
+      <footer className="relative z-10 max-w-md lg:max-w-6xl xl:max-w-[1360px] mx-auto px-4 lg:pb-[210px]">
+        <div className="card p-4 sm:p-5 space-y-4">
         <MusicCorner />
         <p className="survey-label leading-relaxed normal-case tracking-normal">
           A free fan-made puzzle. Not affiliated with Nintendo, Game Freak, or The
@@ -145,6 +149,8 @@ export default function App() {
           trainer data: Bulbapedia (CC BY-NC-SA) · cries: Pokémon Showdown ·
           anonymous visit counts: GoatCounter (no cookies).
         </p>
+        </div>
+        <FooterMon seed={seed} />
       </footer>
 
       <HowTo open={showHowTo} onClose={() => setShowHowTo(false)} />
